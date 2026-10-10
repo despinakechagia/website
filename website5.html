@@ -833,7 +833,7 @@ var pathologyImagesMap = {
 function getPathologyImages(pathologyName) {
     if (pathologyImagesMap[pathologyName]) {
         return pathologyImagesMap[pathologyName].map(function(image) {
-            return 'images/' + image;
+            return image;
         });
     }
 
