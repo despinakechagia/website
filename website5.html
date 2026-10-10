@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Δέσποινα Κεχαγιά | Χειρουργός Οφθαλμίατρος</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{--color-primary:#b38b8b;--color-primary-light:#d4b6b6;--color-primary-dark:#8a6a6a;--color-gold:#c9a87c;--color-gold-light:#e8d5b0;--color-bg:#fcf9f7;--color-white:#fff;--color-dark:#2c2c2c;--color-text:#3d3d3d;--color-gray:#6b6b6b;--font-serif:'Playfair Display',serif;--font-sans:'Inter',sans-serif;--shadow-soft:0 8px 30px rgba(0,0,0,0.06);--shadow-hover:0 15px 40px rgba(0,0,0,0.1);--border-radius:8px;--transition:all 0.3s ease}
+        body{font-family:var(--font-sans);color:var(--color-text);background:var(--color-bg);line-height:1.8}
+        .container{max-width:1200px;margin:0 auto;padding:0 24px}
+        h1,h2,h3,h4{font-family:var(--font-serif);font-weight:600;color:var(--color-dark)}
+        a{text-decoration:none;color:var(--color-primary);transition:var(--transition)}
+        a:hover{color:var(--color-gold)}
+        .section{padding:60px 0}
+        .section-title{font-size:2.4rem;text-align:center;margin-bottom:16px;position:relative}
+        .section-title:after{content:'';display:block;width:80px;height:3px;background:var(--color-gold);margin:16px auto 0}
+        .section-subtitle{text-align:center;color:var(--color-gray);font-size:1.1rem;max-width:700px;margin:0 auto 32px;font-weight:300}
+        .navbar{background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);box-shadow:0 2px 20px rgba(0,0,0,0.04);padding:12px 0;position:sticky;top:0;z-index:1000;border-bottom:1px solid rgba(201,168,124,0.2)}
+        .navbar .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+        .logo{font-family:var(--font-serif);font-size:1.4rem;font-weight:700;color:var(--color-primary-dark);cursor:pointer}
+        .logo span{color:var(--color-gold);font-weight:400}
+        .nav-menu{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+        .nav-menu a{color:var(--color-dark);font-weight:500;font-size:.9rem;padding:8px 16px;border-radius:40px;transition:var(--transition);border:1px solid transparent;cursor:pointer}
+        .nav-menu a:hover,.nav-menu a.active{color:var(--color-primary);background:var(--color-primary-light);border-color:var(--color-gold)}
+        .dropdown{position:relative;display:inline-block}
+        .dropdown-btn{background:transparent;color:var(--color-dark);padding:8px 16px;border:1px solid transparent;border-radius:40px;font-weight:500;font-size:.9rem;cursor:pointer;display:flex;align-items:center;gap:6px;transition:var(--transition);font-family:var(--font-sans)}
+        .dropdown-btn:hover{color:var(--color-primary);background:var(--color-primary-light);border-color:var(--color-gold)}
+        .dropdown-btn i{font-size:.8rem}
+        .dropdown-content{display:none;position:absolute;right:0;top:48px;background:#fff;min-width:340px;max-width:460px;max-height:70vh;overflow-y:auto;box-shadow:var(--shadow-hover);border-radius:var(--border-radius);padding:12px 0;z-index:1001;border:1px solid rgba(201,168,124,0.2)}
+        .dropdown-content::-webkit-scrollbar{width:6px}
+        .dropdown-content::-webkit-scrollbar-thumb{background:var(--color-gold);border-radius:10px}
+        .dropdown-content::-webkit-scrollbar-track{background:#f5f0eb;border-radius:10px}
+        .dropdown-content.show{display:block}
+        .dropdown-category{padding:6px 16px 4px;font-weight:700;color:var(--color-primary-dark);font-size:.78rem;text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid #f0ebe6;margin:4px 12px;padding:8px 4px 4px;cursor:default;display:flex;align-items:center;gap:8px}
+        .dropdown-category i{color:var(--color-gold);font-size:.8rem;width:18px}
+        .dropdown-sub{padding:5px 16px 5px 32px;font-size:.88rem;color:var(--color-text);cursor:pointer;transition:var(--transition);display:flex;align-items:center;gap:8px;border-left:3px solid transparent}
+        .dropdown-sub:hover{background:var(--color-primary-light);color:var(--color-dark);border-left-color:var(--color-gold)}
+        .dropdown-sub i{color:var(--color-gold);font-size:.6rem;opacity:.6;width:14px}
+        .btn{display:inline-block;padding:12px 32px;border-radius:40px;font-weight:600;transition:var(--transition);border:1px solid transparent;cursor:pointer;font-size:.95rem}
+        .btn-primary{background:var(--color-primary);color:#fff}
+        .btn-primary:hover{background:var(--color-gold);color:#fff;transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+        .btn-outline{background:transparent;border-color:var(--color-primary);color:var(--color-primary)}
+        .btn-outline:hover{background:var(--color-primary);color:#fff;transform:translateY(-3px)}
+        .hamburger{display:none;font-size:1.6rem;cursor:pointer;color:var(--color-dark);background:none;border:none;padding:4px 8px}
+        .hero{padding:60px 0 80px;background:linear-gradient(135deg,#fdf8f5 0%,#f5ede9 100%);border-bottom:1px solid rgba(201,168,124,0.2)}
+        .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+        .hero-content h1{font-size:3.4rem;font-weight:700;line-height:1.2;margin-bottom:20px}
+        .hero-content h1 .highlight{color:var(--color-primary);font-style:italic}
+        .hero-content p{font-size:1.15rem;color:var(--color-gray);margin-bottom:20px;max-width:90%}
+        .hero-buttons{display:flex;flex-wrap:wrap;gap:16px}
+        .hero-image img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+        .hero-image .doctor-img{width:100%;height:100%;min-height:300px;object-fit:cover;border-radius:50%;box-shadow:var(--shadow-soft);cursor:pointer}
+        .page-content{display:none;padding:40px 0 80px}
+        .page-content.active{display:block;animation:fadeIn .3s ease}
+        .page-content .back-link{display:inline-block;margin-bottom:24px;color:var(--color-primary);cursor:pointer}
+        .page-content .back-link:hover{color:var(--color-gold)}
+        .page-content h2{font-size:2.2rem;color:var(--color-primary-dark);margin-bottom:8px}
+        .page-content .page-sub{color:var(--color-gold);font-weight:600;font-size:1rem;margin-bottom:20px;display:block}
+        .page-content p{margin-bottom:14px;line-height:1.8}
+        .clinic-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px;margin:30px 0}
+        .clinic-gallery img{width:100%;height:200px;object-fit:cover;border-radius:var(--border-radius);box-shadow:var(--shadow-soft);transition:var(--transition);cursor:pointer}
+        .clinic-gallery img:hover{transform:scale(1.03);box-shadow:var(--shadow-hover)}
+        .clinic-gallery .placeholder-img{background:linear-gradient(135deg,var(--color-primary-light),var(--color-gold-light));display:flex;align-items:center;justify-content:center;color:var(--color-primary-dark);font-size:3rem;min-height:200px;border-radius:var(--border-radius)}
+        .placeholder-img{background:linear-gradient(135deg,var(--color-primary-light),var(--color-gold-light));display:flex;align-items:center;justify-content:center;color:var(--color-primary-dark);font-size:3rem;min-height:200px;border-radius:var(--border-radius)}
+        .contact-section{padding:60px 0;background:#f8f2ef}
+        .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+        .contact-info{background:#fff;padding:40px;border-radius:var(--border-radius);box-shadow:var(--shadow-soft)}
+        .contact-info .info-row{display:flex;align-items:center;gap:16px;margin-bottom:24px}
+        .contact-info .info-row i{width:40px;height:40px;background:var(--color-gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--color-primary-dark);font-size:1.2rem}
+        .map-container{margin-top:40px;border-radius:var(--border-radius);overflow:hidden;box-shadow:var(--shadow-soft);height:250px;background:#e8ddd6}
+        .map-container iframe{width:100%;height:100%;border:0}
+        .footer{background:var(--color-dark);color:#ccc;padding:40px 0 24px;margin-top:40px}
+        .footer .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px}
+        .footer .logo{color:var(--color-gold-light);font-size:1.4rem;cursor:pointer}
+        .footer a{color:#ccc}
+        .footer a:hover{color:#fff}
+        .footer .socials{display:flex;gap:20px;font-size:1.4rem}
+        .inline-icon{margin-right:8px}
+
+        .pathology-images{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin:20px 0}
+        .pathology-images img{width:100%;height:150px;object-fit:cover;border-radius:var(--border-radius);box-shadow:var(--shadow-soft);transition:var(--transition);cursor:pointer}
+        .pathology-images img:hover{transform:scale(1.03);box-shadow:var(--shadow-hover)}
+
+        /* LIGHTBOX */
+        .lightbox-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.92);z-index:9999;justify-content:center;align-items:center;padding:20px;flex-direction:column}
+        .lightbox-overlay.active{display:flex}
+        .lightbox-image-wrapper{position:relative;width:100%;height:85vh;display:flex;justify-content:center;align-items:center;overflow:hidden;max-width:1200px}
+        .lightbox-image-wrapper img{max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;box-shadow:0 0 50px rgba(0,0,0,0.5);animation:lightboxIn .3s ease;transition:transform 0.2s ease;transform-origin:center center;cursor:default !important}
+        .lightbox-image-wrapper img.zoomed{cursor:grab !important;transition:transform 0.05s ease}
+        .lightbox-image-wrapper:active img.zoomed{cursor:grabbing !important}
+        @keyframes lightboxIn{from{opacity:0;transform:scale(0.95)}to{opacity:1;transform:scale(1)}}
+        .lightbox-close{position:fixed;top:20px;right:30px;font-size:3rem;color:#fff;cursor:pointer;z-index:10000;font-weight:300;transition:var(--transition);width:50px;height:50px;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.4);border-radius:50%;border:none}
+        .lightbox-close:hover{color:var(--color-gold);transform:rotate(90deg);background:rgba(0,0,0,0.6)}
+        .lightbox-caption{position:fixed;bottom:80px;left:50%;transform:translateX(-50%);color:#fff;font-size:1rem;background:rgba(0,0,0,0.6);padding:10px 24px;border-radius:40px;z-index:10000;text-align:center;max-width:80%;pointer-events:none}
+
+        .lightbox-nav{position:fixed;top:50%;transform:translateY(-50%);z-index:10001;background:rgba(0,0,0,0.5);color:#fff;border:2px solid rgba(255,255,255,0.3);border-radius:50%;width:55px;height:55px;font-size:1.8rem;cursor:pointer;transition:var(--transition);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px);display:none}
+        .lightbox-nav:hover{background:var(--color-gold);border-color:var(--color-gold);transform:scale(1.1)}
+        .lightbox-nav:active{transform:scale(0.95)}
+        .lightbox-nav.prev{left:25px}
+        .lightbox-nav.next{right:25px}
+        .lightbox-nav.visible{display:flex}
+
+        .zoom-controls{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:12px;z-index:10000;background:rgba(0,0,0,0.7);padding:10px 20px;border-radius:50px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.15)}
+        .zoom-controls button{width:48px;height:48px;border-radius:50%;border:2px solid rgba(255,255,255,0.3);background:rgba(255,255,255,0.1);color:#fff;font-size:1.4rem;cursor:pointer;transition:var(--transition);display:flex;align-items:center;justify-content:center;font-weight:700;user-select:none}
+        .zoom-controls button:hover{background:var(--color-gold);border-color:var(--color-gold);transform:scale(1.05)}
+        .zoom-controls button:active{transform:scale(0.95)}
+        .zoom-controls .zoom-level{color:#fff;font-size:.85rem;min-width:50px;text-align:center;display:flex;align-items:center;justify-content:center;font-weight:500}
+        .zoom-controls .reset-btn{background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.15);font-size:1rem}
+        .zoom-controls .reset-btn:hover{background:rgba(255,255,255,0.2)}
+
+        /* SERVICE CARDS */
+        .service-card{background:#fff;padding:14px 20px;border-radius:var(--border-radius);box-shadow:var(--shadow-soft);display:flex;align-items:center;gap:12px;font-size:.95rem;transition:transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease, background-color 0.4s ease;cursor:default;border-left:3px solid transparent}
+        .service-card:hover{transform:translateY(-6px) scale(1.02);box-shadow:var(--shadow-hover);background:var(--color-white)}
+        .service-card i{transition:transform 0.4s ease}
+        .service-card:hover i{transform:scale(1.1)}
+
+        .service-card-center{background:#fff;padding:12px 16px;border-radius:var(--border-radius);box-shadow:var(--shadow-soft);text-align:center;font-size:.9rem;transition:transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease, background-color 0.4s ease;cursor:default}
+        .service-card-center:hover{transform:translateY(-6px) scale(1.02);box-shadow:var(--shadow-hover);background:var(--color-white)}
+        .service-card-center i{transition:transform 0.4s ease}
+        .service-card-center:hover i{transform:scale(1.1)}
+
+        .laser-card{background:#fff;padding:24px;border-radius:var(--border-radius);box-shadow:var(--shadow-soft);border-top:4px solid var(--color-gold);transition:transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.5s ease, background-color 0.5s ease;cursor:default}
+        .laser-card:hover{transform:translateY(-10px) scale(1.02);box-shadow:var(--shadow-hover);background:var(--color-white);border-top-color:var(--color-primary)}
+        .laser-card h4{transition:color 0.4s ease}
+        .laser-card:hover h4{color:var(--color-primary-dark)}
+        .laser-card i{transition:transform 0.5s ease, color 0.4s ease}
+        .laser-card:hover i{transform:scale(1.15) rotate(3deg);color:var(--color-primary)}
+
+        .service-card-surgery{background:#fff;padding:14px 18px;border-radius:var(--border-radius);box-shadow:var(--shadow-soft);text-align:center;font-weight:500;transition:transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease, background-color 0.4s ease;cursor:default}
+        .service-card-surgery:hover{transform:translateY(-6px) scale(1.02);box-shadow:var(--shadow-hover);background:var(--color-white)}
+        .service-card-surgery i{transition:transform 0.4s ease}
+        .service-card-surgery:hover i{transform:scale(1.1)}
+
+        @media(max-width:768px){
+            .navbar .container{flex-wrap:wrap}
+            .hamburger{display:block;order:2}
+            .nav-menu{display:none;flex-direction:column;width:100%;gap:4px;padding:16px 0;border-top:1px solid #eee;margin-top:12px;order:3;align-items:stretch}
+            .nav-menu.open{display:flex}
+            .nav-menu a{padding:10px 16px;border-radius:8px;text-align:center}
+            .dropdown{width:100%}
+            .dropdown-btn{width:100%;justify-content:center;padding:10px 16px;border-radius:8px;background:var(--color-primary-light);border-color:var(--color-gold)}
+            .dropdown-content{position:fixed;top:60px;right:10px;left:10px;min-width:unset;max-width:unset;max-height:60vh}
+            .section-title{font-size:1.8rem}
+            .clinic-gallery{grid-template-columns:1fr 1fr}
+            #page-bio .bio-grid{grid-template-columns:1fr !important; gap:24px !important;}
+            #page-bio .bio-grid .bio-text{ padding:0 !important; }
+            .hero-grid{grid-template-columns:1fr;text-align:center;gap:30px}
+            .hero-content p{max-width:100%;font-size:1rem}
+            .hero-content h1{font-size:2.4rem}
+            .hero-buttons{justify-content:center}
+            .contact-grid{grid-template-columns:1fr}
+            .hero-image .doctor-img{min-height:200px}
+            .pathology-images{grid-template-columns:1fr 1fr}
+            .lightbox-overlay{padding:10px}
+            .lightbox-close{top:10px;right:15px;font-size:2.5rem;width:45px;height:45px}
+            .lightbox-caption{bottom:70px;font-size:.85rem;padding:8px 16px;max-width:90%}
+            .zoom-controls{bottom:10px;padding:8px 14px;gap:8px}
+            .zoom-controls button{width:40px;height:40px;font-size:1.2rem}
+            .zoom-controls .zoom-level{min-width:40px;font-size:.75rem}
+            .lightbox-image-wrapper{height:75vh}
+            .lightbox-nav{width:40px;height:40px;font-size:1.2rem}
+            .lightbox-nav.prev{left:10px}
+            .lightbox-nav.next{right:10px}
+        }
+        @media(max-width:600px){
+            .container{padding:0 16px}
+            .section-title{font-size:1.5rem}
+            .page-content h2{font-size:1.6rem}
+            .hero-content h1{font-size:2rem}
+            .clinic-gallery{grid-template-columns:1fr}
+            .contact-info{padding:24px}
+            .dropdown-content{width:calc(100% - 20px);right:10px;left:10px}
+            .footer .container{flex-direction:column;text-align:center}
+            .footer .socials{justify-content:center}
+            .pathology-images{grid-template-columns:1fr}
+            .lightbox-overlay{padding:5px}
+            .lightbox-close{top:8px;right:10px;font-size:2rem;width:40px;height:40px}
+            .lightbox-caption{bottom:65px;font-size:.75rem;padding:6px 12px;max-width:95%}
+            .zoom-controls{bottom:8px;padding:6px 10px;gap:6px}
+            .zoom-controls button{width:36px;height:36px;font-size:1rem}
+            .zoom-controls .zoom-level{min-width:35px;font-size:.7rem}
+            .lightbox-image-wrapper{height:70vh}
+            .lightbox-nav{width:35px;height:35px;font-size:1rem}
+            .lightbox-nav.prev{left:5px}
+            .lightbox-nav.next{right:5px}
+        }
+
+        #page-bio .bio-grid{display:grid;grid-template-columns:1fr 2fr;gap:48px;align-items:start;}
+        #page-bio .bio-grid .bio-card{background:#fff;padding:40px 32px;border-radius:var(--border-radius);box-shadow:var(--shadow-soft);border-left:4px solid var(--color-gold);}
+        #page-bio .bio-grid .bio-text{padding:0;}
+        html{scroll-behavior:smooth}
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container">
+        <div class="logo" onclick="navigateTo('home')">Dr. Δ. Κεχαγιά <span>|</span> Οφθαλμίατρος</div>
+        <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+        <div class="nav-menu" id="navMenu">
+            <a onclick="navigateTo('home')" id="nav-home">Αρχική</a>
+            <a onclick="navigateTo('bio')" id="nav-bio">Βιογραφικό</a>
+            <a onclick="navigateTo('services')" id="nav-services">Ιατρείο</a>
+            <div class="dropdown" id="pathologyDropdown">
+                <button class="dropdown-btn" id="dropdownToggle"><i class="fas fa-eye"></i> Οφθαλμικές Παθήσεις <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content" id="dropdownContent"></div>
+            </div>
+            <a onclick="navigateTo('contact')" id="nav-contact">Επικοινωνία</a>
+        </div>
+    </div>
+</nav>
+
+<!-- LIGHTBOX -->
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightboxIfClickOutside(event)">
+    <button class="lightbox-close" id="lightboxClose" onclick="closeLightbox()">&times;</button>
+    <button class="lightbox-nav prev" id="lightboxPrev" onclick="navigateLightbox(-1)">&#10094;</button>
+    <button class="lightbox-nav next" id="lightboxNext" onclick="navigateLightbox(1)">&#10095;</button>
+    <div class="lightbox-image-wrapper" id="lightboxWrapper">
+        <img id="lightboxImg" src="" alt="Μεγέθυνση εικόνας">
+    </div>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+    <div class="zoom-controls">
+        <button onclick="zoomImage('out')" title="Σμίκρυνση"><i class="fas fa-minus"></i></button>
+        <span class="zoom-level" id="zoomLevel">100%</span>
+        <button onclick="zoomImage('in')" title="Μεγέθυνση"><i class="fas fa-plus"></i></button>
+        <button onclick="resetZoom()" class="reset-btn" title="Επαναφορά"><i class="fas fa-expand"></i></button>
+    </div>
+</div>
+
+<div id="page-home" class="page-content active">
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>Καθαρή Όραση.<br><span class="highlight">Προσωπική Φροντίδα.</span><br>Υψηλή Εξειδίκευση.</h1>
+                <p>Καλώς ήρθατε στο σύγχρονο Οφθαλμολογικό Ιατρείο της Dr. Δέσποινας Κεχαγιά. Εδώ όπου η ιατρική ακρίβεια συναντά την κορυφαία τεχνολογία και την εξατομικευμένη προσέγγιση, με στόχο την προστασία του πολυτιμότερου αγαθού σας: της όρασης.</p>
+                <p style="font-size:1rem;">Καλώς ήρθατε στην ιστοσελίδα της Δρ. Δέσποινας Κεχαγιά, Χειρουργού Οφθαλμιάτρου. Με γνώμονα την επιστημονική κατάρτιση, την εξατομικευμένη φροντίδα και τη χρήση σύγχρονης τεχνολογίας, η ιστοσελίδα αυτή δημιουργήθηκε με σκοπό να παρέχει αξιόπιστη ενημέρωση για τις συχνότερες οφθαλμολογικές παθήσεις και τις διαθέσιμες θεραπευτικές προσεγγίσεις.</p>
+                <p style="font-size:0.95rem;color:var(--color-gray);margin-bottom:24px;">Επιπλέον, σας δίνεται η δυνατότητα να ενημερωθείτε για τις υπηρεσίες και τις χειρουργικές επεμβάσεις του ιατρείου, να περιηγηθείτε στους χώρους του και να κλείσετε το ραντεβού σας εύκολα και άμεσα.</p>
+                <div class="hero-buttons">
+                    <a onclick="navigateTo('contact')" class="btn btn-primary"><i class="fas fa-envelope inline-icon"></i>Επικοινωνία</a>
+                    <a onclick="navigateTo('services')" class="btn btn-outline"><i class="fas fa-stethoscope inline-icon"></i>Ανακαλύψτε τις Υπηρεσίες</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/0-02-05-b5b808e1da16f3df77ea7b95debf2ad1f6791aa33f10164c6f4e3550f74414af_77f5d1945e2482df.jpg" alt="Δρ. Δέσποινα Κεχαγιά - Χειρουργός Οφθαλμίατρος" class="doctor-img" onclick="openLightboxGroup('doctor', this.src, 'Δρ. Δέσποινα Κεχαγιά - Χειρουργός Οφθαλμίατρος')" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="placeholder-img" style="display:none;min-height:300px;border-radius:50%;"><i class="fas fa-user-md"></i></div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section" id="contact-home">
+        <div class="container">
+            <h2 class="section-title">Επικοινωνία</h2>
+            <p class="section-subtitle">Επικοινωνήστε μαζί μας για οποιαδήποτε πληροφορία ή για να κλείσετε ραντεβού.</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-row"><i class="fas fa-map-marker-alt"></i> <span><strong>Διεύθυνση:</strong> Ακαδήμου 115, Εύοσμος, Θεσσαλονίκη (Προέκταση Μακρυγιάννη), Κτήριο Β, 1ος όροφος, Γραφείο 14</span></div>
+                    <div class="info-row"><i class="fas fa-phone-alt"></i> <span><strong>Τηλέφωνο:</strong> 2310684556, 6993586657</span></div>
+                    <div class="info-row"><i class="fas fa-envelope"></i> <span><strong>Email:</strong> despinakechagia@gmail.com</span></div>
+                    <div class="info-row"><i class="fas fa-clock"></i> <span><strong>Ώρες λειτουργίας:</strong> Κατόπιν ραντεβού.</span></div>
+                </div>
+                <div style="background:#fff;padding:40px;border-radius:var(--border-radius);box-shadow:var(--shadow-soft);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+                    <i class="fas fa-phone-alt" style="font-size:3rem;color:var(--color-gold);margin-bottom:16px;"></i>
+                    <h3 style="font-family:var(--font-sans);font-size:1.3rem;margin-bottom:8px;">Καλέστε μας</h3>
+                    <p style="font-size:1.1rem;color:var(--color-primary-dark);font-weight:600;">2310 684556</p>
+                    <p style="font-size:1rem;color:var(--color-gray);">699 3586657</p>
+                    <div style="margin-top:16px;padding-top:16px;border-top:1px solid #eee;width:100%;">
+                        <p style="font-size:.95rem;color:var(--color-gray);"><i class="fas fa-envelope" style="color:var(--color-gold);"></i> despinakechagia@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.543218736605!2d22.90967541549427!3d40.686789341183574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a8397f86e36b31%3A0x7c8d1c7a6a7f5b4d!2sAkadimou%20115%2C%20Evosmos%2056224!5e0!3m2!1sel!2sgr!4v1678900000000!5m2!1sel!2sgr" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div id="page-bio" class="page-content">
+    <div class="container">
+        <a class="back-link" onclick="navigateTo('home')"><i class="fas fa-arrow-left"></i> Επιστροφή</a>
+        <h2>Βιογραφικό</h2>
+        <p class="page-sub">Dr. Δέσποινα Κεχαγιά MD, MSc — Χειρουργός Οφθαλμίατρος</p>
+        <div class="bio-grid">
+            <div class="bio-card">
+                <h3 style="font-size:1.5rem;margin-bottom:8px;">Δρ. Δέσποινα Κεχαγιά</h3>
+                <span style="color:var(--color-primary);font-weight:600;margin-bottom:16px;display:block;">MD, MSc — Χειρουργός Οφθαλμίατρος</span>
+                <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:12px;"><i class="fas fa-graduation-cap" style="color:var(--color-gold);width:20px;margin-top:4px;"></i> <span>Πτυχίο Ιατρικής, ΑΠΘ (2009–2015)</span></div>
+                <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:12px;"><i class="fas fa-graduation-cap" style="color:var(--color-gold);width:20px;margin-top:4px;"></i> <span>MSc Διοίκηση Μονάδων Υγείας, Διεθνές Πανεπιστήμιο Ελλάδος (2018–2020)</span></div>
+                <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:12px;"><i class="fas fa-graduation-cap" style="color:var(--color-gold);width:20px;margin-top:4px;"></i> <span>Πτυχίο Νοσηλευτικής, ΤΕΙ Θεσσαλονίκης (2004–2008)</span></div>
+                <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:12px;"><i class="fas fa-user-md" style="color:var(--color-gold);width:20px;margin-top:4px;"></i> <span>Ειδικότητα Οφθαλμολογίας, Α' Πανεπιστημιακή Κλινική ΑΧΕΠΑ</span></div>
+                <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:12px;"><i class="fas fa-hospital" style="color:var(--color-gold);width:20px;margin-top:4px;"></i> <span>Επιμελήτρια Β' Οφθαλμολογίας, ΓΝΘ «Άγιος Δημήτριος» (από 2021)</span></div>
+                <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:12px;"><i class="fas fa-clinic-medical" style="color:var(--color-gold);width:20px;margin-top:4px;"></i> <span>Ιδιωτικό Ιατρείο: Ακαδήμου 115, Εύοσμος</span></div>
+            </div>
+            <div class="bio-text">
+                <p>Η Dr. Δέσποινα Κεχαγιά είναι Χειρουργός Οφθαλμίατρος με πολυετή εμπειρία στη διάγνωση και χειρουργική αντιμετώπιση παθήσεων του οφθαλμού. Διακρίνεται για την επιστημονική της κατάρτιση, τη χειρουργική ακρίβεια και την εξατομικευμένη προσέγγιση κάθε ασθενούς.</p>
+                <p>Αποφοίτησε από την Ιατρική Σχολή του Αριστοτελείου Πανεπιστημίου Θεσσαλονίκης, ενώ είναι κάτοχος Μεταπτυχιακού Διπλώματος (MSc) στη Διοίκηση Μονάδων Υγείας και Πρόνοιας από το Διεθνές Πανεπιστήμιο Ελλάδος. Προηγουμένως ολοκλήρωσε τις σπουδές της στη Νοσηλευτική, γεγονός που της προσφέρει μια ολοκληρωμένη και ανθρωποκεντρική προσέγγιση στη φροντίδα των ασθενών.</p>
+                <p>Την ειδικότητα της Οφθαλμολογίας ολοκλήρωσε στην Α΄ Οφθαλμολογική Κλινική του Πανεπιστημιακού Γενικού Νοσοκομείου ΑΧΕΠΑ, όπου εκπαιδεύτηκε σε όλο το φάσμα της σύγχρονης οφθαλμολογίας και της οφθαλμοχειρουργικής. Από το 2021 υπηρετεί ως Επιμελήτρια Β΄ στην Οφθαλμολογική Κλινική του Γενικού Νοσοκομείου Θεσσαλονίκης «Άγιος Δημήτριος».</p>
+                <p>Συμμετέχει ενεργά σε ελληνικά και διεθνή επιστημονικά συνέδρια με παρουσιάσεις, χειρουργικά βίντεο και ερευνητικές εργασίες, ενώ παρακολουθεί συστηματικά τις εξελίξεις της οφθαλμολογίας με στόχο την εφαρμογή των πλέον σύγχρονων θεραπευτικών και χειρουργικών τεχνικών.</p>
+                <p>Το κλινικό και χειρουργικό της ενδιαφέρον εστιάζεται στη χειρουργική καταρράκτη, τη διαθλαστική χειρουργική, το γλαύκωμα, τις παθήσεις του αμφιβληστροειδούς, τις επεμβάσεις βλεφάρων, καθώς και στην αντιμετώπιση επειγόντων και τραυματικών κακώσεων του οφθαλμού.</p>
+                <p>Με βασικές αρχές την επιστημονική τεκμηρίωση, την ειλικρινή ενημέρωση και τον σεβασμό προς τον ασθενή, στόχος της είναι η παροχή υψηλού επιπέδου οφθαλμολογικής φροντίδας με ασφάλεια, υπευθυνότητα και ανθρώπινη προσέγγιση.</p>
+                <h4 style="margin-top:24px;color:var(--color-primary-dark);">Dr. Δέσποινα Κεχαγιά – Ειδικός Οφθαλμίατρος</h4>
+                <p>Η Dr. Δέσποινα Κεχαγιά είναι Ειδικός Οφθαλμίατρος με βαθιά προσήλωση στην επιστήμη της και εκτενή εμπειρία τόσο στην κλινική όσο και στη χειρουργική οφθαλμολογία. Το όραμά της είναι η παροχή οφθαλμολογικών υπηρεσιών ανώτερης ποιότητας, συνδυάζοντας την κλινική αριστεία με τη βαθιά ανθρώπινη ενσυναίσθηση.</p>
+                <p>Διαθέτει εξειδίκευση σε προηγμένες επεμβάσεις καταρράκτη (λευκού, μέλα, χρήση Toric ενδοφακών, χρήση δακτυλίου I ring σε απαιτητικά περιστατικά) καθώς και σε διόρθωση τυχόν επιπλοκών. Εξειδικεύεται επίσης στη χειρουργική αποκατάσταση ίριδος μετά από επιπλοκές ή τραύματα και στη διαχείριση σύνθετων οφθαλμολογικών περιστατικών.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="page-services" class="page-content">
+    <div class="container">
+        <a class="back-link" onclick="navigateTo('home')"><i class="fas fa-arrow-left"></i> Επιστροφή</a>
+        <h2>Το Ιατρείο &amp; Υπηρεσίες</h2>
+        <p class="page-sub">Σύγχρονος εξοπλισμός και πλήρες φάσμα διαγνωστικών, θεραπευτικών και χειρουργικών υπηρεσιών.</p>
+        <div class="clinic-gallery" id="clinicGallery">
+            <img src="images/0-02-05-917723bfb755e8ce8575e1999f8937c0df9612666b2c27da3b4baafe8973ba7a_a185f80d29006b4e.jpg" alt="Ιατρείο - Χώρος υποδοχής" onclick="openLightboxGroup('clinic', this.src, 'Ιατρείο - Χώρος υποδοχής')" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="placeholder-img" style="display:none;"><i class="fas fa-clinic-medical"></i></div>
+            
+            <img src="images/0-02-05-e81e693540c8a8209bc155483effa8877532281e4c1a9bce5b0b79756a8a7cc1_cc1296b63b7c59ed.jpg" alt="Ιατρείο - Χώρος αναμονής" onclick="openLightboxGroup('clinic', this.src, 'Ιατρείο - Χώρος αναμονής')" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="placeholder-img" style="display:none;"><i class="fas fa-stethoscope"></i></div>
+            
+            <img src="images/image2.jpg" alt="Ιατρείο - Χώρος αναμονής" onclick="openLightboxGroup('clinic', this.src, 'Ιατρείο - Xώρος αναμονής')" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="placeholder-img" style="display:none;"><i class="fas fa-microscope"></i></div>
+
+            <img src="images/0-02-05-a01ea6e05ae27375beb12064cd380c976c7081044fa1ea7d2ff9bc4e5cd6e61c_97a6ee1b407dd54.jpg" alt="Ιατρείο - Εξεταστήριο" onclick="openLightboxGroup('clinic', this.src, 'Ιατρείο - Εξεταστήριο')" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="placeholder-img" style="display:none;"><i class="fas fa-chair"></i></div>
+            
+            <img src="images/image.jpg" alt="Ιατρείο - Εξεταστήριο" onclick="openLightboxGroup('clinic', this.src, 'Ιατρείο - Εξεταστήριο')" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="placeholder-img" style="display:none;"><i class="fas fa-microscope"></i></div>
+
+            <img src="images/0-02-05-d7bc8e6b29d5861fa5e689b3810f77cc4ff2285fe3d4dfdfdc53a25228e00444_90f2e0d39833a064.jpg" alt="Ιατρείο - OCT και Οπτικό Πεδίο" onclick="openLightboxGroup('clinic', this.src, 'OCT και Οπτικό Πεδίο')" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="placeholder-img" style="display:none;"><i class="fas fa-microscope"></i></div>
+
+            <img src="images/0-02-05-c2fc6a166498d82ec3f45c9d1ff010980c32890167d23f255dbcc90fe543caa9_f312fc7865495cb.jpg" alt="Ιατρείο - Εξοπλισμός" onclick="openLightboxGroup('clinic', this.src, 'Ιατρείο - Εξοπλισμός')" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="placeholder-img" style="display:none;"><i class="fas fa-microscope"></i></div>
+            
+            <img src="images/0-02-05-95a70524b72f64d6147d0a3071ded6f1538325ba1dc1adcceaf42d2ea52a7626_c756c033905575cf.jpg" alt="Ιατρείο - Ενδοθηλιόμετρο" onclick="openLightboxGroup('clinic', this.src, 'Ιατρείο - Ενδοθηλιόμετρο')" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="placeholder-img" style="display:none;"><i class="fas fa-microscope"></i></div>
+
+            <img src="images/0-02-05-914167d801b1df3bdbc705c1ec41aa987b5ac30efe2ad9ee689a7d2c1463207f_bae307b60c48febe.jpg" alt="Ιατρείο - Μηχάνημα ξυροφθαλμίας C STIM IPL" onclick="openLightboxGroup('clinic', this.src, 'Ιατρείο - Μηχάνημα ξυροφθαλμίας C STIM IPL')" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="placeholder-img" style="display:none;"><i class="fas fa-microscope"></i></div>  
+
+            <img src="images/0-02-05-2e2be83b49a067cb2ba41e23be1fd5a3c4bbe312e605cec77d4f8a04928a49b3_bcea74c1903b4ff3.jpg" alt="Ιατρείο - Διαθλασίμετρο" onclick="openLightboxGroup('clinic', this.src, 'Ιατρείο - Διαθλασίμετρο')" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="placeholder-img" style="display:none;"><i class="fas fa-microscope"></i></div>  
+
+            <img src="images/0-02-05-0da5b018d58cb3e61c12dab52f1eba9c24bf2e96628e00297b54ea3bcfcfeeb8_d7aff73629c8c787.jpg" alt="Ιατρείο - Σχισμοειδής λυχνία" onclick="openLightboxGroup('clinic', this.src, 'Ιατρείο - Σχισμοειδής λυχνία')" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="placeholder-img" style="display:none;"><i class="fas fa-microscope"></i></div>  
+
+            <img src="images/0-02-05-30a9ee9cb19b48cdd37ad1993a261b27ee722faf0045d714b74a00526d100080_ae21ce64c590f97a.jpg" alt="Ιατρείο - Εξοπλισμός" onclick="openLightboxGroup('clinic', this.src, 'Ιατρείο - Εξοπλισμός')" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="placeholder-img" style="display:none;"><i class="fas fa-microscope"></i></div>
+
+            <img src="images/0-02-05-4d1e8efe6734b4459a464e628a6b3a45347d01296135279a413b299309f47bed_ff0064b8a43fb03e.jpg" alt="Ιατρείο - Εξοπλισμός" onclick="openLightboxGroup('clinic', this.src, 'Ιατρείο - Εξοπλισμός')" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="placeholder-img" style="display:none;"><i class="fas fa-microscope"></i></div>
+
+            
+            
+        </div>
+        
+        <div style="background:#fff;padding:35px 40px;border-radius:var(--border-radius);box-shadow:var(--shadow-soft);margin-bottom:40px;border-left:4px solid var(--color-gold);">
+            <p style="font-size:1.05rem;font-style:italic;"><i class="fas fa-quote-left" style="color:var(--color-gold);margin-right:12px;font-size:1.4rem;"></i>Σε έναν χώρο υψηλής αισθητικής και προηγμένης ιατρικής τεχνολογίας, προσφέρουμε ολοκληρωμένες υπηρεσίες διάγνωσης, παρακολούθησης και χειρουργικής αποκατάστασης. Όλοι οι χώροι του ιατρείου μας έχουν δημιουργηθεί με γνώμονα τη βέλτιστη παροχή υπηρεσιών προς τους ασθενείς μας. Διαθέτουμε σύγχρονο γραφείο υποδοχής, άνετο χώρο αναμονής, καθώς και ιδιωτικό γραφείο και εξεταστήριο, τα οποία είναι πλήρως εξοπλισμένα με μηχανήματα σύγχρονης τεχνολογίας αιχμής. Κάθε ασθενής για εμάς είναι μοναδικός, και κάθε θεραπευτικό πλάνο σχεδιάζεται με απόλυτο σεβασμό στις ανάγκες του.</p>
+        </div>
+        
+        <h3 style="font-size:1.5rem;text-align:center;margin-bottom:24px;color:var(--color-primary-dark);"><i class="fas fa-stethoscope" style="color:var(--color-gold);margin-right:12px;"></i>Παρεχόμενες Υπηρεσίες &amp; Εξετάσεις</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-bottom:40px;">
+            <div class="service-card"><i class="fas fa-prescription" style="color:var(--color-gold);width:22px;text-align:center;"></i> Συνταγογράφηση γυαλιών μέσω ΕΟΠΥΥ</div>
+            <div class="service-card"><i class="fas fa-prescription-bottle" style="color:var(--color-gold);width:22px;text-align:center;"></i> Συνταγογράφηση φαρμάκων μέσω ΕΟΠΥΥ</div>
+            <div class="service-card"><i class="fas fa-id-card" style="color:var(--color-gold);width:22px;text-align:center;"></i> Χορήγηση ή ανανέωση επαγγελματικών ή μη διπλωμάτων οδήγησης</div>
+            <div class="service-card"><i class="fas fa-file-medical" style="color:var(--color-gold);width:22px;text-align:center;"></i> Δημιουργία εισηγητικού φακέλου για ΚΕ.Π.Α</div>
+            <div class="service-card"><i class="fas fa-tint" style="color:var(--color-gold);width:22px;text-align:center;"></i> Διάγνωση και παρακολούθηση νόσου οφθαλμικής επιφάνειας / ξηροφθαλμίας</div>
+            <div class="service-card"><i class="fas fa-eye" style="color:var(--color-gold);width:22px;text-align:center;"></i> Διάγνωση και παρακολούθηση παθήσεων κερατοειδούς</div>
+            <div class="service-card"><i class="fas fa-eye" style="color:var(--color-gold);width:22px;text-align:center;"></i> Διάγνωση και παρακολούθηση παθήσεων βλεφάρων</div>
+            <div class="service-card"><i class="fas fa-eye" style="color:var(--color-gold);width:22px;text-align:center;"></i> Πλήρης μελέτη για διάγνωση και παρακολούθηση γλαυκώματος (Τoνομέτρηση, γωνιοσκοπία, βυθοσκόπηση, OCT οπτικού νεύρου, CCT μέτρηση κεντρικού πάχους κερατοειδούς και οπτική περιμετρία / οπτικό πεδίο)</div>
+            <div class="service-card"><i class="fas fa-eye" style="color:var(--color-gold);width:22px;text-align:center;"></i> Βυθοσκόπηση για διάγνωση και παρακολούθηση παθήσεων υαλοειδούς – αμφιβληστροειδούς</div>
+            <div class="service-card"><i class="fas fa-eye" style="color:var(--color-gold);width:22px;text-align:center;"></i> Διάγνωση και παρακολούθηση φλεγμονών παθήσεων οφθαλμού / ραγοειδίτιδες</div>
+            <div class="service-card"><i class="fas fa-microscope" style="color:var(--color-gold);width:22px;text-align:center;"></i> Τομογραφία Οπτικής Συνοχής (OCT) & OCT Αγγειογραφία: Απεικόνιση υψηλής ανάλυσης των στιβάδων του αμφιβληστροειδούς, της ωχράς κηλίδας και του οπτικού νεύρου, καθώς και αναίμακτη μελέτη των αγγείων χωρίς έγχυση χρωστικής.</div>
+            <div class="service-card"><i class="fas fa-chart-line" style="color:var(--color-gold);width:22px;text-align:center;"></i> Εξέταση Οπτικών Πεδίων (Περιμετρία): Ψηφιακός έλεγχος της ευαισθησίας της όρασης, απαραίτητος για τη διάγνωση και παρακολούθηση του γλαυκώματος και νευροοφθαλμολογικών παθήσεων.</div>
+            <div class="service-card"><i class="fas fa-camera" style="color:var(--color-gold);width:22px;text-align:center;"></i> Φωτογράφηση Προσθίων Μορίων & Βυθού: Ψηφιακή καταγραφή βλαβών για την ακριβή παρακολούθηση της εξέλιξης των παθήσεων στο χρόνο.</div>
+            <div class="service-card"><i class="fas fa-ruler" style="color:var(--color-gold);width:22px;text-align:center;"></i> Παχυμετρία Κερατοειδούς: Ακριβής μέτρηση του πάχους του κερατοειδούς χιτώνα για τη σωστή αξιολόγηση της ενδοφθάλμιας πίεσης αι την παρακολούθηση της μετεγχειρητικής πορείας σε ασθενείς με παθήσεις κερατοειδούς</div>
+            <div class="service-card"><i class="fas fa-microscope" style="color:var(--color-gold);width:22px;text-align:center;"></i> Ενδοθηλιομέτρηση: Έλεγχος της πυκνότητας και της υγείας των κυττάρων της οπίσθιας επιφάνειας του κερατοειδούς, κρίσιμη για προεγχειρητικούς ελέγχους.</div>
+            <div class="service-card"><i class="fas fa-wave-square" style="color:var(--color-gold);width:22px;text-align:center;"></i> Υπερηχογραφία Οφθαλμού: Υπερηχητική απεικόνιση των εσωτερικών δομών του ματιού, ιδιαίτερα χρήσιμη σε περιπτώσεις θολών μέσων (π.χ. πυκνός καταρράκτης, αιμορραγία υαλοειδούς).</div>
+            <div class="service-card"><i class="fas fa-map" style="color:var(--color-gold);width:22px;text-align:center;"></i> Τοπογραφία Κερατοειδούς: Λεπτομερής χαρτογράφηση της πρόσθιας επιφάνειας του οφθαλμού, απαραίτητη για τον προεγχειρητικό έλεγχο διαθλαστικής χειρουργικής (Laser μυωπίας κ.λπ.) και τη διάγνωση κερατόκωνου.</div>
+            <div class="service-card"><i class="fas fa-ruler-combined" style="color:var(--color-gold);width:22px;text-align:center;"></i> Βιομετρία: Υπολογισμός της ισχύος του ενδοφακού που θα τοποθετηθεί κατά τη χειρουργική επέμβαση του καταρράκτη.</div>
+            <div class="service-card"><i class="fas fa-arrows-alt" style="color:var(--color-gold);width:22px;text-align:center;"></i> Ορθοπτικός Έλεγχος & Εξοφθαλμομέτρηση: Μελέτη της κινητικότητας των οφθαλμών καθώς και μέτρηση τυχόν προβολής των οφθαλμών (εξόφθαλμος).</div>
+        </div>
+        
+        <h3 style="font-size:1.3rem;text-align:center;margin-bottom:20px;color:var(--color-primary-dark);"><i class="fas fa-microscope" style="color:var(--color-gold);margin-right:12px;"></i>Προηγμένος Τεχνολογικός Εξοπλισμός</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:40px;">
+            <div class="service-card-center"><i class="fas fa-microscope" style="color:var(--color-gold);display:block;font-size:1.4rem;margin-bottom:4px;"></i>Σχισμοειδής λυχνία (Slit-Lamp Biomicroscope)</div>
+            <div class="service-card-center"><i class="fas fa-tachometer-alt" style="color:var(--color-gold);display:block;font-size:1.4rem;margin-bottom:4px;"></i>Τονόμετρο (Goldmann alpanation tonometer) για μέτρηση ενδοφθάλμιας πίεσης.</div>
+            <div class="service-card-center"><i class="fas fa-eye" style="color:var(--color-gold);display:block;font-size:1.4rem;margin-bottom:4px;"></i>Κερατο- Διαθλασίμετρο για εκτίμηση τυχόν διαθλαστικής διαταραχής.</div>
+            <div class="service-card-center"><i class="fas fa-desktop" style="color:var(--color-gold);display:block;font-size:1.4rem;margin-bottom:4px;"></i>Ψηφιακοί πίνακες οράσεως</div>
+            <div class="service-card-center"><i class="fas fa-search" style="color:var(--color-gold);display:block;font-size:1.4rem;margin-bottom:4px;"></i>Φακόμετρο (για μέτρηση των ήδη υπαρχόντων γυαλιών)</div>
+            <div class="service-card-center"><i class="fas fa-chart-bar" style="color:var(--color-gold);display:block;font-size:1.4rem;margin-bottom:4px;"></i>Οπτική περιμετρία / οπτικό πεδίο</div>
+            <div class="service-card-center"><i class="fas fa-camera-retro" style="color:var(--color-gold);display:block;font-size:1.4rem;margin-bottom:4px;"></i>OCT / OCT Αγγειογραφία</div>
+            <div class="service-card-center"><i class="fas fa-microscope" style="color:var(--color-gold);display:block;font-size:1.4rem;margin-bottom:4px;"></i>Ενδοθηλιόμετρο</div>
+            <div class="service-card-center"><i class="fas fa-camera" style="color:var(--color-gold);display:block;font-size:1.4rem;margin-bottom:4px;"></i>Φωτογράφηση προσθίων και οπισθίων μορίων οφθαλμού</div>
+        </div>
+        
+        <h3 style="font-size:1.3rem;text-align:center;margin-bottom:20px;color:var(--color-primary-dark);"><i class="fas fa-laser" style="color:var(--color-gold);margin-right:12px;"></i>Εξειδικευμένες Θεραπείες Laser (Μη Επεμβατικές)</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:20px;margin-bottom:40px;">
+            <div class="laser-card">
+                <h4 style="font-family:var(--font-sans);font-size:1.1rem;color:var(--color-primary-dark);"><i class="fas fa-laser" style="color:var(--color-gold);margin-right:8px;"></i>YAG Laser Καψουλοτομή (Δευτερογενής Καταρράκτης)</h4>
+                <p style="font-size:.9rem;color:var(--color-gray);">Ανώδυνη και άμεση αποκατάσταση της όρασης σε ασθενείς που έχουν υποβληθεί σε χειρουργείο καταρράκτη στο παρελθόν και παρουσιάζουν θόλωση του οπτικού περιφακίου.</p>
+            </div>
+            <div class="laser-card">
+                <h4 style="font-family:var(--font-sans);font-size:1.1rem;color:var(--color-primary-dark);"><i class="fas fa-laser" style="color:var(--color-gold);margin-right:8px;"></i>SLT Laser (Εκλεκτική Τραμπεκουλοπλαστική για Γλαύκωμα)</h4>
+                <p style="font-size:.9rem;color:var(--color-gray);">Σύγχρονη μέθοδος Laser για τη μείωση της ενδοφθάλμιας πίεσης, μειώνοντας την ανάγκη καθημερινής χρήσης κολλυρίων.</p>
+            </div>
+            <div class="laser-card">
+                <h4 style="font-family:var(--font-sans);font-size:1.1rem;color:var(--color-primary-dark);"><i class="fas fa-laser" style="color:var(--color-gold);margin-right:8px;"></i>Argon Laser / PRP (Παναμφιβληστροειδική Φωτοπηξία)</h4>
+                <p style="font-size:.9rem;color:var(--color-gray);">Εξειδικευμένη θεραπεία Laser για τη σφράγιση ρωγμών του αμφιβληστροειδούς (πρόληψη αποκόλλησης), την αντιμετώπιση της διαβητικής αμφιβληστροειδοπάθειας και ισχαιμικών παθήσεων.</p>
+            </div>
+        </div>
+        
+        <h3 style="font-size:1.3rem;text-align:center;margin-bottom:20px;color:var(--color-primary-dark);"><i class="fas fa-procedures" style="color:var(--color-gold);margin-right:12px;"></i>Οφθαλμολογικές Επεμβάσεις</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-bottom:20px;">
+            <div class="service-card-surgery"><i class="fas fa-eye" style="color:var(--color-gold);margin-right:8px;"></i>Χειρουργείο καταρράκτη / Φακοθρυψία</div>
+            <div class="service-card-surgery"><i class="fas fa-eye" style="color:var(--color-gold);margin-right:8px;"></i>Laser μυωπίας, υπερμετρωπίας, αστιγματισμού, πρεσβυωπίας (Lasik, PRK, Trans PRK, Smile)</div>
+            <div class="service-card-surgery"><i class="fas fa-cut" style="color:var(--color-gold);margin-right:8px;"></i>Χειρουργείο αφαίρεσης πτερυγίου</div>
+            <div class="service-card-surgery"><i class="fas fa-cut" style="color:var(--color-gold);margin-right:8px;"></i>Χειρουργείο βλεφάρων</div>
+            <div class="service-card-surgery"><i class="fas fa-syringe" style="color:var(--color-gold);margin-right:8px;"></i>Ενδουαλοειδικές ενέσεις</div>
+            <div class="service-card-surgery"><i class="fas fa-eye" style="color:var(--color-gold);margin-right:8px;"></i>Χειρουργείο αμφιβληστροειδούς</div>
+            <div class="service-card-surgery"><i class="fas fa-eye" style="color:var(--color-gold);margin-right:8px;"></i>Χειρουργείο γλαυκώματος</div>
+            <div class="service-card-surgery"><i class="fas fa-ambulance" style="color:var(--color-gold);margin-right:8px;"></i>Αντιμετώπιση τραύματος</div>
+        </div>
+    </div>
+</div>
+
+<div id="page-pathology" class="page-content">
+    <div class="container">
+        <a class="back-link" onclick="navigateTo('home')"><i class="fas fa-arrow-left"></i> Επιστροφή</a>
+        <div id="pathologyDetailContent"></div>
+        <div id="pathologyImagesContainer" style="margin-top:30px;display:none;">
+            <h3 style="font-size:1.3rem;color:var(--color-primary-dark);margin-bottom:16px;"><i class="fas fa-images" style="color:var(--color-gold);margin-right:12px;"></i>Σχετικές Εικόνες</h3>
+            <div class="pathology-images" id="pathologyImages"></div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div>
+            <div class="logo" onclick="navigateTo('home')">Dr. Δέσποινα Κεχαγιά</div>
+            <p style="margin-top:8px;font-size:.9rem;">Χειρουργός Οφθαλμίατρος MD, MSc</p>
+            <p style="font-size:.85rem;color:#999;">&copy; 2026 | Όλα τα δικαιώματα διατηρούνται.</p>
+        </div>
+        <div>
+            <div class="socials">
+                <a href="https://www.facebook.com/share/1CkWSPtHXG/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/dr.despina_kechagia?utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p style="margin-top:12px;font-size:.85rem;color:#999;">
+                <i class="fas fa-phone-alt"></i> 2310684556 &nbsp;|&nbsp; <i class="fas fa-envelope"></i> despinakechagia@gmail.com
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+var currentZoom = 1;
+var minZoom = 0.5;
+var maxZoom = 4;
+var zoomStep = 0.15;
+var translateX = 0;
+var translateY = 0;
+var isDragging = false;
+var dragStartX = 0;
+var dragStartY = 0;
+var dragStartTranslateX = 0;
+var dragStartTranslateY = 0;
+
+var imageGroups = {
+    'doctor': [],
+    'clinic': [],
+    'pathology': []
+};
+var currentGroup = '';
+var currentIndex = 0;
+
+function collectImages() {
+    var doctorImg = document.querySelector('.doctor-img');
+    if (doctorImg) {
+        imageGroups['doctor'] = [{src: doctorImg.src, caption: 'Δρ. Δέσποινα Κεχαγιά - Χειρουργός Οφθαλμίατρος'}];
+    }
+    var clinicImages = document.querySelectorAll('#clinicGallery img');
+    clinicImages.forEach(function(img) {
+        if (img.src && img.src.indexOf('data:') === -1) {
+            imageGroups['clinic'].push({src: img.src, caption: img.alt || 'Ιατρείο'});
+        }
+    });
+}
+
+function openLightboxGroup(group, src, caption) {
+    if (group === 'pathology' && imageGroups['pathology'].length === 0) {
+        var pathImages = document.querySelectorAll('#pathologyImages img');
+        pathImages.forEach(function(img) {
+            if (img.src && img.src.indexOf('data:') === -1) {
+                imageGroups['pathology'].push({src: img.src, caption: img.alt || 'Εικόνα'});
+            }
+        });
+    }
+    if (!imageGroups[group] || imageGroups[group].length === 0) {
+        openLightboxSimple(src, caption);
+        return;
+    }
+    currentGroup = group;
+    var foundIndex = -1;
+    for (var i = 0; i < imageGroups[group].length; i++) {
+        if (imageGroups[group][i].src === src) {
+            foundIndex = i;
+            break;
+        }
+    }
+    if (foundIndex === -1) foundIndex = 0;
+    currentIndex = foundIndex;
+    showLightboxImage(currentIndex);
+}
+
+function showLightboxImage(index) {
+    var group = imageGroups[currentGroup];
+    if (!group || group.length === 0) return;
+    if (index < 0) index = group.length - 1;
+    if (index >= group.length) index = 0;
+    currentIndex = index;
+    var img = document.getElementById('lightboxImg');
+    var caption = document.getElementById('lightboxCaption');
+    var data = group[index];
+    img.src = data.src;
+    caption.textContent = data.caption || 'Εικόνα';
+    resetZoom();
+    var prevBtn = document.getElementById('lightboxPrev');
+    var nextBtn = document.getElementById('lightboxNext');
+    if (group.length <= 1) {
+        prevBtn.classList.remove('visible');
+        nextBtn.classList.remove('visible');
+    } else {
+        prevBtn.classList.add('visible');
+        nextBtn.classList.add('visible');
+    }
+    document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function openLightboxSimple(src, caption) {
+    var img = document.getElementById('lightboxImg');
+    var captionEl = document.getElementById('lightboxCaption');
+    img.src = src;
+    captionEl.textContent = caption || '';
+    resetZoom();
+    document.getElementById('lightboxPrev').classList.remove('visible');
+    document.getElementById('lightboxNext').classList.remove('visible');
+    document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function navigateLightbox(direction) {
+    if (!currentGroup || !imageGroups[currentGroup]) return;
+    var newIndex = currentIndex + direction;
+    showLightboxImage(newIndex);
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function closeLightboxIfClickOutside(event) {
+    if (event.target === event.currentTarget) {
+        closeLightbox();
+    }
+}
+
+function zoomImage(direction) {
+    var img = document.getElementById('lightboxImg');
+    if (direction === 'in' && currentZoom < maxZoom) {
+        currentZoom = Math.min(currentZoom + zoomStep, maxZoom);
+    } else if (direction === 'out' && currentZoom > minZoom) {
+        currentZoom = Math.max(currentZoom - zoomStep, minZoom);
+    }
+    if (currentZoom <= 1) {
+        translateX = 0;
+        translateY = 0;
+        img.classList.remove('zoomed');
+    } else {
+        img.classList.add('zoomed');
+    }
+    updateImageTransform(img);
+    document.getElementById('zoomLevel').textContent = Math.round(currentZoom * 100) + '%';
+}
+
+function resetZoom() {
+    var img = document.getElementById('lightboxImg');
+    currentZoom = 1;
+    translateX = 0;
+    translateY = 0;
+    img.classList.remove('zoomed');
+    updateImageTransform(img);
+    document.getElementById('zoomLevel').textContent = '100%';
+}
+
+function updateImageTransform(img) {
+    img.style.transform = 'scale(' + currentZoom + ') translate(' + translateX + 'px, ' + translateY + 'px)';
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var img = document.getElementById('lightboxImg');
+    var wrapper = document.getElementById('lightboxWrapper');
+    collectImages();
+    
+    wrapper.addEventListener('mousedown', function(e) {
+        if (currentZoom <= 1) return;
+        isDragging = true;
+        dragStartX = e.clientX;
+        dragStartY = e.clientY;
+        dragStartTranslateX = translateX;
+        dragStartTranslateY = translateY;
+        wrapper.style.cursor = 'grabbing';
+        e.preventDefault();
+    });
+    document.addEventListener('mousemove', function(e) {
+        if (!isDragging) return;
+        var deltaX = e.clientX - dragStartX;
+        var deltaY = e.clientY - dragStartY;
+        translateX = dragStartTranslateX + deltaX;
+        translateY = dragStartTranslateY + deltaY;
+        var imgRect = img.getBoundingClientRect();
+        var wrapperRect = wrapper.getBoundingClientRect();
+        var maxOffsetX = (imgRect.width * currentZoom - wrapperRect.width) / 2;
+        var maxOffsetY = (imgRect.height * currentZoom - wrapperRect.height) / 2;
+        translateX = Math.max(-maxOffsetX, Math.min(maxOffsetX, translateX));
+        translateY = Math.max(-maxOffsetY, Math.min(maxOffsetY, translateY));
+        updateImageTransform(img);
+    });
+    document.addEventListener('mouseup', function() {
+        if (isDragging) {
+            isDragging = false;
+            wrapper.style.cursor = currentZoom > 1 ? 'grab' : 'default';
+        }
+    });
+    wrapper.addEventListener('touchstart', function(e) {
+        if (currentZoom <= 1) return;
+        var touch = e.touches[0];
+        isDragging = true;
+        dragStartX = touch.clientX;
+        dragStartY = touch.clientY;
+        dragStartTranslateX = translateX;
+        dragStartTranslateY = translateY;
+    }, {passive: true});
+    wrapper.addEventListener('touchmove', function(e) {
+        if (!isDragging || !e.touches.length) return;
+        var touch = e.touches[0];
+        var deltaX = touch.clientX - dragStartX;
+        var deltaY = touch.clientY - dragStartY;
+        translateX = dragStartTranslateX + deltaX;
+        translateY = dragStartTranslateY + deltaY;
+        var imgRect = img.getBoundingClientRect();
+        var wrapperRect = wrapper.getBoundingClientRect();
+        var maxOffsetX = (imgRect.width * currentZoom - wrapperRect.width) / 2;
+        var maxOffsetY = (imgRect.height * currentZoom - wrapperRect.height) / 2;
+        translateX = Math.max(-maxOffsetX, Math.min(maxOffsetX, translateX));
+        translateY = Math.max(-maxOffsetY, Math.min(maxOffsetY, translateY));
+        updateImageTransform(img);
+    }, {passive: true});
+    wrapper.addEventListener('touchend', function() {
+        isDragging = false;
+    }, {passive: true});
+    img.addEventListener('wheel', function(e) {
+        if (!document.getElementById('lightbox').classList.contains('active')) return;
+        e.preventDefault();
+        if (e.deltaY < 0) { zoomImage('in'); } else { zoomImage('out'); }
+    }, {passive: false});
+    document.addEventListener('keydown', function(e) {
+        if (!document.getElementById('lightbox').classList.contains('active')) return;
+        if (e.key === 'Escape') { closeLightbox(); }
+        else if (e.key === 'ArrowLeft') { navigateLightbox(-1); }
+        else if (e.key === 'ArrowRight') { navigateLightbox(1); }
+    });
+});
+
+
+var pathologyData = {
+    "Διαθλαστικές Διαταραχές": {
+        icon: "fa-glasses",
+        items: {
+            "Μυωπία": `<strong>Τι είναι η μυωπία;</strong><br>Η μυωπία αποτελεί τη συχνότερη διαθλαστική ανωμαλία του οφθαλμού και χαρακτηρίζεται από μειωμένη όραση στις μακρινές αποστάσεις. Εμφανίζεται όταν το μάτι είναι πιο μεγάλο από το φυσιολογικό ή όταν ο κερατοειδής παρουσιάζει αυξημένη καμπυλότητα ή και τα δύο, με αποτέλεσμα η εικόνα να εστιάζεται μπροστά από τον αμφιβληστροειδή.<br><br><strong>Πώς εκδηλώνεται;</strong><br>Τα άτομα με μυωπία βλέπουν καθαρά τα κοντινά αντικείμενα, αλλά δυσκολεύονται να διακρίνουν ό,τι βρίσκεται μακριά. Συχνά παρατηρούν δυσκολία στην ανάγνωση πινακίδων κατά την οδήγηση, στην αναγνώριση προσώπων από απόσταση ή στην παρακολούθηση της τηλεόρασης.<br><br><strong>Πότε εμφανίζεται;</strong><br>Η μυωπία συνήθως κάνει την εμφάνισή της κατά την παιδική και σχολική ηλικία. Τα παιδιά μπορεί να παραπονιούνται ότι δεν βλέπουν καλά τον πίνακα στο σχολείο ή να μισοκλείνουν τα μάτια τους, προσπαθώντας να εστιάσουν καλύτερα.<br><br><strong>Είναι κληρονομική;</strong><br>Η εμφάνιση της μυωπίας σχετίζεται σε σημαντικό βαθμό με την κληρονομικότητα. Αν και τα παιδιά μυωπικών γονέων έχουν αυξημένες πιθανότητες να εμφανίσουν μυωπία, αυτό δεν σημαίνει ότι η πάθηση θα εκδηλωθεί απαραίτητα.<br><br><strong>Πώς διορθώνεται;</strong><br>Η αντιμετώπιση της μυωπίας εξατομικεύεται ανάλογα με την ηλικία και τις ανάγκες του κάθε ασθενούς. Στα παιδιά, η διόρθωση γίνεται κυρίως με γυαλιά οράσεως, ενώ στους ενήλικες μπορούν να χρησιμοποιηθούν γυαλιά ή φακοί επαφής. Για όσους επιθυμούν μία πιο μόνιμη λύση, η διαθλαστική χειρουργική με laser προσφέρει τη δυνατότητα διόρθωσης της μυωπίας, βελτιώνοντας σημαντικά την ποιότητα της όρασης και την καθημερινότητα του ασθενούς.`,
+            "Υπερμετρωπία": `<strong>Τι είναι η υπερμετρωπία;</strong><br>Η υπερμετρωπία αποτελεί μία από τις συχνότερες διαθλαστικές ανωμαλίες του οφθαλμού και ουσιαστικά είναι το αντίθετο της μυωπίας. Εμφανίζεται όταν το μάτι είναι μικρότερο από το φυσιολογικό ή όταν η διαθλαστική δύναμη του κερατοειδούς δεν επαρκεί, με αποτέλεσμα οι ακτίνες του φωτός να εστιάζονται πίσω από τον αμφιβληστροειδή.<br><br><strong>Πώς εκδηλώνεται;</strong><br>Κατά τη γέννηση, ο ανθρώπινος οφθαλμός παρουσιάζει φυσιολογικά έναν βαθμό υπερμετρωπίας. Στην παιδική και νεαρή ηλικία, τα μάτια έχουν συνήθως τη δυνατότητα να αντισταθμίσουν την υπερμετρωπία μέσω της προσαρμογής, επιτρέποντας καθαρή όραση. Στα περισσότερα παιδιά η υπερμετρωπία δεν προκαλεί συμπτώματα. Ωστόσο, σε ορισμένες περιπτώσεις μπορεί να οδηγήσει σε προσαρμοστικό συγκλίνοντα στραβισμό, δηλαδή σε στροφή των ματιών προς τα μέσα, εξαιτίας της έντονης προσπάθειας εστίασης. Στους εφήβους και τους ενήλικες, η υπερμετρωπία μπορεί να προκαλέσει: κόπωση των ματιών, πονοκεφάλους, θολή όραση μετά από διάβασμα ή εργασία σε κοντινή απόσταση, αίσθημα βάρους ή καύσου στα μάτια. Η κατάσταση αυτή, που οφείλεται στην υπερβολική προσπάθεια προσαρμογής, ονομάζεται ασθενωπία ή κοπιωπία. Ανάλογα με τον βαθμό της υπερμετρωπίας, τα προβλήματα όρασης εμφανίζονται αρχικά στις κοντινές αποστάσεις και αργότερα μπορεί να επηρεάσουν και τη μακρινή όραση.<br><br><strong>Πώς γίνεται η διάγνωση;</strong><br>Η διάγνωση της υπερμετρωπίας πραγματοποιείται από τον οφθαλμίατρο, μέσω πλήρους οφθαλμολογικού ελέγχου και εξειδικευμένων εξετάσεων. Ιδιαίτερα στα παιδιά, συχνά απαιτείται κυκλοπληγική διάθλαση, ώστε να προσδιοριστεί με ακρίβεια ο βαθμός της υπερμετρωπίας και να αποκλειστούν άλλες παθήσεις που μπορεί να συνυπάρχουν.<br><br><strong>Πώς διορθώνεται;</strong><br>Η αντιμετώπιση της υπερμετρωπίας εξατομικεύεται ανάλογα με την ηλικία και τις ανάγκες του κάθε ασθενούς. Στα παιδιά, η διόρθωση γίνεται συνήθως με γυαλιά οράσεως, ενώ οι ενήλικες μπορούν να επιλέξουν γυαλιά ή φακούς επαφής. Για όσους επιθυμούν μια μόνιμη λύση, η διαθλαστική χειρουργική με laser μπορεί να διορθώσει αποτελεσματικά την υπερμετρωπία, προσφέροντας μεγαλύτερη ανεξαρτησία από τα γυαλιά και τους φακούς επαφής.`,
+            "Αστιγματισμός": `<strong>Τι είναι ο αστιγματισμός;</strong><br>Ο αστιγματισμός είναι μία συχνή διαθλαστική ανωμαλία, κατά την οποία ο κερατοειδής δεν έχει την ίδια καμπυλότητα σε όλους τους άξονες. Ως αποτέλεσμα, οι ακτίνες του φωτός δεν εστιάζονται σε ένα μόνο σημείο του αμφιβληστροειδούς, προκαλώντας θολή ή παραμορφωμένη όραση. Ο αστιγματισμός μπορεί να εμφανίζεται μόνος του ή να συνυπάρχει με μυωπία και υπερμετρωπία.<br><br><strong>Πώς εκδηλώνεται;</strong><br>Τα άτομα με αστιγματισμό μπορεί να παρουσιάζουν: θολή όραση τόσο σε κοντινές όσο και σε μακρινές αποστάσεις, παραμόρφωση των εικόνων, δυσκολία στην ανάγνωση ή στην οδήγηση, κόπωση των ματιών, πονοκεφάλους μετά από παρατεταμένη χρήση υπολογιστή ή διάβασμα. Η ένταση των συμπτωμάτων εξαρτάται από τον βαθμό του αστιγματισμού.<br><br><strong>Πού οφείλεται;</strong><br>Στις περισσότερες περιπτώσεις, ο αστιγματισμός οφείλεται στη διαφορετική καμπυλότητα του κερατοειδούς ανάμεσα στους διάφορους άξονές του. Συνήθως είναι κληρονομικός και υπάρχει από τη γέννηση.<br><br><strong>Αλλάζει με την πάροδο του χρόνου;</strong><br>Ο αστιγματισμός συνήθως παραμένει σταθερός κατά τη διάρκεια της ζωής. Ωστόσο, σημαντικές μεταβολές στην τιμή ή στον άξονά του μπορεί να σχετίζονται με παθήσεις του κερατοειδούς και απαιτούν περαιτέρω οφθαλμολογικό έλεγχο.<br><br><strong>Πώς μετράται;</strong><br>Ο αστιγματισμός περιγράφεται όχι μόνο από τη δύναμή του, που εκφράζεται σε διοπτρίες, αλλά και από τον άξονά του, ο οποίος μετράται σε μοίρες. Η ακριβής μέτρηση είναι ιδιαίτερα σημαντική για τη σωστή συνταγογράφηση γυαλιών, φακών επαφής ή για τον προεγχειρητικό σχεδιασμό διαθλαστικών επεμβάσεων.<br><br><strong>Πώς διορθώνεται;</strong><br>Η αντιμετώπιση του αστιγματισμού εξατομικεύεται ανάλογα με τις ανάγκες κάθε ασθενούς και μπορεί να γίνει με γυαλιά οράσεως, ειδικούς φακούς επαφής ή διαθλαστική χειρουργική με laser. Οι σύγχρονες τεχνικές διαθλαστικής χειρουργικής επιτρέπουν, σε επιλεγμένους ασθενείς, τη μόνιμη διόρθωση του αστιγματισμού, βελτιώνοντας σημαντικά την ποιότητα της όρασης και την καθημερινότητά τους.`,
+            "Πρεσβυωπία": `<strong>Τι είναι η πρεσβυωπία;</strong><br>Η πρεσβυωπία είναι μια φυσιολογική αλλαγή της όρασης που εμφανίζεται σταδιακά σε όλους τους ανθρώπους συνήθως μετά την ηλικία των 40 ετών. Δεν αποτελεί πάθηση, αλλά αποτέλεσμα της φυσιολογικής γήρανσης του οφθαλμού και κυρίως της μείωσης της ελαστικότητας του κρυσταλλοειδούς φακού, με αποτέλεσμα να δυσκολεύεται η εστίαση σε κοντινές αποστάσεις.<br><br><strong>Ποια είναι τα συμπτώματα της πρεσβυωπίας;</strong><br>Τα συχνότερα συμπτώματα περιλαμβάνουν: δυσκολία στην ανάγνωση βιβλίων, κινητού τηλεφώνου ή άλλων κοντινών αντικειμένων, ανάγκη να απομακρύνουμε το κείμενο για να το δούμε καθαρά, κόπωση των ματιών κατά την παρατεταμένη εργασία σε κοντινή απόσταση, πονοκεφάλους ή αίσθημα βάρους στα μάτια μετά από διάβασμα ή χρήση υπολογιστή.<br><br><strong>Γιατί εμφανίζεται νωρίτερα σε κάποιους ανθρώπους;</strong><br>Η ηλικία εμφάνισης των συμπτωμάτων της πρεσβυωπίας διαφέρει από άτομο σε άτομο και επηρεάζεται από διάφορους παράγοντες, κυρίως από την αρχική διαθλαστική κατάσταση των ματιών. Τα άτομα με υπερμετρωπία συχνά εμφανίζουν συμπτώματα πρεσβυωπίας νωρίτερα, καθώς καταβάλλουν ήδη μεγαλύτερη προσπάθεια για την εστίαση σε κοντινές αποστάσεις. Τα άτομα με μυωπία μπορεί να αντιληφθούν την πρεσβυωπία αργότερα ή σε ορισμένες περιπτώσεις να μπορούν να διαβάζουν χωρίς γυαλιά. Άτομα που εργάζονται πολλές ώρες σε κοντινές αποστάσεις, συχνά παρατηρούν νωρίτερα τα συμπτώματα λόγω των αυξημένων οπτικών απαιτήσεων.<br><br><strong>Πώς διορθώνεται η πρεσβυωπία;</strong><br>Η πρεσβυωπία μπορεί να αντιμετωπιστεί με διάφορους τρόπους, ανάλογα με τις ανάγκες και τον τρόπο ζωής κάθε ατόμου. Οι συνηθέστερες επιλογές είναι: γυαλιά οράσεως (μονοεστιακά, πολυεστιακά), φακοί επαφής ή χειρουργικές μέθοδοι διόρθωσης (αντικατάσταση του φυσικού φακού με ενδοφακό προηγμένης τεχνολογίας ή επεμβάσεις στον κερατοειδή). Η επιλογή της κατάλληλης μεθόδου απαιτεί πλήρη οφθαλμολογικό έλεγχο και εξατομικευμένη εκτίμηση από τον οφθαλμίατρο.`
+        }
+    },
+    "Καταρράκτης": {
+        icon: "fa-circle",
+        items: {
+            "Καταρράκτης": `<strong>Τι είναι ο καταρράκτης;</strong><br>Ο καταρράκτης είναι η θόλωση του φυσικού φακού του ματιού, γνωστού ως κρυσταλλοειδής φακός. Αποτελεί μία από τις συχνότερες αιτίες μείωσης της όρασης και εμφανίζεται κυρίως ως αποτέλεσμα της φυσιολογικής γήρανσης του οφθαλμού. Η θόλωση του φακού συνήθως εξελίσσεται σταδιακά, με αποτέλεσμα η όραση να επιδεινώνεται προοδευτικά.<br><br><strong>Ποια είναι τα συμπτώματα του καταρράκτη;</strong><br>Ο ασθενής με καταρράκτη μπορεί να παρατηρήσει: θολή ή μειωμένη όραση, σαν να κοιτάζει μέσα από θολό τζάμι ή κουρτίνα, δυσκολία στην οδήγηση, ιδιαίτερα τη νύχτα, λόγω έντονων αντανακλάσεων και θαμβώσεων, ευαισθησία στο έντονο φως, μείωση της αντίληψης των χρωμάτων και συχνές αλλαγές στη συνταγή των γυαλιών.<br><br><strong>Πώς διορθώνεται ο καταρράκτης;</strong><br>Η οριστική θεραπεία του καταρράκτη είναι η χειρουργική αφαίρεση του θολού φυσικού φακού και η αντικατάστασή του με έναν τεχνητό ενδοφακό. Η επέμβαση πραγματοποιείται με τη σύγχρονη τεχνική της φακοθρυψίας, κατά την οποία ο θολός φακός διασπάται με τη χρήση υπερήχων και αφαιρείται μέσω μικρής τομής. Στη συνέχεια τοποθετείται ένας διαυγής τεχνητός ενδοφακός στη φυσική θέση του φακού. Η επέμβαση διαρκεί λίγα λεπτά, πραγματοποιείται συνήθως με τοπική αναισθησία με σταγόνες, είναι ανώδυνη και επιτρέπει γρήγορη επιστροφή στις καθημερινές δραστηριότητες. Με τη χρήση σύγχρονων ενδοφακών είναι δυνατό, σε κατάλληλους ασθενείς, να μειωθεί σημαντικά η ανάγκη για γυαλιά μετά το χειρουργείο. Καθοριστικής σημασίας για την επιτυχία της επέμβασης είναι ο λεπτομερής προεγχειρητικός έλεγχος, ο οποίος περιλαμβάνει τη σωστή μέτρηση των χαρακτηριστικών του ματιού και την επιλογή του κατάλληλου ενδοφακού ανάλογα με τις ανάγκες και τον τρόπο ζωής κάθε ασθενούς.`,
+            "Δευτερογενής καταρράκτης": `<strong>Τι είναι ο δευτερογενής καταρράκτης;</strong><br>Ο δευτερογενής καταρράκτης, γνωστός και ως θόλωση οπισθίου περιφακίου, είναι μία συχνή κατάσταση που μπορεί να εμφανιστεί μήνες ή και χρόνια μετά από μια επιτυχημένη επέμβαση καταρράκτη. Δεν πρόκειται για επανεμφάνιση του καταρράκτη, καθώς ο φυσικός φακός έχει ήδη αφαιρεθεί, αλλά για τη σταδιακή θόλωση της λεπτής μεμβράνης (οπίσθιο περιφάκιο) που παραμένει στο μάτι για τη στήριξη του τεχνητού ενδοφακού.<br><br><strong>Γιατί συμβαίνει;</strong><br>Κατά την επέμβαση καταρράκτη ο χειρουργός αφαιρεί τον θολό φυσικό φακό, διατηρώντας σκόπιμα το περιφάκιο, ώστε να τοποθετηθεί και να σταθεροποιηθεί ο τεχνητός ενδοφακός. Με την πάροδο του χρόνου, σε ορισμένους ασθενείς μπορεί να αναπτυχθούν κύτταρα στην επιφάνεια του οπισθίου περιφακίου, προκαλώντας τη σταδιακή θόλωσή του. Η εμφάνιση του φαινομένου εξαρτάται από διάφορους παράγοντες, όπως η ηλικία, τα χαρακτηριστικά του ματιού και ο τύπος του ενδοφακού.<br><br><strong>Ποια είναι τα συμπτώματα;</strong><br>Ο ασθενής μπορεί να παρατηρήσει: σταδιακή μείωση της καθαρότητας της όρασης, θάμβος ή αίσθηση ότι βλέπει «σαν μέσα από θολό τζάμι», επανεμφάνιση συμπτωμάτων παρόμοιων με αυτά πριν από την επέμβαση καταρράκτη, ενοχλήσεις από αντανακλάσεις ή μειωμένη αντίθεση. Η κατάσταση εξελίσσεται συνήθως αργά και είναι ανώδυνη.<br><br><strong>Πώς αντιμετωπίζεται;</strong><br>Η αντιμετώπιση γίνεται εύκολα και ανώδυνα με τη χρήση YAG Laser. Με το YAG Laser δημιουργείται ένα μικρό άνοιγμα στο θολωμένο οπίσθιο περιφάκιο, επιτρέποντας στο φως να φτάνει ξανά καθαρά στον αμφιβληστροειδή. Η διαδικασία δεν αποτελεί χειρουργική επέμβαση, δεν απαιτεί τομή ή ράμματα, είναι σύντομη και ανώδυνη, πραγματοποιείται στο ιατρείο και συνήθως προσφέρει βελτίωση της όρασης από τις πρώτες ημέρες. Μετά την εφαρμογή του YAG Laser, ο ασθενής συνήθως δεν χρειάζεται αλλαγή γυαλιών, εκτός αν υπάρχει κάποια ανεξάρτητη διαθλαστική ανάγκη.`
+        }
+    },
+    "Γλαύκωμα": {
+        icon: "fa-eye-low-vision",
+        items: {
+            "Γλαύκωμα": `<strong>Τι είναι το γλαύκωμα;</strong><br>Το γλαύκωμα είναι μια ομάδα παθήσεων που προκαλούν σταδιακή και μη αναστρέψιμη βλάβη του οπτικού νεύρου, δηλαδή του «καλωδίου» που μεταφέρει τις οπτικές πληροφορίες από το μάτι προς τον εγκέφαλο. Αποτελεί μία από τις σημαντικότερες αιτίες μόνιμης απώλειας όρασης παγκοσμίως. Η βλάβη που προκαλείται στο οπτικό νεύρο δεν μπορεί να αποκατασταθεί, όμως με την έγκαιρη διάγνωση και τη σωστή θεραπεία μπορεί να επιβραδυνθεί ή να σταματήσει η εξέλιξή της, διατηρώντας την όραση του ασθενούς.<br><br><strong>Παίζει ρόλο η ηλικία;</strong><br>Η πιθανότητα εμφάνισης γλαυκώματος αυξάνεται με την ηλικία, ιδιαίτερα μετά την ηλικία των 40 ετών. Ωστόσο, το γλαύκωμα μπορεί να εμφανιστεί και σε νεότερα άτομα, ακόμη και σε παιδιά. Η έγκαιρη διάγνωση είναι ιδιαίτερα σημαντική, καθώς το γλαύκωμα στα αρχικά στάδια συνήθως δεν προκαλεί συμπτώματα. Για τον λόγο αυτό συνιστάται προληπτικός οφθαλμολογικός έλεγχος για γλαύκωμα μετά την ηλικία των 40 ετών ή νωρίτερα σε άτομα με παράγοντες κινδύνου.<br><br><strong>Είναι το γλαύκωμα το ίδιο με την αυξημένη ενδοφθάλμια πίεση;</strong><br>Η αυξημένη ενδοφθάλμια πίεση αποτελεί έναν από τους σημαντικότερους παράγοντες κινδύνου για την εμφάνιση γλαυκώματος, αλλά δεν ταυτίζεται με τη νόσο. Οι περισσότεροι άνθρωποι έχουν ενδοφθάλμια πίεση περίπου μεταξύ 10 και 21 mmHg. Τιμές υψηλότερες από αυτές χαρακτηρίζονται ως οφθαλμική υπερτονία και αυξάνουν την πιθανότητα εμφάνισης γλαυκώματος, χωρίς όμως όλοι οι ασθενείς με υψηλή πίεση να εμφανίζουν βλάβη στο οπτικό νεύρο. Υπάρχει επίσης το γλαύκωμα φυσιολογικής πίεσης, όπου η βλάβη του οπτικού νεύρου εμφανίζεται παρά τις φυσιολογικές τιμές ενδοφθάλμιας πίεσης. Επομένως, η πίεση είναι ένας σημαντικός παράγοντας κινδύνου, αλλά η διάγνωση του γλαυκώματος βασίζεται συνολικά στην εικόνα του οπτικού νεύρου και των οπτικών πεδίων.<br><br><strong>Ποια είναι τα συμπτώματα του γλαυκώματος;</strong><br>Το χρόνιο γλαύκωμα είναι ιδιαίτερα ύπουλη πάθηση, καθώς στα αρχικά στάδια εξελίσσεται συνήθως χωρίς συμπτώματα. Σε προχωρημένα στάδια μπορεί να εμφανιστούν: σταδιακή απώλεια της περιφερικής όρασης, περιορισμός του οπτικού πεδίου («σαν να βλέπει μέσα από σωλήνα»), δυσκολία προσαρμογής σε διαφορετικές συνθήκες φωτισμού και μείωση της αντίληψης των αντιθέσεων (contrast sensitivity).<br><br><strong>Πώς γίνεται η διάγνωση;</strong><br>Η διάγνωση του γλαυκώματος απαιτεί ολοκληρωμένο οφθαλμολογικό έλεγχο και αξιολόγηση πολλών παραμέτρων. Ο έλεγχος περιλαμβάνει: μέτρηση της ενδοφθάλμιας πίεσης, βυθοσκόπηση και αξιολόγηση της κεφαλής του οπτικού νεύρου, OCT οπτικού νεύρου, οπτικά πεδία και γωνιοσκόπηση όταν απαιτείται. Η σωστή διάγνωση βασίζεται στον συνδυασμό των ευρημάτων και όχι σε μία μόνο μέτρηση.<br><br><strong>Υπάρχει θεραπεία;</strong><br>Το γλαύκωμα δεν μπορεί να θεραπευτεί οριστικά, αλλά μπορεί να ελεγχθεί αποτελεσματικά. Ο βασικός στόχος της θεραπείας είναι η επίτευξη της κατάλληλης πίεσης-στόχου για κάθε ασθενή. Οι θεραπευτικές επιλογές περιλαμβάνουν: κολλύρια, που μειώνουν την παραγωγή ή αυξάνουν την αποχέτευση του υδατοειδούς υγρού, laser, όπως η SLT (Selective Laser Trabeculoplasty) σε κατάλληλους ασθενείς με γλαύκωμα ανοικτής γωνίας, αλλά και η YAG laser ιριδοτομή σε περιπτώσεις γλαυκώματος κλειστής γωνίας ή ανατομικής προδιάθεσης για απόφραξη της γωνίας και χειρουργικές επεμβάσεις, όταν η φαρμακευτική ή laser θεραπεία δεν επαρκεί.`
+        }
+    },
+    "Αμφιβληστροειδής": {
+        icon: "fa-eye",
+        items: {
+            "Αποκόλληση υαλοειδούς": `<strong>Τι είναι η αποκόλληση του υαλοειδούς σώματος;</strong><br>Η αποκόλληση του υαλοειδούς είναι μια συχνή κατάσταση κατά την οποία το υαλοειδές σώμα, το διαφανές ζελατινώδες υλικό που γεμίζει το εσωτερικό του ματιού, αποχωρίζεται από τον αμφιβληστροειδή. Πρόκειται συνήθως για μια φυσιολογική μεταβολή που σχετίζεται με την ηλικία, αλλά εμφανίζεται συχνότερα σε άτομα με μυωπία, μετά από τραυματισμό ή μετά από οφθαλμικές επεμβάσεις.<br><br><strong>Πώς εμφανίζεται;</strong><br>Η αποκόλληση του υαλοειδούς εκδηλώνεται συνήθως με την αιφνίδια εμφάνιση μυιοψιών («μυγάκια») και φωτοψιών, δηλαδή λάμψεων ή «αστραπών», ιδιαίτερα στο σκοτάδι ή κατά τις κινήσεις των ματιών. Σε ορισμένες περιπτώσεις, οι ασθενείς μπορεί να αντιληφθούν έναν κινούμενο δακτύλιο ή σκιές στο οπτικό τους πεδίο.<br><br><strong>Χρειάζεται αντιμετώπιση;</strong><br>Στις περισσότερες περιπτώσεις, η αποκόλληση του υαλοειδούς δεν απαιτεί θεραπεία και τα συμπτώματα βελτιώνονται σταδιακά. Ωστόσο, σε ένα μικρό ποσοστό ασθενών μπορεί να δημιουργηθούν ρωγμές ή αποκόλληση του αμφιβληστροειδούς, καταστάσεις που χρειάζονται άμεση αντιμετώπιση.<br><br><strong>Πότε πρέπει να εξεταστεί ο ασθενής;</strong><br>Η αιφνίδια εμφάνιση πολλών νέων μυιοψιών, έντονων φωτοψιών ή μιας σκοτεινής σκιάς που επεκτείνεται στο οπτικό πεδίο απαιτεί άμεση οφθαλμολογική εξέταση με βυθοσκόπηση, ώστε να αποκλειστεί η ύπαρξη ρωγμής ή αποκόλλησης του αμφιβληστροειδούς.`,
+            "Ηλικιακή εκφύλιση ωχράς (ΗΕΩ)": `<strong>Τι είναι η ηλικιακή εκφύλιση ωχράς κηλίδας;</strong><br>Η ηλικιακή εκφύλιση ωχράς κηλίδας είναι μία χρόνια εκφυλιστική πάθηση της ωχράς κηλίδας, δηλαδή της περιοχής του αμφιβληστροειδούς που είναι υπεύθυνη για την κεντρική, λεπτομερή όραση. Η νόσος εμφανίζεται κυρίως σε άτομα ηλικίας άνω των 50 ετών και μπορεί να προκαλέσει σταδιακή απώλεια της κεντρικής όρασης, ενώ συνήθως διατηρείται η περιφερική όραση. Η εκφύλιση ωχράς κηλίδας είναι ανώδυνη και δεν οδηγεί σε πλήρη τύφλωση, καθώς δεν επηρεάζει ολόκληρο το οπτικό πεδίο, αλλά μπορεί να επηρεάσει σημαντικά δραστηριότητες όπως η ανάγνωση, η οδήγηση και η αναγνώριση προσώπων.<br><br><strong>Πώς εμφανίζεται;</strong><br>Τα συμπτώματα μπορεί να περιλαμβάνουν: θόλωση ή παραμόρφωση της κεντρικής όρασης, δυσκολία στην ανάγνωση, δυσκολία στην αναγνώριση προσώπων, αντίληψη ευθειών γραμμών ως κυματιστών ή παραμορφωμένων (μεταμορφοψίες) και εμφάνιση σκοτώματος (σκοτεινού ή θολού σημείου) στο κέντρο της όρασης.Τα συμπτώματα μπορεί να αφορούν το ένα ή και τα δύο μάτια, με διαφορετική βαρύτητα.<br><br><strong>Ποιες μορφές έχει;</strong><br>Η ηλικιακή εκφύλιση ωχράς κηλίδας διακρίνεται κυρίως σε δύο μορφές: την ξηρά μορφή (Dry AMD) που είναι η συχνότερη και χαρακτηρίζεται από τη σταδιακή εκφύλιση των κυττάρων της ωχράς, και την υγρή μορφή (Wet AMD) που χαρακτηρίζεται από την ανάπτυξη παθολογικών νεοαγγείων κάτω από τον αμφιβληστροειδή (χοριοειδική νεοαγγείωση), τα οποία μπορεί να προκαλέσουν διαρροή υγρού ή αίματος και ταχεία επιδείνωση της όρασης. Η υγρή μορφή είναι λιγότερο συχνή αλλά πιο επιθετική και απαιτεί άμεση αντιμετώπιση.<br><br><strong>Πώς γίνεται η διάγνωση;</strong><br>Η διάγνωση πραγματοποιείται με πλήρη οφθαλμολογικό έλεγχο και εξειδικευμένες εξετάσεις, όπως OCT ωχράς κηλίδας (Οπτική Τομογραφία Συνοχής), που απεικονίζει με λεπτομέρεια τις στιβάδες του αμφιβληστροειδούς, OCT αγγειογραφία και φλουοροαγγειογραφία.<br><br><strong>Πώς αντιμετωπίζεται;</strong><br>Στην ξηρά μορφή, η αντιμετώπιση περιλαμβάνει τακτική παρακολούθηση, έλεγχο παραγόντων κινδύνου και σε συγκεκριμένα στάδια, χρήση ειδικών συμπληρωμάτων διατροφής. Στην υγρή μορφή, η έγκαιρη διάγνωση είναι ιδιαίτερα σημαντική, καθώς η σύγχρονη θεραπεία με ενδοϋαλοειδικές ενέσεις αντιαγγειογενετικών παραγόντων (anti-VEGF) μπορεί να σταθεροποιήσει ή και να βελτιώσει την όραση σε πολλούς ασθενείς. Οι ενέσεις πραγματοποιούνται με τοπική αναισθησία με σταγόνες, σε ελεγχόμενο περιβάλλον, και είναι συνήθως καλά ανεκτές.`,
+            "Διαβητική αμφιβληστροειδοπάθεια": `<strong>Τι είναι η διαβητική αμφιβληστροειδοπάθεια;</strong><br>Η διαβητική αμφιβληστροειδοπάθεια είναι μία πάθηση του αμφιβληστροειδούς που προκαλείται από τον σακχαρώδη διαβήτη. Ο διαβήτης επηρεάζει τα μικρά αγγεία του αμφιβληστροειδούς, προκαλώντας βλάβες στη δομή και τη λειτουργία τους. Οι αλλοιώσεις αυτές μπορεί να οδηγήσουν σε διαρροή υγρού (διαβητικό οίδημα ωχράς), μικροαιμορραγίες, μικροανευρύσματα, διαταραχές της αιμάτωσης (ισχαιμία) και σε πιο προχωρημένα στάδια, ανάπτυξη παθολογικών νεοαγγείων. Τα νεοαγγεία αυτά είναι εύθραυστα και μπορεί να αιμορραγήσουν μέσα στο υαλοειδές σώμα του ματιού, προκαλώντας ενδοϋαλοειδική αιμορραγία.<br><br><strong>Ποιοι παράγοντες επηρεάζουν την εμφάνισή της;</strong><br>Η εμφάνιση και η εξέλιξη της διαβητικής αμφιβληστροειδοπάθειας σχετίζονται κυρίως με τη διάρκεια του σακχαρώδη διαβήτη, τον καλό έλεγχο ή μη του σακχάρου, την αρτηριακή υπέρταση και άλλους αγγειακούς παράγοντες και τη συνύπαρξη νεφρικής νόσου.<br><br><strong>Πώς εμφανίζεται;</strong><br>Στα αρχικά στάδια η διαβητική αμφιβληστροειδοπάθεια μπορεί να είναι εντελώς ασυμπτωματικήασυμπτωματική, γι’ αυτό και ο τακτικός οφθαλμολογικός έλεγχος είναι απαραίτητος. Όταν επηρεάζεται η ωχρά κηλίδα από διαβητικό οίδημα, ο ασθενής μπορεί να εμφανίσει θόλωση της κεντρικής όρασης, δυσκολία στην ανάγνωση και μείωση της οπτικής οξύτητας παρά τη χρήση γυαλιών. Σε περίπτωση ρήξης νεοαγγείων και ενδοϋαλοειδικής αιμορραγίας μπορεί να εμφανιστεί ξαφνική και ανώδυνη πτώση της όρασης με εμφάνιση πολλών «μυγών» ή σκοτεινών σημείων στο οπτικό πεδίο.<br><br><strong>Πώς γίνεται η διάγνωση;</strong><br>Η διάγνωση γίνεται με πλήρη οφθαλμολογικό έλεγχο και περιλαμβάνει: Βυθοσκόπηση για την εκτίμηση των αλλοιώσεων του αμφιβληστροειδούς, OCT ωχράς κηλίδας για την ανίχνευση και παρακολούθηση διαβητικού οιδήματος Φλουοροαγγειογραφία ή OCT αγγειογραφία σε ειδικές περιπτώσεις για την αξιολόγηση ισχαιμίας και νεοαγγείωσης<br><br><strong>Πώς αντιμετωπίζεται;</strong><br>Η αντιμετώπιση εξαρτάται από το στάδιο της νόσου και μπορεί να περιλαμβάνει τακτική παρακολούθηση σε πρώιμα στάδια, laser φωτοπηξία (Argon laser) σε συγκεκριμένες ενδείξεις, κυρίως για την αντιμετώπιση ισχαιμικών περιοχών ή νεοαγγείωσης, ενδοϋαλοειδικές ενέσεις anti-VEGF παραγόντων για το διαβητικό οίδημα ωχράς ή νεοαγγειακές επιπλοκές ή βιτρεκτομή/Υαλοειδεκτομή σε περιπτώσεις όπως επίμονη ενδοϋαλοειδική αιμορραγία ή έλξεις στον αμφιβληστροειδήΗ τακτική οφθαλμολογική παρακολούθηση των ασθενών με σακχαρώδη διαβήτη και η έγκαιρη αντιμετώπιση των αλλοιώσεων είναι καθοριστικής σημασίας για τη διατήρηση της όρασης. `,
+            "Απόφραξη αγγείων αμφιβληστροειδούς": `<strong>Τι είναι οι αποφράξεις αγγείων αμφιβληστροειδούς;</strong><br>Ο αμφιβληστροειδής χιτώνας βρίσκεται στο εσωτερικό του ματιού και αποτελεί τον ιστό που είναι υπεύθυνος για την πρόσληψη και επεξεργασία του φωτός. Περιέχει τους φωτοϋποδοχείς, μέσω των οποίων το φωτεινό ερέθισμα μετατρέπεται σε νευρική πληροφορία που μεταφέρεται μέσω του οπτικού νεύρου στον εγκέφαλο.Η φυσιολογική λειτουργία του αμφιβληστροειδούς εξαρτάται από την καλή αιμάτωσή του. Όταν συμβεί απόφραξη ενός αγγείου του αμφιβληστροειδούς, είτε αρτηρίας είτε φλέβας, διαταράσσεται η κυκλοφορία του αίματος, με αποτέλεσμα την ανεπαρκή οξυγόνωση των ιστών (ισχαιμία) και την εμφάνιση βλαβών στην όραση.<br><br><strong>Πώς εμφανίζονται;</strong><br>Οι αποφράξεις διακρίνονται σε κεντρική (όταν επηρεάζεται το κεντρικό αγγείο) και κλαδική (όταν αφορά έναν κλάδο). Στην αρτηριακή απόφραξη, η απώλεια της αιμάτωσης προκαλεί συνήθως αιφνίδια, ανώδυνη και σημαντική μείωση της όρασης. Στη φλεβική απόφραξη, τα συμπτώματα εξαρτώνται από την έκταση και την εντόπιση της βλάβης. Μπορεί να υπάρχει θόλωση της όρασης λόγω οιδήματος της ωχράς κηλίδας ή αιμορραγιών στον αμφιβληστροειδή.<br><br><strong>Ποιοι παράγοντες σχετίζονται με τις αποφράξεις;</strong><br>Οι αποφράξεις αγγείων του αμφιβληστροειδούς σχετίζονται συχνότερα με αγγειακούς παράγοντες κινδύνου, όπως: αρτηριακή υπέρταση, σακχαρώδης διαβήτης, υπερλιπιδαιμία, καρδιαγγειακή νόσος, γλαύκωμα ή αυξημένη ενδοφθάλμια πίεση. Για τον λόγο αυτό συχνά απαιτείται και έλεγχος των συστηματικών παραγόντων κινδύνου.<br><br><strong>Πώς γίνεται η διάγνωση;</strong><br>Η διάγνωση γίνεται με πλήρη οφθαλμολογικό έλεγχο και μπορεί να περιλαμβάνει: βυθοσκόπηση, OCT ωχράς κηλίδας για την εκτίμηση οιδήματος, Φλουοροαγγειογραφία ή OCT αγγειογραφία για την αξιολόγηση της αιμάτωσης και πιθανής ισχαιμίας.<br><br><strong>Πώς αντιμετωπίζονται;</strong><br>Η αντιμετώπιση εξαρτάται από τον τύπο της απόφραξης και τις επιπλοκές που έχουν προκύψει. Στις φλεβικές αποφράξεις, η θεραπεία στοχεύει κυρίως: στην αντιμετώπιση του οιδήματος της ωχράς κηλίδας με ενδοϋαλοειδικές ενέσεις anti-VEGF παραγόντων, στην αντιμετώπιση ισχαιμικών επιπλοκών με laser φωτοπηξία αμφιβληστροειδούς, όταν υπάρχει ένδειξηΣτις αρτηριακές αποφράξεις, η έγκαιρη αντιμετώπιση είναι ιδιαίτερα σημαντική, καθώς ο αμφιβληστροειδής είναι ιδιαίτερα ευαίσθητος στην έλλειψη οξυγόνου. Σε πολλές περιπτώσεις, όταν έχει παρέλθει σημαντικό χρονικό διάστημα από την έναρξη της απόφραξης, η αποκατάσταση της όρασης είναι περιορισμένη. Η άμεση οφθαλμολογική εκτίμηση σε κάθε περίπτωση ξαφνικής, ανώδυνης απώλειας όρασης είναι απαραίτητη.`,
+            "Αποκόλληση αμφιβληστροειδούς": `<strong>Τι είναι η αποκόλληση αμφιβληστροειδούς;</strong><br>Η αποκόλληση αμφιβληστροειδούς είναι μία σοβαρή και επείγουσα οφθαλμολογική κατάσταση, κατά την οποία ο αμφιβληστροειδής χιτώνας, δηλαδή ο φωτοευαίσθητος ιστός στο εσωτερικό του ματιού που μετατρέπει το φως σε νευρικά σήματα, απομακρύνεται από την υποκείμενη στοιβάδα του χοριοειδούς. Η έγκαιρη διάγνωση και αντιμετώπιση είναι καθοριστικής σημασίας για τη διατήρηση της όρασης.<br><br><strong>Γιατί συμβαίνει;</strong><br>Ανάλογα με τον μηχανισμό δημιουργίας της, η αποκόλληση αμφιβληστροειδούς διακρίνεται σε: ρηγματογενής αποκόλληση: προκαλείται από μία ρωγμή ή οπή στον αμφιβληστροειδή, μέσω της οποίας υγρό περνά κάτω από τον αμφιβληστροειδή και τον αποκολλά. Είναι η συχνότερη μορφή και αποτελεί επείγουσα κατάσταση, ελκτική αποκόλληση: προκαλείται από την ανάπτυξη ινωδών ή ινοαγγειακών μεμβρανών που ασκούν έλξη πάνω στον αμφιβληστροειδή. Εμφανίζεται συχνά σε παθήσεις όπως η προχωρημένη διαβητική αμφιβληστροειδοπάθεια, εξιδρωματική αποκόλληση: προκαλείται από συσσώρευση υγρού κάτω από τον αμφιβληστροειδή χωρίς να υπάρχει ρωγμή, λόγω φλεγμονωδών, αγγειακών ή άλλων παθήσεων. Η ρηγματογενής μορφή είναι η συχνότερη και αυτή που απαιτεί συνήθως την πιο άμεση αντιμετώπιση.<br><br><strong>Πώς εμφανίζεται;</strong><br>Τα συμπτώματα που πρέπει να κινητοποιήσουν τον ασθενή περιλαμβάνουν: εμφάνιση ή ξαφνική αύξηση σε μυιοψίες («μυγάκια» ή μαύρα στίγματα),φωτοψίες (λάμψεις ή αστραπές στο οπτικό πεδίο), αίσθηση σκιάς ή «μαύρης/γκρίζας κουρτίνας» που ξεκινά από την περιφέρεια και επεκτείνεται προς το κέντρο της όρασης, μείωση της όρασης, ιδιαίτερα όταν επηρεάζεται η ωχρά κηλίδα, Η εμφάνιση αυτών των συμπτωμάτων απαιτεί άμεση οφθαλμολογική εξέταση.<br><br><strong>Πώς αντιμετωπίζεται;</strong><br>Η θεραπεία της αποκόλλησης αμφιβληστροειδούς είναι συνήθως χειρουργική και ο στόχος είναι η επαναπροσκόλληση του αμφιβληστροειδούς και η αποκατάσταση της φυσιολογικής ανατομίας του ματιού. Η αντιμετώπιση μπορεί να περιλαμβάνει: βιτρεκτομή / υαλοειδεκτομή, δηλαδή αφαίρεση του υαλοειδούς σώματος (του διαφανούς «ζελέ» που γεμίζει το εσωτερικό του ματιού). Εντοπισμό και αντιμετώπιση των ρωγμών με laser φωτοπηξία ή κρυοπηξία. Πλήρωση του ματιού με ειδικό αέριο ή έλαιο σιλικόνης, ώστε να διατηρηθεί ο αμφιβληστροειδής στη σωστή θέση κατά την επούλωση. Σε ορισμένες περιπτώσεις μπορεί να χρησιμοποιηθούν και άλλες χειρουργικές τεχνικές, ανάλογα με τα χαρακτηριστικά της αποκόλλησης. Η έγκαιρη προσέλευση στον οφθαλμίατρο, ιδιαίτερα όταν εμφανιστούν ξαφνικά μυιοψίες, φωτοψίες ή σκιά στην όραση, είναι καθοριστική για την καλύτερη δυνατή πρόγνωση.`,
+            "Επιωχρική μεμβράνη": `<strong>Τι είναι η επιωχρική μεμβράνη;</strong><br>Η επιωχρική μεμβράνη είναι μία λεπτή ινώδης μεμβράνη που αναπτύσσεται στην επιφάνεια της ωχράς κηλίδας, δηλαδή στο κέντρο του αμφιβληστροειδούς που είναι υπεύθυνο για την ευκρινή και λεπτομερή κεντρική όραση. Η παρουσία της μπορεί να προκαλέσει παραμόρφωση της φυσιολογικής αρχιτεκτονικής της ωχράς και να επηρεάσει την ποιότητα της όρασης.<br><br><strong>Γιατί δημιουργείται;</strong><br>Στις περισσότερες περιπτώσεις η επιωχρική μεμβράνη σχετίζεται με τις φυσιολογικές αλλαγές του υαλοειδούς σώματος που συμβαίνουν με την ηλικία. Κατά την αποκόλληση του υαλοειδούς μπορεί να ενεργοποιηθούν κύτταρα στην επιφάνεια του αμφιβληστροειδούς, τα οποία πολλαπλασιάζονται και σχηματίζουν μία λεπτή μεμβράνη πάνω από την ωχρά. Μπορεί επίσης να εμφανιστεί δευτεροπαθώς μετά από φλεγμονές του ματιού (ραγοειδίτιδες), τραύματα, αγγειακές παθήσεις του αμφιβληστροειδούς, προηγούμενες επεμβάσεις ή άλλες παθήσεις της ωχράς κηλίδας.<br><br><strong>Πώς εμφανίζεται;</strong><br>Η βαρύτητα των συμπτωμάτων εξαρτάται από το πάχος και την επίδραση της μεμβράνης στην ωχρά. Ο ασθενής μπορεί να αντιληφθεί: μεταμορφοψίες, δηλαδή παραμόρφωση των εικόνων, όπου οι ευθείες γραμμές εμφανίζονται κυματιστές ή τεθλασμένες, θόλωση ή μείωση της κεντρικής όρασης, Δυσκολία στην ανάγνωση ή σε δραστηριότητες που απαιτούν λεπτομερή όραση.<br><br><strong>Πώς γίνεται η διάγνωση;</strong><br>Η διάγνωση γίνεται με πλήρη οφθαλμολογική εξέταση και κυρίως με τη χρήση OCT ωχράς κηλίδας, η οποία απεικονίζει με λεπτομέρεια την κατάσταση της ωχράς και βοηθά στην εκτίμηση της βαρύτητας της πάθησης.<br><br><strong>Πώς αντιμετωπίζεται;</strong><br> Σε ήπιες περιπτώσεις με μικρή επίδραση στην όραση μπορεί να απαιτείται μόνο παρακολούθηση. Όταν η επιωχρική μεμβράνη προκαλεί σημαντική μείωση της όρασης ή έντονες μεταμορφοψίες, η αντιμετώπιση είναι χειρουργική με βιτρεκτομή / υαλοειδεκτομή. Κατά την επέμβαση αφαιρείται το υαλοειδές σώμα και πραγματοποιείται αφαίρεση (peeling) της επιωχρικής μεμβράνης, ώστε να αποκατασταθεί όσο είναι δυνατόν η φυσιολογική μορφολογία της ωχράς.`,
+            "Οπή ωχράς": `<strong>Τι είναι η οπή ωχράς κηλίδας;</strong><br>Η οπή ωχράς κηλίδας είναι μία βλάβη που αφορά το κέντρο του αμφιβληστροειδούς, στην περιοχή της ωχράς κηλίδας, η οποία είναι υπεύθυνη για την ευκρινή και λεπτομερή κεντρική όραση. Πρόκειται για μία απώλεια ιστού στο κέντρο της ωχράς, η οποία μπορεί να είναι μερικού ή πλήρους πάχους, ανάλογα με την έκταση της βλάβης.<br><br><strong>Που οφείλεται;</strong><br>Η οπή ωχράς κηλίδας προκαλείται συνήθως από αλλαγές που συμβαίνουν στο υαλοειδές σώμα του ματιού με την πάροδο της ηλικίας. Καθώς το υαλοειδές συστέλλεται και αποκολλάται από την επιφάνεια του αμφιβληστροειδούς, σε ορισμένες περιπτώσεις μπορεί να παραμείνει προσκολλημένο στην περιοχή της ωχράς και να ασκεί έλξη πάνω της. Οι ελκτικές αυτές δυνάμεις μπορούν σταδιακά να οδηγήσουν στη δημιουργία μιας οπής στο κέντρο της ωχράς κηλίδας.<br><br><strong>Σε ποιους συμβαίνει συχνότερα;</strong><br>Η οπή ωχράς κηλίδας εμφανίζεται συχνότερα: σε άτομα μεγαλύτερης ηλικίας, κυρίως άνω των 60 ετών, στις γυναίκες, σε ασθενείς με υψηλή μυωπία. Μπορεί επίσης να σχετίζεται με άλλες παθήσεις της ωχράς κηλίδας, όπως η επιωχρική μεμβράνη και τέλος, μετά από τραυματισμό ή άλλες παθολογικές καταστάσεις του οφθαλμού.<br><br><strong>Πώς εμφανίζεται;</strong><br>Τα κυριότερα συμπτώματα περιλαμβάνουν: μείωση της κεντρικής όρασης, δυσκολία στην ανάγνωση, δυσκολία στην αναγνώριση προσώπων, παραμόρφωση των εικόνων (μεταμορφοψίες) και εμφάνιση κεντρικού σκοτώματος, δηλαδή ενός θολού ή σκοτεινού σημείου στο κέντρο της όρασης. Συνήθως η περιφερική όραση παραμένει φυσιολογική.<br><br><strong>Πώς γίνεται η διάγνωση;</strong><br>Η διάγνωση γίνεται με πλήρη οφθαλμολογική εξέταση και κυρίως με: OCT ωχράς κηλίδας (Οπτική Τομογραφία Συνοχής), η οποία απεικονίζει με λεπτομέρεια τις στιβάδες του αμφιβληστροειδούς και επιβεβαιώνει την ύπαρξη και το στάδιο της οπής.<br><br><strong>Πώς αντιμετωπίζεται;</strong><br>Η αντιμετώπιση της οπής ωχράς κηλίδας είναι στις περισσότερες περιπτώσεις χειρουργική. Η συνηθέστερη επέμβαση είναι η βιτρεκτομή / υαλοειδεκτομή, κατά την οποία αφαιρείται το υαλοειδές σώμα (το διαφανές «ζελέ» που γεμίζει το εσωτερικό του ματιού), ώστε να μειωθούν οι έλξεις πάνω στην ωχρά. Κατά τη διάρκεια της επέμβασης μπορεί να πραγματοποιηθεί αφαίρεση της έσω αφοριστικής μεμβράνης (ILM peeling) και το μάτι πληρώνεται με ειδικό αέριο, το οποίο βοηθά στο κλείσιμο της οπής. Η έγκαιρη διάγνωση και η κατάλληλη χειρουργική αντιμετώπιση μπορούν να οδηγήσουν σε σημαντική βελτίωση της κεντρικής όρασης σε πολλούς ασθενείς.`,
+            "Κληρονομικές δυστροφίες αμφιβληστροειδούς": `<strong>Τι είναι οι κληρονομικές δυστροφίες του αμφιβληστροειδούς;</strong><br>Οι κληρονομικές δυστροφίες του αμφιβληστροειδούς αποτελούν μια ομάδα σπάνιων παθήσεων στις οποίες υπάρχει σταδιακή δυσλειτουργία ή εκφύλιση των κυττάρων του αμφιβληστροειδούς, κυρίως των φωτοϋποδοχέων (ραβδίων και κωνίων), που είναι υπεύθυνοι για τη μετατροπή του φωτός σε οπτική πληροφορία. Οι παθήσεις αυτές οφείλονται σε γενετικές μεταλλάξεις και μπορεί να εμφανιστούν είτε κατά την παιδική ηλικία είτε αργότερα στη ζωή.<br><br><strong>Πώς εμφανίζονται;</strong><br>Τα συμπτώματα εξαρτώνται από τον τύπο της δυστροφίας και την περιοχή του αμφιβληστροειδούς που επηρεάζεται. Συχνά οι ασθενείς παρουσιάζουν: δυσκολία στην όραση σε χαμηλό φωτισμό (νυχτερινή τύφλωση), σταδιακή μείωση της περιφερικής ή της κεντρικής όρασης, δυσκολία στην προσαρμογή από το φως στο σκοτάδι, ελαττωμένη αντίληψη χρωμάτων. Μία από τις συχνότερες μορφές είναι η μελαγχρωστική αμφιβληστροειδοπάθεια (Retinitis Pigmentosa), όπου αρχικά επηρεάζεται κυρίως η περιφερική όραση και η νυχτερινή όραση.<br><br><strong>Πώς γίνεται η διάγνωση;</strong><br>Η διάγνωση πραγματοποιείται με λεπτομερή οφθαλμολογική εξέταση και εξειδικευμένες εξετάσεις όπως OCT αμφιβληστροειδούς, φωτογράφηση βυθού, οπτικά πεδία, ηλεκτροφυσιολογικό έλεγχο (ERG) και, όπου ενδείκνυται, γενετικό έλεγχο.<br><br><strong>Υπάρχει θεραπεία;</strong><br>Η αντιμετώπιση εξαρτάται από τον τύπο της δυστροφίας και το στάδιο της νόσου. Σε αρκετές περιπτώσεις η θεραπεία επικεντρώνεται στην παρακολούθηση, την αντιμετώπιση επιπλοκών και την υποστήριξη της οπτικής λειτουργίας. Σε συγκεκριμένες γενετικές μορφές μπορεί να υπάρχουν πλέον εξειδικευμένες θεραπείες, όπως γονιδιακές θεραπείες.`
+        }
+    },
+    "Κερατοειδής": {
+        icon: "fa-circle",
+        items: {
+            "Ξηροφθαλμία": `<strong>Τι είναι η ξηροφθαλμία;</strong><br>Η ξηροφθαλμία ή σύνδρομο ξηρού οφθαλμού είναι μία συχνή πάθηση της οφθαλμικής επιφάνειας, κατά την οποία τα δάκρυα δεν επαρκούν σε ποσότητα ή ποιότητα για τη σωστή λίπανση, προστασία και ομαλή λειτουργία του οφθαλμού. Η σταθερότητα της δακρυϊκής στιβάδας είναι απαραίτητη για τη διατήρηση καθαρής όρασης και την υγεία του κερατοειδούς και του επιπεφυκότα.<br><br><strong>Πού οφείλεται;</strong><br>Η ξηροφθαλμία μπορεί να οφείλεται σε διαφορετικούς μηχανισμούς: μειωμένη παραγωγή δακρύων, όπως σε αυτοάνοσες παθήσεις (π.χ. σύνδρομο Sjögren), σε ορισμένα φάρμακα ή λόγω ηλικίας, αυξημένη εξάτμιση των δακρύων και διαταραχή της ποιότητάς τους, κυρίως λόγω δυσλειτουργίας των μεϊβομιανών αδένων και βλεφαρίτιδας, ατελές κλείσιμο των βλεφάρων (εκθετική κερατίτιδα), που οδηγεί σε αυξημένη έκθεση και ξήρανση της οφθαλμικής επιφάνειας.<br><br><strong>Πώς εκδηλώνεται;</strong><br>Τα συμπτώματα της ξηροφθαλμίας μπορεί να περιλαμβάνουν: αίσθημα ξένου σώματος, σαν «άμμος» ή «σκουπιδάκι» στα μάτια, κάψιμο ή τσούξιμο, ερυθρότητα και ερεθισμό, Ευαισθησία στο έντονο φως (φωτοφοβία), Παροδική θόλωση της όρασης, ιδιαίτερα κατά την παρατεταμένη χρήση υπολογιστή ή κινητού, Αντανακλαστική δακρύρροια σε ορισμένες περιπτώσεις.<br><br><strong>Πώς αντιμετωπίζεται;</strong><br>Η σωστή αντιμετώπιση της ξηροφθαλμίας απαιτεί αρχικά λεπτομερή οφθαλμολογικό έλεγχο, ώστε να αναγνωριστεί η αιτία και ο κυρίαρχος μηχανισμός της. Η θεραπεία εξατομικεύεται και μπορεί να περιλαμβάνει: τεχνητά δάκρυα και ειδικά λιπαντικά κολλύρια, αντιμετώπιση της βλεφαρίτιδας και δυσλειτουργίας των μεϊβομιανών αδένων με σωστή υγιεινή των βλεφάρων, αντιφλεγμονώδη θεραπεία όταν απαιτείται, απόφραξη των δακρυϊκών σημείων με punctal plugs για περιορισμό της αποχέτευσης των δακρύων, Αντιμετώπιση ανατομικών προβλημάτων των βλεφάρων όταν υπάρχουν. Η έγκαιρη διάγνωση και η σωστή εξατομικευμένη θεραπεία βοηθούν σημαντικά στη βελτίωση των συμπτωμάτων και στην προστασία της οφθαλμικής επιφάνειας.<br><br><strong></strong><br>`,
+            "Δυστροφία κερατοειδούς": `<strong>Τι είναι οι δυστροφίες του κερατοειδούς;</strong><br>Οι δυστροφίες του κερατοειδούς είναι σπάνιες, συνήθως κληρονομικές παθήσεις που χαρακτηρίζονται από τη μη φυσιολογική εναπόθεση ή συσσώρευση ουσιών στα διάφορα στρώματα του κερατοειδούς, του διαφανούς δηλαδή πρόσθιου τμήματος του ματιού. Οι δυστροφίες συνήθως προσβάλλουν και τα δύο μάτια, εξελίσσονται αργά και δεν οφείλονται σε φλεγμονή ή λοίμωξη. Ανάλογα με το στρώμα του κερατοειδούς που επηρεάζουν διακρίνονται σε επιθηλιακές, στρωματικές και ενδοθηλιακές.<br><br><strong>Ποιες είναι οι συχνότερες δυστροφίες;</strong><br>Μερικές από τις πιο γνωστές δυστροφίες είναι: η δυστροφία Fuchs του ενδοθηλίου, κατά την οποία υπάρχει σταδιακή απώλεια των ενδοθηλιακών κυττάρων με αποτέλεσμα τη συσσώρευση υγρού στον κερατοειδή (οίδημα) και προοδευτική μείωση της όρασης, οι κερατοειδικές στρωματικές δυστροφίες (π.χ. κοκκώδης ή δικτυωτή δυστροφία), όπου εμφανίζονται εναποθέσεις μέσα στο στρώμα του κερατοειδούς που μπορεί να προκαλέσουν θολώσεις, δυστροφίες του επιθηλίου, οι οποίες μπορεί να προκαλούν επαναλαμβανόμενες διαβρώσεις του κερατοειδούς και επεισόδια πόνου.<br><br><strong>Πώς εκδηλώνονται;</strong><br>Τα συμπτώματα εξαρτώνται από το είδος και το στάδιο της δυστροφίας. Μπορεί να περιλαμβάνουν: θολή ή μειωμένη όραση, αίσθημα ξένου σώματος, πόνο, ιδιαίτερα σε περιπτώσεις επαναλαμβανόμενων διαβρώσεων του επιθηλίου, φωτοφοβία, αυξημένη ευαισθησία του ματιού. Σε αρχικά στάδια πολλές δυστροφίες μπορεί να μην προκαλούν σημαντικά συμπτώματα και να διαπιστώνονται τυχαία κατά την οφθαλμολογική εξέταση.<br><br><strong>Πώς γίνεται η διάγνωση;</strong><br>Η διάγνωση γίνεται με την οφθαλμολογική εξέταση και τη λεπτομερή μελέτη του κερατοειδούς. Μπορεί να απαιτηθούν ειδικές εξετάσεις, όπως: βιομικροσκόπηση στη σχισμοειδή λυχνία, τοπογραφία ή τομογραφία κερατοειδούς, παχυμετρία κερατοειδούς, ενδοθηλιακή μικροσκοπία σε δυστροφίες του ενδοθηλίου. Η σωστή διάγνωση είναι σημαντική, καθώς ορισμένες δυστροφίες μπορεί να χρειάζονται παρακολούθηση ή ειδική θεραπεία.<br><br><strong>Πώς αντιμετωπίζονται;</strong><br>Η αντιμετώπιση εξαρτάται από τον τύπο και τη βαρύτητα και μπορεί να περιλαμβάνει παρακολούθηση σε ήπιες περιπτώσεις χωρίς σημαντική επίπτωση στην όραση, τεχνητά δάκρυα και θεραπεία της οφθαλμικής επιφάνειας, θεραπεία επαναλαμβανόμενων διαβρώσεων του κερατοειδούς, ειδικές χειρουργικές θεραπείες σε προχωρημένα στάδια, Σε ορισμένες σοβαρές περιπτώσεις, ιδιαίτερα όταν υπάρχει σημαντική θόλωση ή ανεπάρκεια του ενδοθηλίου, μπορεί να απαιτηθεί μεταμόσχευση κερατοειδούς ή σύγχρονες τεχνικές μερικής μεταμόσχευσης, όπως DMEK ή DSAEK. Η έγκαιρη διάγνωση και η τακτική παρακολούθηση από οφθαλμίατρο είναι σημαντικές για τη διατήρηση της όρασης και την επιλογή της κατάλληλης θεραπείας.`,
+            "Κερατίτιδα": `<strong>Τι είναι η κερατίτιδα;</strong><br>Η κερατίτιδα είναι η φλεγμονή του κερατοειδούς, δηλαδή του διαφανούς πρόσθιου τμήματος του οφθαλμού που βρίσκεται μπροστά από την ίριδα και την κόρη. Ο κερατοειδής αποτελεί βασικό στοιχείο της όρασης, καθώς συμμετέχει σημαντικά στην εστίαση των εικόνων. Η φλεγμονή του μπορεί να επηρεάσει την ομαλή λειτουργία του και σε ορισμένες περιπτώσεις να απειλήσει την όραση.<br><br><strong>Πού οφείλεται;</strong><br>Η κερατίτιδα μπορεί να προκληθεί από διάφορα αίτια, όπως: μικροβιακές λοιμώξεις, κυρίως βακτηριακές, ιογενείς (π.χ. ιός του απλού έρπητα), μυκητιασικές ή παρασιτικές (π.χ. Acanthamoeba), τραυματισμούς ή είσοδο ξένου σώματος στον οφθαλμό, Παρατεταμένη χρήση φακών επαφής, ιδιαίτερα όταν δεν τηρούνται σωστά οι κανόνες υγιεινής, έντονη ξηροφθαλμία ή διαταραχές της οφθαλμικής επιφάνειας, αυτοάνοσες ή φλεγμονώδεις παθήσεις που επηρεάζουν τον κερατοειδή.<br><br><strong>Πώς εκδηλώνεται;</strong><br>Τα συμπτώματα της κερατίτιδας μπορεί να περιλαμβάνουν: πόνο ή έντονη ενόχληση στο μάτι, ερυθρότητα του οφθαλμού, Φωτοφοβία (ενόχληση στο φως), δακρύρροια, αίσθημα ξένου σώματος, θολή ή μειωμένη όραση. Σε ορισμένες περιπτώσεις μπορεί να εμφανιστεί λευκή κηλίδα στον κερατοειδή, ιδιαίτερα όταν υπάρχει διήθηση ή έλκος.<br><br><strong>Πώς γίνεται η διάγνωση;</strong><br>Η διάγνωση γίνεται με λεπτομερή οφθαλμολογική εξέταση στη σχισμοειδή λυχνία. Ανάλογα με την περίπτωση μπορεί να χρειαστούν: xρώση με φλουορεσκεΐνη για τον έλεγχο επιθηλιακών βλαβών, Καλλιέργεια ή ειδικές εξετάσεις όταν υπάρχει υποψία λοίμωξης, Έλεγχος της οφθαλμικής επιφάνειας και των παραγόντων κινδύνου.<br><br><strong>Πώς αντιμετωπίζεται;</strong><br>Η θεραπεία εξαρτάται από την αιτία της κερατίτιδας και πρέπει να εξατομικεύεται. Μπορεί να περιλαμβάνει: αντιβιοτικά κολλύρια σε βακτηριακές κερατίτιδες, αντιιική θεραπεία σε ερπητικές κερατίτιδες, αντιμυκητιασική ή ειδική θεραπεία σε σπανιότερες λοιμώξεις, τεχνητά δάκρυα και αντιμετώπιση της ξηροφθαλμίας όταν αυτή συμμετέχει, αποφυγή ή προσωρινή διακοπή φακών επαφής. Η έγκαιρη διάγνωση και θεραπεία είναι ιδιαίτερα σημαντικές, καθώς ορισμένες μορφές κερατίτιδας μπορεί να εξελιχθούν σε έλκος κερατοειδούς και να αφήσουν μόνιμες ουλές που επηρεάζουν την όραση.`,
+            "Κερατόκωνος": `<strong>Τι είναι ο κερατόκωνος;</strong><br>Ο κερατόκωνος είναι μια προοδευτική πάθηση του κερατοειδούς, του διαφανούς πρόσθιου τμήματος του ματιού που λειτουργεί σαν ο φυσικός «φακός» του οφθαλμού. Φυσιολογικά ο κερατοειδής έχει ομαλή και συμμετρική καμπυλότητα. Στον κερατόκωνο, λόγω σταδιακής λέπτυνσης και παραμόρφωσής του, εμφανίζεται μια προπέτεια στην επιφάνειά του με μορφή κώνου. Η αλλαγή αυτή δεν είναι ορατή από τον ίδιο τον ασθενή, αλλά επηρεάζει σημαντικά την ποιότητα της όρασης.<br><br><strong>Πώς εκδηλώνεται;</strong><br>Το κυριότερο σύμπτωμα του κερατοκώνου είναι η προοδευτική θόλωση της όρασης, η οποία συχνά δεν διορθώνεται ικανοποιητικά με γυαλιά. Συνήθως εμφανίζεται στην εφηβεία ή στη νεαρή ενήλικη ζωή και μπορεί να εξελίσσεται μέχρι περίπου την ηλικία των 30-40 ετών. Τα συχνότερα συμπτώματα περιλαμβάνουν: συνεχή αλλαγή στη συνταγή των γυαλιών, αυξανόμενη μυωπία και αστιγματισμό, μείωση της ποιότητας και της ευκρίνειας της όρασης, φωτοευαισθησία ή θαμβώσεις,  δυσκολία στη νυχτερινή όραση. Η πορεία της νόσου διαφέρει από άτομο σε άτομο. Γενικά, όσο μικρότερη είναι η ηλικία εμφάνισης και όσο πιο έντονες είναι οι αρχικές αλλοιώσεις, τόσο μεγαλύτερη είναι η πιθανότητα εξέλιξης. Σε προχωρημένα στάδια μπορεί σπάνια να εμφανιστεί οξύς κερατοκωνικός ύδρωπας, μια κατάσταση κατά την οποία προκαλείται ρήξη της εσωτερικής στιβάδας του κερατοειδούς, με αποτέλεσμα ξαφνική μείωση της όρασης, πόνο και ερυθρότητα. Συνήθως βελτιώνεται με την πάροδο του χρόνου, αλλά σε ορισμένες περιπτώσεις μπορεί να αφήσει μόνιμες ουλές ή θολερότητες.<br><br><strong>Πώς γίνεται η διάγνωση;</strong><br>Η διάγνωση του κερατοκώνου γίνεται με: Οφθαλμολογική εξέταση Τοπογραφία ή τομογραφία κερατοειδούς, η οποία αποτελεί βασική εξέταση για τη διάγνωση και την παρακολούθηση της νόσου Οι εξετάσεις αυτές δημιουργούν έναν λεπτομερή «χάρτη» της επιφάνειας και του πάχους του κερατοειδούς, επιτρέποντας την ανίχνευση ακόμη και πρώιμων μορφών.<br><br><strong>Υπάρχει θεραπεία;</strong><br>Η αντιμετώπιση του κερατοκώνου εξαρτάται από το στάδιο της νόσου και τις ανάγκες του κάθε ασθενούς. Οι διαθέσιμες θεραπευτικές επιλογές περιλαμβάνουν: γυαλιά και φακοί επαφής Στα αρχικά στάδια, η όραση μπορεί να βελτιωθεί με γυαλιά. Σε πιο προχωρημένες περιπτώσεις χρησιμοποιούνται ειδικοί φακοί επαφής, όπως ημίσκληροι ή σκληρικοί φακοί, οι οποίοι προσφέρουν καλύτερη οπτική αποκατάσταση, διασύνδεση κολλαγόνου κερατοειδούς (Corneal Cross-Linking). Το cross-linking είναι μια σύγχρονη θεραπευτική μέθοδος που έχει ως στόχο την ενίσχυση της αντοχής του κερατοειδούς και την αναστολή της εξέλιξης του κερατοκώνου. Πραγματοποιείται με τη χρήση ριβοφλαβίνης (βιταμίνης Β2) και ειδικού φωτισμού με υπεριώδη ακτινοβολία UVA, υπό τοπική αναισθησία με σταγόνες. Δεν απαιτείται νοσηλεία και στις περισσότερες περιπτώσεις εφαρμόζεται μία φορά στον πάσχοντα οφθαλμό. Ενδοκερατικοί δακτύλιοι. Οι κερατοειδικοί δακτύλιοι είναι μικρά ειδικά εμφυτεύματα που τοποθετούνται στο εσωτερικό του κερατοειδούς και βοηθούν στη μερική εξομάλυνση της παραμόρφωσής του, βελτιώνοντας την ποιότητα της όρασης σε επιλεγμένους ασθενείς. Μεταμόσχευση κερατοειδούς. Σε πολύ προχωρημένα στάδια, όταν η όραση δεν μπορεί να αποκατασταθεί με άλλες μεθόδους ή υπάρχουν σημαντικές ουλές, μπορεί να απαιτηθεί μεταμόσχευση κερατοειδούς. Η έγκαιρη διάγνωση και η τακτική παρακολούθηση είναι ιδιαίτερα σημαντικές, καθώς οι σύγχρονες θεραπείες μπορούν να σταματήσουν ή να επιβραδύνουν σημαντικά την εξέλιξη της νόσου.`
+        }
+    },
+    "Επιπεφυκότας": {
+        icon: "fa-circle",
+        items: {
+            "Επιπεφυκίτιδα": `<strong>Τι είναι η επιπεφυκίτιδα;</strong><br>Η επιπεφυκίτιδα είναι η φλεγμονή του επιπεφυκότα, δηλαδή του λεπτού, ημιδιάφανου υμένα που καλύπτει το λευκό μέρος του ματιού (σκληρός χιτώνας) και την εσωτερική επιφάνεια των βλεφάρων. Αποτελεί μία από τις συχνότερες αιτίες εμφάνισης «κόκκινου ματιού» και μπορεί να εμφανιστεί σε όλες τις ηλικίες.<br><br><strong>Πού οφείλεται;</strong><br>Η επιπεφυκίτιδα μπορεί να προκληθεί από διαφορετικά αίτια. Τα κυριότερα είναι: βακτηριακή λοίμωξη, ιογενής λοίμωξη, αλλεργική αντίδραση, άλλα αίτια μπορεί να είναι ο ερεθισμός από περιβαλλοντικούς παράγοντες, η χρήση φακών επαφής ή η έκθεση σε χημικές ουσίες.<br><br><strong>Ποια είναι τα συμπτώματα;</strong><br>Το βασικό χαρακτηριστικό όλων των μορφών επιπεφυκίτιδας είναι η ερυθρότητα του ματιού. Τα υπόλοιπα συμπτώματα διαφέρουν ανάλογα με την αιτία: βακτηριακή επιπεφυκίτιδα, παρουσία πυωδών εκκρίσεων (κιτρινωπές ή πρασινωπές «τσίμπλες»), Τα βλέφαρα μπορεί να είναι κολλημένα, ιδιαίτερα το πρωί, Αίσθημα ξένου σώματος ή ερεθισμός ιογενής επιπεφυκίτιδα, έντονη δακρύρροια, υδαρείς εκκρίσεις. Συχνά ξεκινά από το ένα μάτι και μπορεί να εμφανιστεί στη συνέχεια και στο άλλο. Μπορεί να συνοδεύεται από συμπτώματα όπως αυτά μιας ίωσης. Αλλεργική επιπεφυκίτιδα. Συνήθως προσβάλλονται και τα δύο μάτια, έντονος κνησμός (φαγούρα), δακρύρροια, λευκωπές βλεννώδεις εκκρίσεις. Συχνά συνυπάρχει με άλλα αλλεργικά συμπτώματα<br><br><strong>Πώς αντιμετωπίζεται;</strong><br>Η θεραπεία της επιπεφυκίτιδας εξαρτάται από το αίτιο που την προκαλεί. Μπορεί να περιλαμβάνει: αντιβιοτικά κολλύρια σε περιπτώσεις βακτηριακής λοίμωξης αντιαλλεργικά κολλύρια σε αλλεργική επιπεφυκίτιδα υποστηρικτική θεραπεία με τεχνητά δάκρυα ή άλλα κατάλληλα σκευάσματα σε ιογενείς περιπτώσεις. Η σωστή επιλογή θεραπείας απαιτεί οφθαλμολογική εξέταση, καθώς η αδικαιολόγητη χρήση κολλυρίων, ιδιαίτερα κορτιζόνης ή αντιβιοτικών, μπορεί να επιδεινώσει ορισμένες καταστάσεις ή να καθυστερήσει τη σωστή διάγνωση.`,
+            "Πτερύγιο": `<strong>Τι είναι το πτερύγιο;</strong><br>Το πτερύγιο είναι μια καλοήθης υπερπλασία του επιπεφυκότα, της λεπτής μεμβράνης που καλύπτει το λευκό τμήμα του ματιού, η οποία επεκτείνεται σταδιακά προς τον κερατοειδή. Εμφανίζεται συχνότερα σε άτομα που εκτίθενται χρόνια στην ηλιακή ακτινοβολία, ιδιαίτερα στην υπεριώδη ακτινοβολία (UV), καθώς και σε περιβάλλοντα με σκόνη, αέρα ή έντονη ξηρότητα.<br><br><strong>Ποια είναι τα συμπτώματα;</strong><br>Ο ασθενής μπορεί να παρατηρήσει στον καθρέφτη μια τριγωνική λευκωπή ή ροζ προεξοχή που ξεκινά από τον επιπεφυκότα και προχωρά πάνω στον κερατοειδή, με κατεύθυνση προς την κόρη. α συμπτώματα μπορεί να περιλαμβάνουν: αίσθημα ξένου σώματος ή ερεθισμό στο μάτι, κοκκίνισμα και φλεγμονή, ξηροφθαλμία ή αίσθημα καύσου, θολή όραση, όταν το πτερύγιο προκαλεί σημαντικό αστιγματισμό ή επεκτείνεται προς τον οπτικό άξονα<br><br><strong>Χρειάζεται αντιμετώπιση;</strong><br>Μικρά πτερύγια που δεν προκαλούν συμπτώματα μπορεί απλώς να παρακολουθούνται. Χειρουργική αντιμετώπιση συνιστάται όταν: επηρεάζεται η όραση λόγω αστιγματισμού ή επέκτασης προς την περιοχή της κόρης, προκαλεί έντονο ερεθισμό ή συμπτώματα ξηροφθαλμίας, υπάρχει ανάγκη πριν από επέμβαση καταρράκτη, ώστε να εξασφαλιστούν καλύτερες μετρήσεις και αποτελέσματα Η θεραπεία είναι χειρουργική και πραγματοποιείται με τοπική αναισθησία. Κατά την επέμβαση αφαιρείται το πτερύγιο και, για τη μείωση της πιθανότητας υποτροπής, εφαρμόζεται σύγχρονη τεχνική με αυτόλογο μόσχευμα επιπεφυκότα, δηλαδή μεταφορά υγιούς ιστού από το ίδιο το μάτι. Η τεχνική αυτή παρουσιάζει σημαντικά μικρότερα ποσοστά επανεμφάνισης σε σχέση με την απλή αφαίρεση του πτερυγίου.`,
+            "Υπόσφαγμα":`<strong> Τι είναι το υπόσφαγμα;</strong><br>Το υπόσφαγμα είναι η παρουσία αίματος κάτω από τον επιπεφυκότα, τη λεπτή διάφανη μεμβράνη που καλύπτει το λευκό μέρος του ματιού (σκληρό χιτώνα). Πρόκειται για μία συχνή και συνήθως ακίνδυνη κατάσταση, η οποία εμφανίζεται ως μία έντονα κόκκινη κηλίδα στο μάτι και συχνά προκαλεί ανησυχία λόγω της εικόνας της, χωρίς όμως να επηρεάζει την όραση.<br><br><strong>Ποια είναι τα αίτια;</strong><br>Το υπόσφαγμα μπορεί να εμφανιστεί αυτόματα ή να προκληθεί από: έντονο βήχα, φτέρνισμα ή εμετό, έντονη σωματική προσπάθεια ή άρση βάρους, τραυματισμό του οφθαλμού, τρίψιμο των ματιών, αρτηριακή υπέρταση, λήψη αντιπηκτικών ή αντιαιμοπεταλιακών φαρμάκων, διαταραχές της πήξης του αίματος. Σε αρκετές περιπτώσεις δεν εντοπίζεται κάποιο συγκεκριμένο αίτιο.<br><br><strong>Ποια είναι τα συμπτώματα;</strong></br>Συνήθως το υπόσφαγμα δεν προκαλεί πόνο ούτε επηρεάζει την όραση. Οι περισσότεροι ασθενείς αντιλαμβάνονται μόνο την ερυθρή κηλίδα στον καθρέφτη ή τους το επισημαίνει κάποιος τρίτος. Σπανιότερα μπορεί να υπάρχει ήπιο αίσθημα ξένου σώματος ή μικρή ενόχληση.<br><br><strong>Χρειάζεται θεραπεία;</strong><br> Στις περισσότερες περιπτώσεις δεν απαιτείται κάποια ειδική θεραπεία. Το αίμα απορροφάται σταδιακά από τον οργανισμό μέσα σε 1 έως 3 εβδομάδες, όπως ακριβώς συμβαίνει και με έναν μώλωπα στο δέρμα. Τεχνητά δάκρυα μπορούν να χρησιμοποιηθούν εάν υπάρχει ήπιος ερεθισμός.<br><br><strong>Πότε πρέπει να εξεταστείτε από οφθαλμίατρο;</strong><br> Συνιστάται οφθαλμολογική εξέταση όταν: το υπόσφαγμα εμφανίστηκε μετά από τραυματισμό, συνοδεύεται από πόνο ή μείωση της όρασης, υποτροπιάζει συχνά, συνυπάρχουν εκτεταμένες αιμορραγίες ή εύκολοι μώλωπες σε άλλα σημεία του σώματος. Ο οφθαλμίατρος θα αξιολογήσει εάν απαιτείται περαιτέρω διερεύνηση, όπως έλεγχος της αρτηριακής πίεσης ή εργαστηριακές εξετάσεις, ιδιαίτερα σε περιπτώσεις υποτροπών ή όταν υπάρχουν συνοδά προβλήματα υγείας.`
+        }
+    },
+    "Βλέφαρα": {
+        icon: "fa-circle",
+        items: {
+            "Βλεφαρίτιδα": `<strong>Τι είναι η βλεφαρίτιδα;</strong><br>Η βλεφαρίτιδα είναι μια πολύ συχνή χρόνια φλεγμονώδης πάθηση των βλεφάρων που επηρεάζει το χείλος των βλεφάρων και την περιοχή των βλεφαρίδων. Ανάλογα με την περιοχή που προσβάλλεται διακρίνεται σε: πρόσθια βλεφαρίτιδα, η οποία αφορά τη βάση των βλεφαρίδων και το πρόσθιο χείλος του βλεφάρου. Οπίσθια βλεφαρίτιδα, η οποία αφορά κυρίως τους μεϊβομιανούς αδένες που βρίσκονται στο εσωτερικό χείλος των βλεφάρων και σχετίζεται συχνά με δυσλειτουργία των αδένων αυτών.<br><br><strong>Πού οφείλεται η βλεφαρίτιδα;</strong><br>Στις περισσότερες περιπτώσεις η βλεφαρίτιδα είναι αποτέλεσμα πολλών παραγόντων και δεν υπάρχει μία μοναδική αιτία. Η πρόσθια βλεφαρίτιδα μπορεί να σχετίζεται με: αυξημένο μικροβιακό φορτίο στη βάση των βλεφαρίδων, συσσώρευση εκκρίσεων και υπολειμμάτων στις βλεφαρίδες. Η οπίσθια βλεφαρίτιδα σχετίζεται συχνά με: δυσλειτουργία των μεϊβομιανών αδένων, σμηγματορροϊκή δερματίτιδα, ροδόχρου ακμή.<br><br><strong>Ποια είναι τα συμπτώματα της βλεφαρίτιδας;</strong><br>Τα συμπτώματα μπορεί να περιλαμβάνουν: ερυθρότητα και πρήξιμο στα βλέφαρα ερεθισμό, κάψιμο ή αίσθημα ξένου σώματος, συμπτώματα ξηροφθαλμίας, κνησμό (φαγούρα), τσίμπλες και κολλώδεις εκκρίσεις, ιδιαίτερα το πρωί, αυξημένη δακρύρροια. Χαρακτηριστικό της χρόνιας βλεφαρίτιδας είναι η κυμαινόμενη πορεία της, με περιόδους έξαρσης και ύφεσης των συμπτωμάτων.<br><br><strong>Ποιοι παράγοντες επιδεινώνουν τη βλεφαρίτιδα;</strong><br>Τα συμπτώματα μπορεί να επιδεινώνονται από: ξηρό ή κλιματιζόμενο περιβάλλον, παρατεταμένη χρήση ηλεκτρονικών συσκευών και μειωμένο βλεφαρισμό, έλλειψη ύπνου, χρόνια χρήση φακών επαφής, αφυδάτωση, παρουσία δερματικών παθήσεων, όπως ροδόχρους ακμή ή σμηγματορροϊκή δερματίτιδα.<br><br><strong>Υπάρχει θεραπεία;</strong><br>Η αντιμετώπιση της βλεφαρίτιδας βασίζεται κυρίως στη συστηματική υγιεινή των βλεφάρων, η οποία αποτελεί τη βάση της μακροχρόνιας θεραπείας. Περιλαμβάνει: καθαρισμό του χείλους των βλεφάρων, ζεστές κομπρέσες για τη βελτίωση της λειτουργίας των μεϊβομιανών αδένων, Απαλό μασάζ των βλεφάρων όταν ενδείκνυται, τεχνητά δάκρυα για την αντιμετώπιση της συνοδού ξηροφθαλμίας. Σε ορισμένες περιπτώσεις μπορεί να χρειαστούν: αντιβιοτικά κολλύρια ή αλοιφές, Αντιφλεγμονώδη θεραπεία, ειδική αντιμετώπιση της υποκείμενης δερματικής πάθησης. Η βλεφαρίτιδα είναι συχνά μια χρόνια κατάσταση που χρειάζεται συνεχή φροντίδα, καθώς η σωστή υγιεινή των βλεφάρων βοηθά στον έλεγχο των συμπτωμάτων και στη μείωση των υποτροπών.`,
+            "Κριθή – Χαλάζιο": `<strong>Τι είναι το χαλάζιο;</strong><br>Το χαλάζιο είναι μια χρόνια κοκκιωματώδης φλεγμονή των μεϊβομιανών αδένων του βλεφάρου, η οποία προκαλείται από απόφραξη του αδένα και συσσώρευση των εκκρίσεών του.<br><br><strong>Πώς εμφανίζεται;</strong><br>Συνήθως εμφανίζεται ως: στρογγυλή, εντοπισμένη διόγκωση στο βλέφαρο, συνήθως ανώδυνη μάζα, ελαφρύ τοπικό πρήξιμο ή ενόχληση. Τις περισσότερες φορές αποτελεί κυρίως αισθητικό πρόβλημα, αν και σε μεγαλύτερα χαλάζια μπορεί να προκαλεί αίσθημα βάρους ή ακόμη και παροδική θόλωση της όρασης λόγω πίεσης στον κερατοειδή.<br><br><strong>Πώς αντιμετωπίζεται;</strong><br>Η αρχική αντιμετώπιση μπορεί να περιλαμβάνει: ζεστές κομπρέσες, καλή υγιεινή των βλεφάρων, τοπική θεραπεία όταν υπάρχει συνοδός φλεγμονή. Σε περιπτώσεις που επιμένει, η οριστική αντιμετώπιση γίνεται χειρουργικά με διάνοιξη και απόξεση του χαλαζίου υπό τοπική αναισθησία, με αφαίρεση του περιεχομένου του.<br><br><strong>Τι είναι η κριθή (κριθαράκι);</strong><br>Η κριθή ή «κριθαράκι» είναι μια οξεία φλεγμονή των αδένων του βλεφάρου, η οποία συνήθως οφείλεται σε μικροβιακή λοίμωξη, κυρίως από σταφυλόκοκκο.<br><br><strong>Πώς εμφανίζεται;</strong><br>Εμφανίζεται ως: επώδυνη, ερυθρή διόγκωση στο βλέφαρο, τοπική ευαισθησία στην πίεση, αίσθημα θερμότητας και πρήξιμο στην περιοχή. Σε ορισμένες περιπτώσεις μικρή πυώδης συλλογή. Σε αντίθεση με το χαλάζιο, η κριθή είναι συνήθως επώδυνη και εμφανίζεται αιφνίδια.<br><br><strong>Πώς αντιμετωπίζεται;</strong><br>Η θεραπεία περιλαμβάνει συνήθως: ζεστές κομπρέσες για τη διευκόλυνση της παροχέτευσης, σωστή υγιεινή των βλεφάρων, αντιβιοτική αλοιφή ή κολλύριο όταν υπάρχει ένδειξη. Σπανιότερα, όταν δεν υποχωρεί ή δημιουργείται απόστημα, μπορεί να χρειαστεί διάνοιξη και παροχέτευση από τον οφθαλμίατρο. Η αποφυγή πίεσης ή προσπάθειας «σπασίματος» της βλάβης από τον ίδιο τον ασθενή είναι σημαντική, καθώς μπορεί να επιδεινώσει τη φλεγμονή`,
+            "Ξανθελάσματα": `<strong>Τι είναι τα ξανθελάσματα;</strong><br>Τα ξανθελάσματα είναι καλοήθεις βλάβες των βλεφάρων που οφείλονται σε εναπόθεση λιπιδίων (κυρίως χοληστερόλης) στο δέρμα. Εμφανίζονται συχνότερα στην έσω γωνία των άνω και κάτω βλεφάρων και μπορεί να σχετίζονται με διαταραχές του μεταβολισμού των λιπιδίων, όπως αυξημένα επίπεδα χοληστερόλης ή τριγλυκεριδίων στο αίμα. Ωστόσο, μπορεί να εμφανιστούν και σε άτομα με φυσιολογικές τιμές λιπιδίων.<br><br><strong>Πώς εμφανίζονται;</strong><br>Τα ξανθελάσματα εμφανίζονται συνήθως ως: κιτρινωπές, επίπεδες πλάκες στο δέρμα των βλεφάρων, συχνότερα κοντά στην έσω γωνία του ματιού, προς τη μύτη, βλάβες που μπορεί να αυξάνονται σταδιακά σε μέγεθος με την πάροδο του χρόνου. Συνήθως δεν προκαλούν πόνο ή λειτουργικά προβλήματα, αλλά μπορεί να αποτελούν σημαντικό αισθητικό πρόβλημα για τον ασθενή.<br><br><strong>Χρειάζεται θεραπεία;</strong><br>Η παρουσία ξανθελασμάτων αποτελεί ένδειξη για έλεγχο του λιπιδαιμικού προφίλ (χοληστερόλη, LDL, HDL, τριγλυκερίδια), καθώς σε ορισμένες περιπτώσεις μπορεί να συνδέεται με διαταραχές του μεταβολισμού των λιπιδίων. Η αφαίρεση γίνεται όταν υπάρχει αισθητική ενόχληση και μπορεί να πραγματοποιηθεί με διάφορες μεθόδους, ανάλογα με το μέγεθος και τη θέση της βλάβης. Η χειρουργική αφαίρεση πραγματοποιείται συνήθως με τοπική αναισθησία και είναι ανώδυνη. Η επιλογή της κατάλληλης τεχνικής γίνεται με βάση την έκταση της βλάβης, ώστε να επιτευχθεί το καλύτερο δυνατό αισθητικό αποτέλεσμα.`,
+            "Τριχίαση": `<strong>Τι είναι η τριχίαση;</strong><br>Η τριχίαση είναι η παθολογική στροφή των βλεφαρίδων προς τα μέσα, με αποτέλεσμα οι βλεφαρίδες να έρχονται σε επαφή με την επιφάνεια του οφθαλμού. Μπορεί να αφορά το άνω ή συχνότερα το κάτω βλέφαρο και να εμφανίζεται είτε σε μεμονωμένες βλεφαρίδες είτε σε μεγαλύτερο αριθμό βλεφαρίδων. <br><br><strong>Πώς εκδηλώνεται;</strong><br>Η συνεχής επαφή των βλεφαρίδων με τον κερατοειδή και τον επιπεφυκότα μπορεί να προκαλέσει: αίσθημα ξένου σώματος, ερεθισμό και κοκκίνισμα του ματιού, δακρύρροια, πόνο ή φωτοφοβία σε πιο έντονες περιπτώσεις. Εάν η τριχίαση παραμείνει χωρίς αντιμετώπιση, η χρόνια τριβή μπορεί να προκαλέσει βλάβες στην επιφάνεια του κερατοειδούς, όπως διαβρώσεις ή έλκος κερατοειδούς, με πιθανή επίπτωση στην όραση.<br><br><strong>Υπάρχει θεραπεία;</strong><br>Η προσωρινή αντιμετώπιση περιλαμβάνει την αφαίρεση των παθολογικά στραμμένων βλεφαρίδων με ειδική λαβίδα. Ωστόσο, οι βλεφαρίδες συνήθως αναπτύσσονται ξανά και το πρόβλημα μπορεί να επανεμφανιστεί. Η οριστική αντιμετώπιση εξαρτάται από την έκταση και την αιτία της τριχίασης και μπορεί να περιλαμβάνει: χειρουργική διόρθωση της θέσης του βλεφάρου όταν υπάρχει συνοδός ανωμαλία, καταστροφή των θυλάκων των προβληματικών βλεφαρίδων με μεθόδους όπως κρυοπηξία, διαθερμία ή laser. Στόχος της θεραπείας είναι η απομάκρυνση της τριβής των βλεφαρίδων από τον κερατοειδή και η προστασία της οφθαλμικής επιφάνειας.`,
+            "Βλεφαρόπτωση": `<strong>Τι είναι η βλεφαρόπτωση;</strong><br>Η βλεφαρόπτωση είναι η πτώση του άνω βλεφάρου, με αποτέλεσμα ο ασθενής να μην μπορεί να ανοίξει πλήρως το ένα ή και τα δύο μάτια. Μπορεί να αφορά μόνο την αισθητική εμφάνιση ή, όταν το βλέφαρο καλύπτει την κόρη, να επηρεάζει και την όραση περιορίζοντας το άνω οπτικό πεδίο.<br><br><strong>Γιατί συμβαίνει;</strong><br>Οι αιτίες της βλεφαρόπτωσης είναι πολλές και μπορεί να σχετίζονται με διαφορετικούς μηχανισμούς: εκφυλιστική βλεφαρόπτωση: αποτελεί τη συχνότερη μορφή στους ενήλικες και οφείλεται σε χαλάρωση ή αποδυνάμωση της απονεύρωσης του ανελκτήρα μυός του άνω βλεφάρου, συνήθως λόγω ηλικίας, μηχανική βλεφαρόπτωση: προκαλείται από αυξημένο βάρος του βλεφάρου λόγω μορφωμάτων ή άλλων αλλοιώσεων στην περιοχή, παραλυτική βλεφαρόπτωση: οφείλεται σε διαταραχή της νεύρωσης των μυών που συμμετέχουν στην ανύψωση του βλεφάρου, όπως σε πάρεση της 3ης εγκεφαλικής συζυγίας. Συγγενής βλεφαρόπτωση: υπάρχει από τη γέννηση και οφείλεται σε ανωμαλία της ανάπτυξης ή της λειτουργίας του ανελκτήρα μυός. Νευρομυϊκή βλεφαρόπτωση: μπορεί να εμφανιστεί σε παθήσεις όπως η μυασθένεια Gravis, όπου διαταράσσεται η μετάδοση του νευρικού ερεθίσματος προς τον μυ.<br><br><strong>Ποια είναι τα συμπτώματα;</strong><br>Ο ασθενής μπορεί να παρατηρήσει: πτώση του άνω βλεφάρου στο ένα ή και στα δύο μάτια, δυσκολία στο πλήρες άνοιγμα των ματιών, αίσθημα βάρους στα βλέφαρα, αισθητική ενόχληση λόγω της αλλαγής στην εμφάνιση, περιορισμό της όρασης όταν το βλέφαρο καλύπτει μέρος της κόρης, αντισταθμιστική ανύψωση των φρυδιών ή κλίση του κεφαλιού προς τα πίσω για να βλέπει καλύτερα.<br><br><strong>Πώς αντιμετωπίζεται;</strong><br>Η θεραπεία εξαρτάται από την αιτία και τη βαρύτητα της βλεφαρόπτωσης. Στις περισσότερες περιπτώσεις η αντιμετώπιση είναι χειρουργική, με ειδικές τεχνικές που έχουν στόχο την αποκατάσταση της σωστής θέσης και λειτουργίας του βλεφάρου. Η επιλογή της κατάλληλης επέμβασης εξαρτάται από: την αιτία της βλεφαρόπτωσης, τη λειτουργία του ανελκτήρα μυός, το ύψος του βλεφάρου, τα ευρήματα της οφθαλμολογικής εξέτασης. Η επέμβαση πραγματοποιείται συνήθως με τοπική αναισθησία και εξατομικεύεται ανάλογα με τις ανάγκες κάθε ασθενούς.`,
+            "Εντρόπιο / Εκτρόπιο": `<strong>Τι είναι;</strong><br>Το εντρόπιο και το εκτρόπιο είναι διαταραχές της θέσης των βλεφάρων, κατά τις οποίες το χείλος του βλεφάρου μετακινείται από τη φυσιολογική του θέση, προκαλώντας ενοχλήματα και πιθανή επιβάρυνση της οφθαλμικής επιφάνειας.<br><br><strong>Πως εκδηώνονται;</strong><br>Στο εντρόπιο το βλέφαρο στρέφεται προς τα μέσα, με αποτέλεσμα οι βλεφαρίδες να έρχονται σε συνεχή επαφή με την επιφάνεια του ματιού. Ο ασθενής μπορεί να εμφανίζει: αίσθημα ξένου σώματος, ερεθισμό και κοκκίνισμα του ματιού, δακρύρροια, πόνο ή φωτοφοβία σε πιο έντονες περιπτώσεις. Η συνεχής τριβή των βλεφαρίδων μπορεί να προκαλέσει ερεθισμό ή ακόμη και βλάβες στον κερατοειδή. Στο εκτρόπιο το βλέφαρο στρέφεται προς τα έξω, με αποτέλεσμα να μην εφαρμόζει σωστά πάνω στον οφθαλμό. Αυτό έχει ως αποτέλεσμα: τα δάκρυα να μην κατανέμονται σωστά στην επιφάνεια του ματιού, να εμφανίζεται έντονη δακρύρροια, να προκαλείται ξηρότητα και αίσθημα ξένου σώματος, να υπάρχει ερεθισμός της οφθαλμικής επιφάνειας.<br><br><strong>Πού οφείλονται;</strong><br>Η συχνότερη αιτία τόσο του εντροπίου όσο και του εκτροπίου είναι η χαλάρωση των υποστηρικτικών δομών του βλεφάρου λόγω ηλικίας (εκφυλιστικό). Ουλώδες: λόγω ουλών μετά από τραυματισμούς, εγκαύματα ή προηγούμενες χειρουργικές επεμβάσεις. Σπαστικό: λόγω ακούσιου σπασμού των μυών του βλεφάρου. Παραλυτικό: λόγω διαταραχής της νεύρωσης, όπως σε πάρεση του προσωπικού νεύρου Μηχανικό: λόγω παρουσίας όγκων ή άλλων μορφωμάτων στην περιοχή των βλεφάρων <br><br><strong>Υπάρχει θεραπεία;</strong><br>Η οριστική αντιμετώπιση τόσο του εντροπίου όσο και του εκτροπίου είναι συνήθως χειρουργική. Η επέμβαση πραγματοποιείται με ειδικές τεχνικές αποκατάστασης των βλεφάρων, με στόχο την επαναφορά της φυσιολογικής θέσης τους και την προστασία της οφθαλμικής επιφάνειας. Η επιλογή της κατάλληλης τεχνικής εξαρτάται από: την αιτία της διαταραχής, τον βαθμό χαλάρωσης του βλεφάρου, τα ευρήματα της οφθαλμολογικής εξέτασης. Οι επεμβάσεις γίνονται συνήθως με τοπική αναισθησία και έχουν ως στόχο τόσο τη βελτίωση των συμπτωμάτων όσο και τη διατήρηση της υγείας του κερατοειδούς.`,
+            "Βλεφαροχάλαση/ Δερματοχάλαση": `<strong>Τι είναι η βλεφαροχάλαση;</strong><br>Η βλεφαροχάλαση είναι μια σπάνια πάθηση των βλεφάρων που συχνά συγχέεται με τη δερματοχάλαση. Χαρακτηρίζεται από επαναλαμβανόμενα επεισόδια οιδήματος (πρηξίματος) των άνω βλεφάρων, τα οποία με την πάροδο του χρόνου προκαλούν λέπτυνση, χαλάρωση και ρυτίδωση του δέρματος. Σε αντίθεση με τη δερματοχάλαση, η οποία εμφανίζεται κυρίως σε μεγαλύτερες ηλικίες, η βλεφαροχάλαση συνήθως ξεκινά σε εφηβική ή νεαρή ηλικία. Η διάκριση μεταξύ των δύο καταστάσεων είναι σημαντική, καθώς πρόκειται για διαφορετικές παθήσεις με διαφορετικό μηχανισμό εμφάνισης και αντιμετώπισης.<br><br><strong>Τι είναι η δερματοχάλαση;</strong><br>Η δερματοχάλαση είναι η χαλάρωση και περίσσεια του δέρματος των βλεφάρων, η οποία εμφανίζεται συχνότερα με την πάροδο της ηλικίας λόγω απώλειας της ελαστικότητας των ιστών. Αποτελεί κυρίως αισθητικό πρόβλημα, αλλά σε ορισμένες περιπτώσεις η περίσσεια του δέρματος στα άνω βλέφαρα μπορεί να περιορίζει και το άνω οπτικό πεδίο. Ο ασθενής συνήθως αντιλαμβάνεται: «βαριά» ή πεσμένα άνω βλέφαρα, περίσσεια δέρματος σαν «καπάκια» στα άνω βλέφαρα, «σακούλες» κάτω από τα μάτια λόγω χαλάρωσης των κάτω βλεφάρων και προβολής του λίπους της περιοχής <br><br><strong>Πώς αντιμετωπίζεται;</strong><br>Η αντιμετώπιση της δερματοχάλασης είναι χειρουργική, με τη διενέργεια βλεφαροπλαστικής. Η επέμβαση έχει στόχο την αφαίρεση της περίσσειας δέρματος και, όταν απαιτείται, τη διόρθωση της προβολής του λίπους των βλεφάρων. Πραγματοποιείται συνήθως με τοπική αναισθησία, είναι ανώδυνη για τον ασθενή και εξατομικεύεται ανάλογα με τις ανάγκες κάθε περίπτωσης.
+`
+        }
+    },
+    "Δακρυοκυστίτιδα": {
+        icon: "fa-tint",
+        items: {
+            "Δακρυοκυστίτιδα": `<strong>Τι είναι η δακρύρροια;</strong><br>Η δακρύρροια είναι η υπερβολική παρουσία δακρύων στην επιφάνεια του ματιού και μπορεί να οφείλεται είτε σε αυξημένη παραγωγή δακρύων είτε σε διαταραχή της αποχέτευσής τους. Όταν τα δάκρυα παράγονται σε μεγαλύτερη ποσότητα λόγω ερεθισμού του ματιού, χρησιμοποιείται ο όρος δακρύρροια. Όταν η παραγωγή δακρύων είναι φυσιολογική, αλλά υπάρχει δυσκολία στην αποχέτευσή τους μέσω της δακρυϊκής οδού, τότε πρόκειται για επιφορά. Στην περίπτωση αυτή τα δάκρυα λιμνάζουν και κυλούν προς τα έξω από τα βλέφαρα.<br><br><strong>Ποια είναι τα συμπτώματα;</strong><br>Ο ασθενής μπορεί να αισθάνεται ότι: τα δάκρυα κυλούν συνεχώς από τα μάτια, χρειάζεται να σκουπίζει συχνά τα μάτια του, η όραση θολώνει παροδικά λόγω της παρουσίας δακρύων στην επιφάνεια του κερατοειδούς, υπάρχει ερεθισμός ή αίσθημα υγρασίας γύρω από τα μάτια. Η συνεχής δακρύρροια μπορεί να επηρεάσει σημαντικά την καθημερινότητα, την εργασία και την οδήγηση.<br><br><strong>Πού οφείλεται;</strong><br>Η δακρύρροια μπορεί να προκληθεί από διάφορες καταστάσεις, όπως: στένωση ή απόφραξη των δακρυϊκών σημείων και σωληναρίων, απόφραξη του ρινοδακρυϊκού πόρου, φλεγμονή ή λοίμωξη του δακρυϊκού ασκού (δακρυοκυστίτιδα), ερεθισμό της οφθαλμικής επιφάνειας, όπως ξηροφθαλμία ή επιπεφυκίτιδα.<br><br><strong>Πώς αντιμετωπίζεται η δακρυοκυστίτιδα;</strong><br>Η αντιμετώπιση εξαρτάται από το αν πρόκειται για οξεία ή χρόνια μορφή. Η οξεία δακρυοκυστίτιδα εμφανίζεται με: έντονο πόνο και ευαισθησία στην περιοχή μεταξύ του ματιού και της μύτης, ερυθρότητα και οίδημα (πρήξιμο), πιθανή έκκριση πύου από τα δακρυϊκά σημεία. Απαιτεί άμεση αντιμετώπιση, συνήθως με κατάλληλη αντιβιοτική αγωγή και παρακολούθηση από οφθαλμίατρο. Η χρόνια δακρυοκυστίτιδα μετά από επαναλαμβανόμενα επεισόδια μπορεί να δημιουργηθεί μόνιμη απόφραξη της δακρυϊκής οδού, με αποτέλεσμα συνεχή δακρύρροια. Η οριστική θεραπεία σε αυτές τις περιπτώσεις είναι χειρουργική και ονομάζεται δακρυοασκορινοστομία (DCR). Κατά την επέμβαση δημιουργείται νέα επικοινωνία μεταξύ του δακρυϊκού ασκού και της ρινικής κοιλότητας, ώστε τα δάκρυα να αποχετεύονται φυσιολογικά. Μία πλήρης οφθαλμολογική εξέταση, συμπεριλαμβανομένου του ελέγχου της βατότητας της δακρυϊκής οδού, είναι απαραίτητη για τον εντοπισμό της αιτίας και την επιλογή της κατάλληλης θεραπείας.`
+        }
+    },
+    "Όγκοι και μορφώματα": {
+        icon: "fa-circle",
+        items: {
+            "Σπίλος επιπεφυκότα": `<strong>Τι είναι ο σπίλος επιπεφυκότα;</strong><br>Ο σπίλος του επιπεφυκότα είναι μία καλοήθης μελαγχρωματική αλλοίωση του επιπεφυκότα, δηλαδή του λεπτού διαφανούς υμένα που καλύπτει το λευκό μέρος του ματιού (σκληρό χιτώνα). Αποτελεί μία συχνή βλάβη και συνήθως εμφανίζεται ως μία επίπεδη ή ελαφρώς υπεγερμένη καφέ ή μαύρη κηλίδα στην επιφάνεια του ματιού.<br><br><strong>Πως εμφανίζεται;</strong><br>Στις περισσότερες περιπτώσεις ο σπίλος επιπεφυκότα αποτελεί τυχαίο εύρημα και δεν προκαλεί συμπτώματα. Ο ασθενής μπορεί να παρατηρήσει μία χρωματιστή κηλίδα στο λευκό του ματιού, η οποία μπορεί να παραμένει σταθερή για πολλά χρόνια.<br><br><strong>Χρειάζεται παρακολούθηση;</strong><br>Παρότι οι περισσότεροι σπίλοι επιπεφυκότα είναι καλοήθεις, απαιτείται οφθαλμολογικός έλεγχος, ιδιαίτερα όταν παρατηρούνται αλλαγές στο μέγεθος, στο χρώμα, στο σχήμα ή στην αγγείωσή τους. Η φωτογράφηση της βλάβης και η σύγκριση μελλοντικά βοηθούν στην παρακολούθηση πιθανών μεταβολών και στην έγκαιρη αναγνώριση σπάνιων περιπτώσεων που μπορεί να χρειάζονται περαιτέρω διερεύνηση.`,
+            "Σπίλος ίριδας / οπίσθιου πόλου": `<strong>Τι είναι οι σπίλοι του οφθαλμού;</strong><br>Οι σπίλοι του οφθαλμού είναι καλοήθεις μελαγχρωματικές αλλοιώσεις, αντίστοιχες με τις ελιές που εμφανίζονται στο δέρμα. Μπορούν να εμφανιστούν σε διάφορες δομές του ματιού, συχνότερα στην ίριδα ή στον χοριοειδή χιτώνα.<br><br><strong>Τι είναι ο σπίλος ίριδας;</strong><br> Ο σπίλος της ίριδας είναι μία επίπεδη ή ελαφρώς υπεγερμένη χρωματιστή αλλοίωση που εντοπίζεται στην ίριδα, δηλαδή στο έγχρωμο τμήμα του ματιού. Συνήθως αποτελεί τυχαίο εύρημα κατά την οφθαλμολογική εξέταση και δεν προκαλεί συμπτώματα. Σε ορισμένες περιπτώσεις μπορεί να παρουσιάσει μεταβολές στο μέγεθος, στο χρώμα ή στη μορφολογία του και για αυτό απαιτείται τακτική παρακολούθηση.<br><br><strong>Τι είναι ο σπίλος οπίσθιου πόλου;</strong><br> Ο σπίλος οπισθίου πόλου είναι μία καλοήθης μελαγχρωματική αλλοίωση που εντοπίζεται στον χοριοειδή, δηλαδή τη στιβάδα κάτω από τον αμφιβληστροειδή που περιέχει τα αγγεία τα οποία τροφοδοτούν το μάτι. Συνήθως δεν προκαλεί συμπτώματα και ανακαλύπτεται κατά τη βυθοσκόπηση. Σπάνια μπορεί να παρουσιάσει ανάπτυξη και να εξελιχθεί σε μελάνωμα χοριοειδούς, γι’ αυτό η συστηματική παρακολούθηση είναι σημαντική.<br><br><strong>Πώς γίνεται η παρακολούθηση;</strong><br>Η εκτίμηση ενός σπίλου περιλαμβάνει λεπτομερή οφθαλμολογική εξέταση και, ανάλογα με την περίπτωση, μπορεί να χρειαστούν: φωτογράφηση για καταγραφή της μορφολογίας και σύγκριση στην πορεία του χρόνου, OCT όταν η βλάβη βρίσκεται κοντά στην ωχρά, υπερηχογράφημα οφθαλμού σε επιλεγμένες περιπτώσεις. Η τακτική παρακολούθηση επιτρέπει την έγκαιρη ανίχνευση πιθανών αλλαγών και τη σωστή αντιμετώπιση όταν χρειάζεται.`,
+            "Μελάνωμα χοριοειδούς": `<strong>Τι είναι το μελάνωμα χοριοειδούς;</strong><br>Το μελάνωμα χοριοειδούς είναι ο συχνότερος κακοήθης πρωτοπαθής όγκος του οφθαλμού στους ενήλικες. Προέρχεται από τα μελανοκύτταρα του χοριοειδούς, του αγγειοβριθούς δηλαδή χιτώνα που βρίσκεται κάτω από τον αμφιβληστροειδή και είναι υπεύθυνος για την αιμάτωσή του.<br><br><strong>Πως εμφανίζεται;</strong><br>Το μελάνωμα χοριοειδούς μπορεί στα αρχικά στάδια να μην προκαλεί κανένα σύμπτωμα και να ανακαλύπτεται τυχαία κατά τη διάρκεια μιας οφθαλμολογικής εξέτασης. Όταν μεγαλώσει μπορεί να προκαλέσει θόλωση της όρασης, παραμόρφωση των εικόνων (μεταμορφοψίες), ελαττώματα στο οπτικό πεδίο, λάμψεις (φωτοψίες) ή σπανιότερα πόνο και αύξηση της ενδοφθάλμιας πίεσης.<br><br><strong>Πώς γίνεται η διάγνωση;</strong><br>Η διάγνωση γίνεται με λεπτομερή βυθοσκόπηση και συμπληρώνεται με εξειδικευμένες εξετάσεις όπως υπερηχογράφημα οφθαλμού, OCT, φωτογράφηση βυθού και, σε ειδικές περιπτώσεις, άλλες απεικονιστικές εξετάσεις. Η έγκαιρη διάγνωση είναι ιδιαίτερα σημαντική, καθώς ο όγκος μπορεί να δώσει μεταστάσεις, κυρίως στο ήπαρ.<br><br><strong>Πως αντιμετωπίζεται;</strong><br>Η αντιμετώπιση εξαρτάται από το μέγεθος, τη θέση και τα χαρακτηριστικά του όγκου. Μπορεί να περιλαμβάνει στενή παρακολούθηση σε μικρούς όγκους με χαμηλή πιθανότητα ανάπτυξης, ακτινοθεραπεία με ειδικές τεχνικές (όπως βραχυθεραπεία με ραδιενεργό πλάκα ή ακτινοθεραπεία με πρωτόνια), χειρουργικές τεχνικές ή, σε προχωρημένες περιπτώσεις, πιο εκτεταμένες θεραπείες σε συνεργασία με ογκολόγους. Η τακτική οφθαλμολογική εξέταση και η έγκαιρη ανίχνευση ύποπτων αλλοιώσεων συμβάλλουν καθοριστικά στη διατήρηση της όρασης και στη σωστή αντιμετώπιση της νόσου.`,
+            "Ρετινοβλάστωμα": `<strong>Τι είναι το ρετινοβλάστωμα;</strong><br>Το ρετινοβλάστωμα είναι ο συχνότερος κακοήθης ενδοφθάλμιος όγκος της παιδικής ηλικίας. Αναπτύσσεται από τα κύτταρα του αμφιβληστροειδούς και εμφανίζεται συνήθως σε παιδιά μικρότερα των 5 ετών. Μπορεί να προσβάλλει το ένα ή και τα δύο μάτια και σε ορισμένες περιπτώσεις σχετίζεται με κληρονομική προδιάθεση.<br><br><strong>Πώς εμφανίζεται;</strong><br>Το συχνότερο σύμπτωμα είναι η λευκοκορία, δηλαδή η εμφάνιση ενός λευκού αντανακλαστικού στην κόρη του ματιού, το οποίο συχνά γίνεται αντιληπτό σε φωτογραφίες με φλας. Άλλα πιθανά συμπτώματα είναι ο στραβισμός, η ερυθρότητα, η μείωση της όρασης και, σπανιότερα, ο πόνος ή η αύξηση του μεγέθους του οφθαλμού.<br><br><strong>Πώς γίνεται η διάγνωση;</strong><br>Η διάγνωση βασίζεται στην οφθαλμολογική εξέταση και επιβεβαιώνεται με εξειδικευμένες εξετάσεις, όπως υπερηχογράφημα και μαγνητική τομογραφία. Σε περιπτώσεις με οικογενειακό ιστορικό μπορεί να χρειαστεί και γενετικός έλεγχος.<br><br><strong>Πώς αντιμετωπίζεται;</strong><br>Η αντιμετώπιση εξαρτάται από το μέγεθος και την έκταση του όγκου. Η αντιμετώπιση του ρετινοβλαστώματος εξαρτάται από το μέγεθος και την έκταση του όγκου, καθώς και από το αν προσβάλλεται το ένα ή και τα δύο μάτια. Η θεραπεία πραγματοποιείται σε εξειδικευμένα οφθαλμοογκολογικά κέντρα, σε συνεργασία με παιδοογκολόγους και άλλες ιατρικές ειδικότητες. Στόχος είναι πρωτίστως η προστασία της ζωής του παιδιού και, όπου είναι δυνατόν, η διατήρηση του οφθαλμού και της όρασης. Στόχος είναι πρωτίστως η προστασία της ζωής του παιδιού και, όπου είναι δυνατόν, η διατήρηση του οφθαλμού και της όρασης. Η έγκαιρη διάγνωση του ρετινοβλαστώματος είναι ιδιαίτερα σημαντική και οποιαδήποτε εμφάνιση λευκής κόρης ή στραβισμού σε μικρό παιδί πρέπει να αξιολογείται άμεσα από οφθαλμίατρο.`,
+            "Όγκοι βλεφάρων": `<strong>Τι είναι ένας όγκος;</strong><br>Όγκος είναι η ανώμαλη ανάπτυξη κυττάρων ή ιστών σε μία περιοχή του σώματος. Οι όγκοι μπορεί να είναι: Καλοήθεις, όταν αναπτύσσονται τοπικά και δεν διηθούν άλλους ιστούς. Κακοήθεις, όταν έχουν τη δυνατότητα να διηθούν τους γύρω ιστούς και σε ορισμένες περιπτώσεις να εξαπλώνονται σε άλλα σημεία του σώματος (μεταστάσεις). Μία μεγάλη ποικιλία καλοήθων και κακοήθων όγκων μπορεί να εμφανιστεί στα βλέφαρα και στις γειτονικές δομές του οφθαλμού. Η έγκαιρη αξιολόγηση κάθε ύποπτης βλάβης είναι σημαντική για τη σωστή διάγνωση και αντιμετώπιση.<br><br><strong>Πώς εκδηλώνονται οι όγκοι των βλεφάρων;</strong><br>Τα συμπτώματα εξαρτώνται από το είδος, τη θέση και το μέγεθος του όγκου. Μία βλάβη στο βλέφαρο μπορεί να εμφανιστεί ως: νέα ή μεταβαλλόμενη δερματική αλλοίωση, οζίδιο ή διόγκωση στο βλέφαρο, επίμονο οίδημα ή ερυθρότητα, απώλεια βλεφαρίδων στην περιοχή της βλάβης (μαδάρωση), πληγή που δεν επουλώνεται, ενόχληση, ερεθισμός ή αίσθημα ξένου σώματος. Ιδιαίτερη προσοχή χρειάζονται βλάβες που αλλάζουν μορφή, μεγαλώνουν, αιμορραγούν ή επιμένουν παρά τη συνήθη θεραπεία.<br><br><strong>Ποιοι όγκοι εμφανίζονται στα βλέφαρα;</strong><br>Οι συχνότεροι καλοήθεις όγκοι των βλεφάρων περιλαμβάνουν διάφορες κύστεις και δερματικές βλάβες, ενώ οι συχνότεροι κακοήθεις όγκοι είναι: βασικοκυτταρικό καρκίνωμα (ο συχνότερος κακοήθης όγκος των βλεφάρων), ακανθοκυτταρικό καρκίνωμα, καρκίνωμα των σμηγματογόνων αδένων, μελάνωμα, λέμφωμα, καρκίνωμα κυττάρων Merkel, άλλοι σπανιότεροι όγκοι, όπως το σάρκωμα Kaposi.<br><br><strong>Πώς γίνεται η διάγνωση;</strong><br>Η διάγνωση βασίζεται στην κλινική εξέταση από τον οφθαλμίατρο και, όταν υπάρχει υποψία, μπορεί να απαιτηθεί βιοψία για ιστολογική επιβεβαίωση. Σε ορισμένες χαρακτηριστικές βλάβες η αφαίρεση μπορεί να πραγματοποιηθεί ταυτόχρονα με τη λήψη δείγματος για εξέταση. Η επιλογή της κατάλληλης μεθόδου εξαρτάται από τη μορφή, τη θέση και τα χαρακτηριστικά του όγκου.<br><br><strong>Πώς αντιμετωπίζονται;</strong><br>Η θεραπεία των κακοήθων όγκων των βλεφάρων είναι κυρίως χειρουργική, με πλήρη αφαίρεση της βλάβης και εξασφάλιση υγιών ορίων. Λόγω της ιδιαίτερα σύνθετης ανατομίας των βλεφάρων, η χειρουργική αντιμετώπιση απαιτεί λεπτομερή σχεδιασμό, ώστε να επιτευχθεί τόσο η ογκολογική ασφάλεια όσο και η διατήρηση της λειτουργίας και της εμφάνισης του βλεφάρου. Η έγκαιρη διάγνωση και αντιμετώπιση αυξάνει σημαντικά τις πιθανότητες επιτυχούς θεραπείας.`
+        }
+    },
+    "Ραγοειδίτιδα": {
+        icon: "fa-circle",
+        items: {
+            "Ραγοειδίτιδα / Ιριδοκυκλίτιδα": `<strong>Τι είναι η ραγοειδίτιδα;</strong><br>Η ραγοειδίτιδα είναι η φλεγμονή του ραγοειδούς χιτώνα, δηλαδή της αγγειοβριθούς στιβάδας του ματιού που αποτελείται από την ίριδα, το ακτινωτό σώμα και τον χοριοειδή.Ανάλογα με την περιοχή που προσβάλλεται, διακρίνεται σε: Πρόσθια ραγοειδίτιδα (ιρίτιδα ή ιριδοκυκλίτιδα), όταν αφορά κυρίως την ίριδα και το ακτινωτό σώμα. Ενδιάμεση ραγοειδίτιδα, όταν αφορά κυρίως το υαλοειδές και την περιοχή πίσω από το ακτινωτό σώμα. Οπίσθια ραγοειδίτιδα, όταν προσβάλλονται ο χοριοειδής και ο αμφιβληστροειδής. Πανραγοειδίτιδα, όταν η φλεγμονή αφορά όλα τα τμήματα του ραγοειδούς. Η ραγοειδίτιδα μπορεί να είναι οξεία ή χρόνια και απαιτεί έγκαιρη διάγνωση και θεραπεία, καθώς σε ορισμένες περιπτώσεις μπορεί να επηρεάσει σημαντικά την όραση.<br><br><strong>Πού οφείλεται;</strong><br>Η ραγοειδίτιδα μπορεί να οφείλεται σε διάφορα αίτια. Στις περισσότερες περιπτώσεις δεν προκαλείται από άμεση μόλυνση του ματιού, αλλά σχετίζεται με διαταραχή του ανοσοποιητικού συστήματος. Μπορεί να συνδέεται με: Αυτοάνοσα ή φλεγμονώδη νοσήματα, όπως: αγκυλοποιητική σπονδυλαρθρίτιδα, ψωριασική αρθρίτιδα, ρευματοειδή αρθρίτιδα, φλεγμονώδεις παθήσεις του εντέρου (νόσος Crohn, ελκώδης κολίτιδα), σαρκοείδωση και άλλα συστηματικά νοσήματα, λοιμώξεις, όπως από ιούς (π.χ. έρπητα), βακτήρια, παράσιτα ή μύκητες, άγνωστη αιτία (ιδιοπαθής ραγοειδίτιδα), όταν δεν ανευρίσκεται συγκεκριμένος παράγοντας.<br><br><strong>Ποια είναι τα συμπτώματα;</strong><br> Τα συμπτώματα εξαρτώνται από τον τύπο και τη βαρύτητα της φλεγμονής. Στην πρόσθια ραγοειδίτιδα ο ασθενής μπορεί να εμφανίσει: βαθύ πόνο στο μάτι, έντονη ενόχληση στο φως (φωτοφοβία), ερυθρότητα γύρω από την ίριδα, δακρύρροια, θολή όραση, μείωση της όρασης. Σε οπίσθιες ραγοειδίτιδες μπορεί να κυριαρχούν η θολή όραση, τα μυγάκια (μυοψίες) ή η εμφάνιση σκιών στο οπτικό πεδίο, ακόμη και χωρίς έντονο πόνο ή κοκκίνισμα.<br><br><strong>Ποια είναι τα συμπτώματα;</strong><br>Στην πρόσθια ραγοειδίτιδα: βαθύς πόνος, φωτοφοβία, ερυθρότητα, δακρύρροια, θολή όραση. Σε οπίσθιες μορφές μπορεί να κυριαρχούν η θολή όραση, τα μυγάκια ή οι σκιές στο οπτικό πεδίο.<br><br><strong>Πώς αντιμετωπίζεται;</strong><br>Η θεραπεία εξαρτάται από το είδος, την αιτία και τη βαρύτητα της ραγοειδίτιδας. Συχνά χρησιμοποιούνται: κορτιζονούχα κολλύρια στην πρόσθια ραγοειδίτιδα για την καταστολή της φλεγμονής, κυκλοπληγικά κολλύρια, τα οποία διαστέλλουν την κόρη, μειώνουν τον πόνο και βοηθούν στην πρόληψη συμφύσεων, συστηματική κορτιζόνη ή ανοσοτροποποιητική θεραπεία σε πιο εκτεταμένες ή υποτροπιάζουσες μορφές, ειδική αντιμικροβιακή θεραπεία, όταν υπάρχει αποδεδειγμένη λοιμώδης αιτία. Απαραίτητη είναι η στενή παρακολούθηση από οφθαλμίατρο, καθώς η ραγοειδίτιδα μπορεί να προκαλέσει επιπλοκές όπως αύξηση της ενδοφθάλμιας πίεσης, καταρράκτη, οίδημα ωχράς κηλίδας ή μόνιμη μείωση της όρασης. Σε περιπτώσεις υποτροπών ή υποψίας συστηματικού νοσήματος μπορεί να χρειαστεί περαιτέρω εργαστηριακός έλεγχος και συνεργασία με άλλες ειδικό`
+        }
+    },
+    "Νευρο-οφθαλμολογικές παθήσεις": {
+        icon: "fa-brain",
+        items: {
+            "Νευρο-οφθαλμολογικές παθήσεις": `<strong>Τι είναι οι νευρο-οφθαλμολογικές παθήσεις;</strong><br>Οι νευρο-οφθαλμολογικές παθήσεις αφορούν διαταραχές που επηρεάζουν τη σχέση μεταξύ του οφθαλμού και του νευρικού συστήματος, δηλαδή την οπτική οδό που ξεκινά από τον αμφιβληστροειδή και το οπτικό νεύρο και καταλήγει στον εγκέφαλο. Η σωστή λειτουργία της όρασης δεν εξαρτάται μόνο από την υγεία του ματιού, αλλά και από την ομαλή μετάδοση και επεξεργασία των οπτικών πληροφοριών από τον εγκέφαλο.<br><br><strong>Ποιες παθήσεις περιλαμβάνονται;</strong><br>Στις νευρο-οφθαλμολογικές παθήσεις περιλαμβάνονται μεταξύ άλλων: παθήσεις του οπτικού νεύρου, όπως η οπτική νευρίτιδα (η οποία μπορεί να σχετίζεται με πολλαπλή σκλήρυνση), η πρόσθια ισχαιμική οπτική νευροπάθεια (Π.Ι.Ο.Ν.) και άλλες μορφές βλάβης του οπτικού νεύρου, διαταραχές της οπτικής οδού, οι οποίες μπορεί να σχετίζονται με παθήσεις του εγκεφάλου και να προκαλούν διαταραχές του οπτικού πεδίου, διαταραχές των οφθαλμικών κινήσεων και διπλωπία (διπλή όραση) λόγω διαταραχής της λειτουργίας των οφθαλμοκινητικών νεύρων (III, IV, VI εγκεφαλικές συζυγίες) ή των οφθαλμικών μυών, παραλύσεις κρανιακών νεύρων, όπως η πάρεση του προσωπικού νεύρου (VII εγκεφαλική συζυγία), που μπορεί να προκαλέσει αδυναμία σύγκλεισης των βλεφάρων (λαγόφθαλμο), διαταραχές της κόρης και της αντανακλαστικής λειτουργίας του ματιού, όπως η ανισοκορία, νυσταγμός, δηλαδή ακούσιες ρυθμικές κινήσεις των οφθαλμών, που μπορεί να σχετίζονται με διαταραχές του κεντρικού νευρικού συστήματος, όπως η πολλαπλή σκλήρυνση, παθήσεις της παρεγκεφαλίδας ή του αιθουσαίου συστήματος, ανωμαλίες της οπτικής οξύτητας ή του οπτικού πεδίου που δεν εξηγούνται από πρόβλημα του ίδιου του οφθαλμού.<br><br><strong>Ποια συμπτώματα πρέπει να μας οδηγήσουν στον οφθαλμίατρο;</strong><br>Τα συμπτώματα που μπορεί να σχετίζονται με νευρο-οφθαλμολογικές παθήσεις περιλαμβάνουν: ξαφνική ή σταδιακή μείωση της όρασης, απώλεια τμήματος του οπτικού πεδίου, θόλωση της όρασης που δεν βελτιώνεται με γυαλιά, διπλωπία (διπλή εικόνα), πόνο κατά την κίνηση του ματιού, αλλαγές στην αντίδραση της κόρης, νέα εμφάνιση πονοκεφάλων σε συνδυασμό με οπτικά συμπτώματα<br><br><strong>Πώς γίνεται η διάγνωση;</strong><br>Η διερεύνηση απαιτεί λεπτομερή οφθαλμολογικό και νευρο-οφθαλμολογικό έλεγχο, ο οποίος μπορεί να περιλαμβάνει: πλήρη οφθαλμολογική εξέταση και βυθοσκόπηση, έλεγχο οπτικής οξύτητας και χρωματικής αντίληψης, εξέταση οπτικών πεδίων, OCT οπτικού νεύρου και στιβάδας νευρικών ινών του αμφιβληστροειδούς, απεικονιστικό έλεγχο (όπως μαγνητική τομογραφία), όταν κρίνεται απαραίτητο, συνεργασία με νευρολόγο ή άλλες ειδικότητες ανάλογα με τα ευρήματα<br><br><strong>Αντιμετώπιση</strong><br>Η θεραπεία εξαρτάται από την αιτία της πάθησης. Μπορεί να περιλαμβάνει φαρμακευτική αγωγή, αντιμετώπιση υποκείμενων νοσημάτων ή συνεργασία με άλλες ιατρικές ειδικότητες.Η έγκαιρη διάγνωση είναι ιδιαίτερα σημαντική, καθώς ορισμένες νευρο-οφθαλμολογικές παθήσεις μπορούν να αντιμετωπιστούν αποτελεσματικά όταν αναγνωριστούν εγκαίρως.`
+        }
+    },
+    "Παιδοοφθαλμολογία": {
+        icon: "fa-child",
+        items: {
+            "Αμβλυωπία": `<strong>Τι είναι η αμβλυωπία;</strong><br>Η αμβλυωπία είναι η μειωμένη ανάπτυξη της όρασης σε ένα ή και στα δύο μάτια κατά την παιδική ηλικία, χωρίς να υπάρχει κάποια εμφανής οργανική βλάβη στο μάτι. Η μειωμένη οπτική οξύτητα δεν βελτιώνεται πλήρως με τη χρήση των κατάλληλων γυαλιών, καθώς ο εγκέφαλος δεν έχει αναπτύξει φυσιολογικά την ικανότητα να επεξεργάζεται τις οπτικές πληροφορίες από το συγκεκριμένο μάτι. Συχνά αναφέρεται ως «τεμπέλικο μάτι», όρος που περιγράφει τη λειτουργική αδυναμία του ματιού και όχι κάποια πραγματική αδράνεια ή βλάβη του ίδιου του οφθαλμού.<br><br><strong>Γιατί συμβαίνει η αμβλυωπία;</strong><br>Η αμβλυωπία εμφανίζεται όταν η φυσιολογική ανάπτυξη της όρασης διαταράσσεται κατά την κρίσιμη περίοδο της παιδικής ηλικίας. Οι συχνότερες αιτίες είναι: στραβισμός, όπου τα δύο μάτια δεν συνεργάζονται σωστά και ο εγκέφαλος μπορεί να «αγνοεί» την εικόνα από το ένα μάτι, μεγάλη διαφορά στη διαθλαστική ανωμαλία μεταξύ των δύο ματιών (ανισομετρωπία), με αποτέλεσμα το ένα μάτι να μην αναπτύσσει φυσιολογική όραση, μεγάλος βαθμός μυωπίας, υπερμετρωπίας ή αστιγματισμού, καταστάσεις που εμποδίζουν την είσοδο του φωτός στο μάτι, όπως συγγενής καταρράκτης, θολερότητες του κερατοειδούς, σημαντική βλεφαρόπτωση ή άλλες παθήσεις των βλεφάρων και των οφθαλμικών μέσων.<br><br><strong>Πώς αντιμετωπίζεται η αμβλυωπία;</strong><br>Η έγκαιρη διάγνωση και θεραπεία είναι καθοριστικής σημασίας για την ανάπτυξη της όρασης. Όσο νωρίτερα ξεκινήσει η αντιμετώπιση, τόσο μεγαλύτερες είναι οι πιθανότητες βελτίωσης. Η θεραπεία μπορεί να περιλαμβάνει: διόρθωση της διαθλαστικής ανωμαλίας με γυαλιά. κάλυψη του υγιούς ματιού (θεραπεία με οφθαλμικό επίθεμα), ώστε να ενισχυθεί η χρήση του αμβλυωπικού ματιού, αντιμετώπιση του στραβισμού, όταν υπάρχει, με την κατάλληλη θεραπεία ή χειρουργική επέμβαση, αντιμετώπιση οποιασδήποτε αιτίας που εμποδίζει την οπτική ανάπτυξη, όπως ο συγγενής καταρράκτης. Η θεραπεία είναι πιο αποτελεσματική κατά τα πρώτα χρόνια της ζωής, όταν το οπτικό σύστημα βρίσκεται ακόμη σε ανάπτυξη. Για τον λόγο αυτό, ο προληπτικός οφθαλμολογικός έλεγχος στην παιδική ηλικία είναι ιδιαίτερα σημαντικός.`,
+            "Στραβισμός": `<strong>Τι είναι ο στραβισμός;</strong><br>Ο στραβισμός είναι η διαταραχή της ευθυγράμμισης των δύο ματιών, με αποτέλεσμα τα μάτια να μην κοιτούν ταυτόχρονα προς την ίδια κατεύθυνση. Μπορεί να εμφανιστεί στην παιδική ηλικία ή να παρουσιαστεί αργότερα στη ζωή.<br><br><strong>Πού οφείλεται;</strong><br>Ο στραβισμός μπορεί να οφείλεται σε διαταραχή της συνεργασίας των οφθαλμοκινητικών μυών και νεύρων, σε διαθλαστικές ανωμαλίες (όπως η υπερμετρωπία), σε προβλήματα ανάπτυξης της διόφθαλμης όρασης ή σε νευρολογικές παθήσεις. Στους ενήλικες μπορεί επίσης να εμφανιστεί μετά από πάρεση κρανιακού νεύρου, τραύμα ή άλλες παθήσεις του οφθαλμού ή του νευρικού συστήματος.<br><br><strong>Πώς εμφανίζεται;</strong><br>Ο ασθενής ή οι γονείς ενός παιδιού μπορεί να παρατηρήσουν ότι το ένα μάτι αποκλίνει προς τα μέσα, προς τα έξω, προς τα πάνω ή προς τα κάτω. Στα παιδιά ο στραβισμός μπορεί να οδηγήσει σε αμβλυωπία («τεμπέλικο μάτι») λόγω μη φυσιολογικής ανάπτυξης της όρασης.Στους ενήλικες μπορεί να προκαλέσει διπλωπία (διπλή όραση), δυσκολία στην εκτίμηση των αποστάσεων και οπτική κόπωση.<br><br><strong>Πώς αντιμετωπίζεται;</strong><br>Η αντιμετώπιση εξαρτάται από την αιτία και την ηλικία του ασθενούς. Μπορεί να περιλαμβάνει διόρθωση με γυαλιά, θεραπεία αμβλυωπίας, ασκήσεις σε επιλεγμένες περιπτώσεις, χρήση πρισμάτων ή χειρουργική διόρθωση των οφθαλμοκινητικών μυών όταν απαιτείται. Η έγκαιρη διάγνωση στην παιδική ηλικία είναι ιδιαίτερα σημαντική για την ανάπτυξη της φυσιολογικής όρασης.`,
+            "Τραύμα Οφθαλμού":`<strong>Τι είναι το τραύμα οφθαλμού;</strong><br>Το τραύμα του οφθαλμού αποτελεί μία επείγουσα οφθαλμολογική κατάσταση που μπορεί να αφορά τα βλέφαρα, τον κερατοειδή, τον επιπεφυκότα, τον φακό, τον αμφιβληστροειδή ή ακόμη και ολόκληρο τον βολβό του ματιού. Ανάλογα με τη βαρύτητα του τραυματισμού, μπορεί να προκαλέσει από ήπια ενόχληση έως σοβαρή και μόνιμη απώλεια της όρασης. Η άμεση εκτίμηση από οφθαλμίατρο είναι καθοριστικής σημασίας για τη σωστή αντιμετώπιση και την καλύτερη δυνατή πρόγνωση.<br><br><strong>Που είναι τα συχνότερα αίτια;</strong><br>Τα οφθαλμικά τραύματα μπορεί να προκληθούν από: ξένα σώματα (μέταλλο, ξύλο, σκόνη, γυαλί), χτυπήματα κατά τη διάρκεια αθλητικών ή επαγγελματικών δραστηριοτήτων, τροχαία ατυχήματα, αιχμηρά αντικείμενα, χημικά εγκαύματα από οξέα ή αλκάλια, θερμικά εγκαύματα, πυροτεχνήματα ή εκρήξεις.<br><br><strong>Ποια είναι τα συμπτώματα;</strong><br>Ανάλογα με το είδος του τραυματισμού, μπορεί να εμφανιστούν: έντονος πόνος, ερυθρότητα, δακρύρροια, φωτοφοβία, θολή ή μειωμένη όραση, αίσθημα ξένου σώματος, αιμορραγία, δυσκολία στο άνοιγμα του ματιού.<br><br><strong>Τι πρέπει να κάνετε;</strong><br>Σε περίπτωση τραυματισμού του ματιού: μην τρίβετε το μάτι, μην προσπαθήσετε να αφαιρέσετε μόνοι σας κάποιο ξένο σώμα, μην ασκείτε πίεση στον οφθαλμό, σε περίπτωση χημικού εγκαύματος, ξεπλύνετε αμέσως το μάτι με άφθονο καθαρό νερό ή φυσιολογικό ορό για τουλάχιστον 15–20 λεπτά και αναζητήστε άμεσα ιατρική βοήθεια. Απευθυνθείτε το συντομότερο δυνατό σε οφθαλμίατρο ή στο πλησιέστερο Τμήμα Επειγόντων Περιστατικών.<br><br><strong>Πώς αντιμετωπίζεται;</strong><br>Η θεραπεία εξαρτάται από το είδος και τη σοβαρότητα του τραυματισμού και μπορεί να περιλαμβάνει: αφαίρεση ξένου σώματος, φαρμακευτική αγωγή με κολλύρια ή αλοιφές, προστατευτικό κάλυμμα του οφθαλμού, παρακολούθηση της επούλωσης, ή, στις σοβαρότερες περιπτώσεις, επείγουσα χειρουργική αποκατάσταση.<br><br><strong>Μπορεί να προληφθεί;</strong><br>Η χρήση προστατευτικών γυαλιών κατά την εργασία, τις αθλητικές δραστηριότητες και τις εργασίες στο σπίτι μειώνει σημαντικά τον κίνδυνο οφθαλμικών τραυματισμών. Η έγκαιρη διάγνωση και αντιμετώπιση ενός τραύματος του οφθαλμού μπορεί να αποτρέψει σοβαρές επιπλοκές και να διαφυλάξει την όραση. Σε κάθε τραυματισμό του ματιού, ακόμη και όταν τα συμπτώματα φαίνονται ήπια, συνιστάται άμεση οφθαλμολογική εξέταση.`
+        }
+    }
+};
+
+// PATHOLOGY IMAGES MAP
+var pathologyImagesMap = {
+    "Μυωπία": ['μυωπία.jpg'],
+    "Υπερμετρωπία": ['υπερμετρωπία.jpg'],
+    "Αστιγματισμός": ['αστιγματισμός.jpg'],
+    "Πρεσβυωπία": ['πρεσβυωπία.jpg'],
+    "Καταρράκτης": ['καταράκτης1.jpg', 'καταράκτης2.jpg', 'καταράκτης3.jpg'],
+    "Δευτερογενής καταρράκτης": ['δευτερογενής_καταράκτης.jpg', 'δευτερογενής_καταράκτης2.jpg'],
+    "Γλαύκωμα": ['γλαύκωμα.jpg', 'γλαύκωμα2.jpg'],
+    "Αποκόλληση υαλοειδούς": ['υαλοειδής.jpg'],
+    "Ηλικιακή εκφύλιση ωχράς (ΗΕΩ)": ['ΗΕΩ.jpg', 'ΗΕΩ2.jpg', 'ΗΕΩ3.jpg', 'ΗΕΩ4.jpg'],
+    "Διαβητική αμφιβληστροειδοπάθεια": ['ΔΑ.jpg', 'ΔΑ2.jpg', 'ΔΑ3.jpg', 'ΔΑ4.jpg'],
+    "Απόφραξη αγγείων αμφιβληστροειδούς": ['ΑΦΑ.jpg', 'ΑΦΑ2.jpg', 'ΑΦΑ3.jpg', 'ΑΦΑ4.jpg'],
+    "Αποκόλληση αμφιβληστροειδούς": ['ΑΑ.jpg', 'AA_2.jpg', 'AA_3.jpg', 'AA_4.jpg', 'AA_5.jpg'],
+    "Επιωχρική μεμβράνη": ['ΕΜ.jpg'],
+    "Οπή ωχράς": ['ΟΩ.jpg'],
+    "Κληρονομικές δυστροφίες αμφιβληστροειδούς": ['ΚΔΑ.jpg',],
+    "Ξηροφθαλμία": ['Ξηροφθαλμία.jpg'],
+    "Δυστροφία κερατοειδούς": ['ΔΚ.jpg'],
+    "Κερατίτιδα": ['Κερατίτιδα.jpg'],
+    "Κερατόκωνος": ['Κερατόκωνος.jpg'],
+    "Επιπεφυκίτιδα": ['Επιπεφυκίτιδα.jpg'],
+    "Πτερύγιο": ['Πτερύγιο.jpg', 'Πτερύγιο2.jpg'],
+    "Υπόσφαγμα":['Υπόσφαγμα.jpg', 'Υπόσφαγμα2.jpg'],
+    "Βλεφαρίτιδα": [],
+    "Κριθή – Χαλάζιο": ['ΧΚ3.jpg', 'ΧΚ4.jpg', 'ΧΚ.jpg', 'ΧΚ2.jpg'],
+    "Ξανθελάσματα": ['Ξανθελάσματα.jpg'],
+    "Τριχίαση": ['Τριχίαση.jpg'],
+    "Βλεφαρόπτωση": ['Βλεφαρόπτωση.jpg'],
+    "Εντρόπιο / Εκτρόπιο": ['ΕΕ.jpg'],
+    "Βλεφαροχάλαση/ Δερματοχάλαση": ['ΒΔ.jpg'],
+    "Δακρυοκυστίτιδα": ['Δακρυιοκυστίτιδα.jpg'],
+    "Σπίλος επιπεφυκότα": ['ΣΕ.jpg'],
+    "Σπίλος ίριδας / οπίσθιου πόλου": ['ΣΙ.jpg'],
+    "Μελάνωμα χοριοειδούς": ['ΜΧ.jpg'],
+    "Ρετινοβλάστωμα": ['ΡΒ.jpg'],
+    "Όγκοι βλεφάρων": ['ΟΒ.jpg'],
+    "Ραγοειδίτιδα / Ιριδοκυκλίτιδα": ['Ρ.jpg'],
+    "Νευρο-οφθαλμολογικές παθήσεις": ['Ν.jpg', 'Ν2.jpg', 'Ν3.jpg', 'Ν4.jpg', 'Ν4.jpg', 'Ν5.jpg', 'Ν6.jpg'],
+    "Αμβλυωπία": ['ΑΤ.jpg'],
+    "Στραβισμός": ['Σ.jpg'],
+    "Τραύμα Οφθαλμού":['ΤΣΟ.jpg']
+};
+
+function getPathologyImages(pathologyName) {
+    if (pathologyImagesMap[pathologyName]) {
+        return pathologyImagesMap[pathologyName].map(function(image) {
+            return 'images/' + image;
+        });
+    }
+
+    return [];
+}
+
+// NAVIGATION
+var currentPage = 'home';
+
+function navigateTo(page, category, pathology) {
+    var dropdownContent = document.getElementById('dropdownContent');
+    var navMenu = document.getElementById('navMenu');
+    var hamburger = document.getElementById('hamburger');
+    if (dropdownContent) dropdownContent.classList.remove('show');
+    if (navMenu) navMenu.classList.remove('open');
+    if (hamburger) hamburger.querySelector('i').className = 'fas fa-bars';
+    var pages = document.querySelectorAll('.page-content');
+    for (var i = 0; i < pages.length; i++) {
+        pages[i].classList.remove('active');
+    }
+    if (page === 'contact') {
+    document.getElementById('page-home').classList.add('active');
+    currentPage = 'home';
+    window.location.hash = '#home';
+    updateActiveNav('home');
+
+    var contactSection = document.getElementById('contact-home');
+
+    if (contactSection) {
+        setTimeout(function() {
+            var headerOffset = 80;
+            var elementPosition = contactSection.getBoundingClientRect().top;
+            var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }, 100);
+    }
+
+    return;
+}
+    if (page === 'home') {
+        document.getElementById('page-home').classList.add('active');
+        currentPage = 'home';
+        window.location.hash = '#home';
+        updateActiveNav('home');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        document.getElementById('pathologyImagesContainer').style.display = 'none';
+        imageGroups['pathology'] = [];
+        return;
+    }
+    if (page === 'bio') {
+        document.getElementById('page-bio').classList.add('active');
+        currentPage = 'bio';
+        window.location.hash = '#bio';
+        updateActiveNav('bio');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        document.getElementById('pathologyImagesContainer').style.display = 'none';
+        return;
+    }
+    if (page === 'services') {
+        document.getElementById('page-services').classList.add('active');
+        currentPage = 'services';
+        window.location.hash = '#services';
+        updateActiveNav('services');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        document.getElementById('pathologyImagesContainer').style.display = 'none';
+        return;
+    }
+    if (page === 'pathology' && category && pathology) {
+        var content = document.getElementById('pathologyDetailContent');
+        var text = 'Πληροφορίες δεν βρέθηκαν.';
+        if (pathologyData[category] && pathologyData[category].items[pathology]) {
+            text = pathologyData[category].items[pathology];
+        }
+        content.innerHTML = '<h2>' + category + '</h2><span class="page-sub">' + pathology + '</span><div id="pathologyImagesTop" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin:20px 0;"></div><div style="padding-top:8px;">' + text + '</div><p style="font-style:italic;color:var(--color-gray);margin-top:20px;border-top:1px solid #eee;padding-top:16px;"><i class="fas fa-info-circle" style="color:var(--color-gold);"></i> Για περισσότερες πληροφορίες ή για ραντεβού, επικοινωνήστε με το ιατρείο μας.</p>';
+        document.getElementById('page-pathology').classList.add('active');
+        currentPage = 'pathology';
+        var hashPath = encodeURIComponent(category) + '/' + encodeURIComponent(pathology);
+        window.location.hash = '#pathology/' + hashPath;
+        updateActiveNav('pathology');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        var container = document.getElementById('pathologyImagesContainer');
+        container.style.display = 'none';
+var imagesTopDiv = document.getElementById('pathologyImagesTop');
+if (imagesTopDiv) {
+    imagesTopDiv.innerHTML = '';
+    imageGroups['pathology'] = [];
+    var images = getPathologyImages(pathology);
+    
+    if (images.length > 0) {
+        for (var i = 0; i < images.length; i++) {
+            var img = document.createElement('img');
+            img.src = images[i];
+            img.alt = 'Εικόνα για ' + pathology;
+            img.loading = 'lazy';
+            img.style.width = '100%';
+            img.style.height = '180px';
+            img.style.objectFit = 'cover';
+            img.style.borderRadius = '8px';
+            img.style.boxShadow = 'var(--shadow-soft)';
+            img.style.cursor = 'pointer';
+            img.style.transition = 'var(--transition)';
+            img.onmouseover = function() { this.style.transform = 'scale(1.03)'; this.style.boxShadow = 'var(--shadow-hover)'; };
+            img.onmouseout = function() { this.style.transform = 'scale(1)'; this.style.boxShadow = 'var(--shadow-soft)'; };
+            
+            imageGroups['pathology'].push({src: images[i], caption: 'Εικόνα για ' + pathology});
+            
+            (function(src, alt) {
+                img.onclick = function() {
+                    var idx = -1;
+                    for (var j = 0; j < imageGroups['pathology'].length; j++) {
+                        if (imageGroups['pathology'][j].src === src) {
+                            idx = j;
+                            break;
+                        }
+                    }
+                    if (idx !== -1) {
+                        currentGroup = 'pathology';
+                        currentIndex = idx;
+                        showLightboxImage(idx);
+                    } else {
+                        openLightboxSimple(src, alt);
+                    }
+                };
+            })(images[i], 'Εικόνα για ' + pathology);
+            
+            imagesTopDiv.appendChild(img);
+        }
+    }
+}
+    }
+}
+
+function updateActiveNav(page) {
+    var elements = document.querySelectorAll('.nav-menu a, .nav-menu .dropdown-btn');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].classList.remove('active');
+    }
+    if (page === 'home') { var el = document.getElementById('nav-home'); if (el) el.classList.add('active'); }
+    else if (page === 'bio') { var el = document.getElementById('nav-bio'); if (el) el.classList.add('active'); }
+    else if (page === 'services') { var el = document.getElementById('nav-services'); if (el) el.classList.add('active'); }
+    else if (page === 'contact') { var el = document.getElementById('nav-contact'); if (el) el.classList.add('active'); }
+    else if (page === 'pathology') { var el = document.getElementById('dropdownToggle'); if (el) el.classList.add('active'); }
+}
+
+var dropdownContentEl = document.getElementById('dropdownContent');
+var categoryKeys = Object.keys(pathologyData);
+for (var i = 0; i < categoryKeys.length; i++) {
+    var category = categoryKeys[i];
+    var data = pathologyData[category];
+    var catDiv = document.createElement('div');
+    catDiv.className = 'dropdown-category';
+    catDiv.innerHTML = '<i class="fas ' + data.icon + '"></i> ' + category;
+    dropdownContentEl.appendChild(catDiv);
+    var itemKeys = Object.keys(data.items);
+    for (var j = 0; j < itemKeys.length; j++) {
+        (function(cat, path) {
+            var subDiv = document.createElement('div');
+            subDiv.className = 'dropdown-sub';
+            subDiv.innerHTML = '<i class="fas fa-chevron-right"></i> ' + path;
+            subDiv.addEventListener('click', function(e) {
+                e.stopPropagation();
+                navigateTo('pathology', cat, path);
+            });
+            dropdownContentEl.appendChild(subDiv);
+        })(category, itemKeys[j]);
+    }
+}
+
+document.getElementById('dropdownToggle').addEventListener('click', function(e) {
+    e.stopPropagation();
+    document.getElementById('dropdownContent').classList.toggle('show');
+});
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.dropdown')) {
+        document.getElementById('dropdownContent').classList.remove('show');
+    }
+});
+
+document.getElementById('hamburger').addEventListener('click', function() {
+    var navMenu = document.getElementById('navMenu');
+    navMenu.classList.toggle('open');
+    var icon = this.querySelector('i');
+    icon.className = navMenu.classList.contains('open') ? 'fas fa-times' : 'fas fa-bars';
+});
+
+function handleHash() {
+    var hash = window.location.hash.slice(1) || 'home';
+    if (hash === 'home') { navigateTo('home'); return; }
+    if (hash === 'bio') { navigateTo('bio'); return; }
+    if (hash === 'services') { navigateTo('services'); return; }
+    if (hash === 'contact') { navigateTo('contact'); return; }
+    if (hash.startsWith('pathology/')) {
+        var parts = hash.replace('pathology/', '').split('/');
+        if (parts.length >= 2) {
+            var category = decodeURIComponent(parts[0]);
+            var pathology = decodeURIComponent(parts[1]);
+            if (pathologyData[category] && pathologyData[category].items[pathology]) {
+                navigateTo('pathology', category, pathology);
+                return;
+            }
+        }
+    }
+    navigateTo('home');
+}
+
+window.addEventListener('hashchange', handleHash);
+if (window.location.hash) {
+    handleHash();
+} else {
+    navigateTo('home');
+}
+</script>
+</body>
+</html>
